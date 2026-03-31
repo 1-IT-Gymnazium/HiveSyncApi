@@ -1,0 +1,909 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  id: DeleteTodoCommandHandler
+  parent: HiveSync.Application.Handlers.Todos.Commands
+  children:
+  - HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo},HiveSync.Application.Interfaces.ICurrentUserProvider,NodaTime.IClock)
+  - HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: DeleteTodoCommandHandler
+  nameWithType: DeleteTodoCommandHandler
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: DeleteTodoCommandHandler
+    path: ../src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+    startLine: 13
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Todos.Commands
+  summary: Handles the deletion of a <xref href="HiveSync.Application.Contracts.Entities.Business.Todo" data-throw-if-not-resolved="false"></xref> entity.
+  example: []
+  syntax:
+    content: 'public class DeleteTodoCommandHandler : IRequestHandler<DeleteTodoCommand>'
+    content.vb: Public Class DeleteTodoCommandHandler Implements IRequestHandler(Of DeleteTodoCommand)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo},HiveSync.Application.Interfaces.ICurrentUserProvider,NodaTime.IClock)
+  commentId: M:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo},HiveSync.Application.Interfaces.ICurrentUserProvider,NodaTime.IClock)
+  id: '#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo},HiveSync.Application.Interfaces.ICurrentUserProvider,NodaTime.IClock)'
+  parent: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: DeleteTodoCommandHandler(IRepository<Todo>, ICurrentUserProvider, IClock)
+  nameWithType: DeleteTodoCommandHandler.DeleteTodoCommandHandler(IRepository<Todo>, ICurrentUserProvider, IClock)
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.DeleteTodoCommandHandler(HiveSync.Application.Contracts.Persistence.IRepository<HiveSync.Application.Contracts.Entities.Business.Todo>, HiveSync.Application.Interfaces.ICurrentUserProvider, NodaTime.IClock)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+    startLine: 13
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Todos.Commands
+  summary: Handles the deletion of a <xref href="HiveSync.Application.Contracts.Entities.Business.Todo" data-throw-if-not-resolved="false"></xref> entity.
+  example: []
+  syntax:
+    content: public DeleteTodoCommandHandler(IRepository<Todo> todoRepository, ICurrentUserProvider currentUserProvider, IClock clock)
+    parameters:
+    - id: todoRepository
+      type: HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo}
+      description: Repository for CRUD operations on Todos.
+    - id: currentUserProvider
+      type: HiveSync.Application.Interfaces.ICurrentUserProvider
+    - id: clock
+      type: NodaTime.IClock
+      description: Clock service to obtain the current instant.
+    content.vb: Public Sub New(todoRepository As IRepository(Of Todo), currentUserProvider As ICurrentUserProvider, clock As IClock)
+  overload: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor*
+  nameWithType.vb: DeleteTodoCommandHandler.New(IRepository(Of Todo), ICurrentUserProvider, IClock)
+  fullName.vb: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.New(HiveSync.Application.Contracts.Persistence.IRepository(Of HiveSync.Application.Contracts.Entities.Business.Todo), HiveSync.Application.Interfaces.ICurrentUserProvider, NodaTime.IClock)
+  name.vb: New(IRepository(Of Todo), ICurrentUserProvider, IClock)
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  id: Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  parent: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(DeleteTodoCommand, CancellationToken)
+  nameWithType: DeleteTodoCommandHandler.Handle(DeleteTodoCommand, CancellationToken)
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Handle
+    path: ../src/HiveSync.Application/Handlers/Todos/Commands/DeleteTodoCommandHandler.cs
+    startLine: 27
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Todos.Commands
+  summary: Handles the deletion request for a specific Todo.
+  example: []
+  syntax:
+    content: public Task Handle(DeleteTodoCommand request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+      description: The command containing the ID of the Todo to delete.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Handle(request As DeleteTodoCommand, cancellationToken As CancellationToken) As Task
+  overload: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle*
+  exceptions:
+  - type: HiveSync.Utilities.Error.NotFoundException
+    commentId: T:HiveSync.Utilities.Error.NotFoundException
+    description: Thrown if the Todo with the given ID does not exist.
+  - type: HiveSync.Utilities.Error.ConflictException
+    commentId: T:HiveSync.Utilities.Error.ConflictException
+    description: Thrown if the Todo could not be marked as deleted.
+  implements:
+  - MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business.Todo
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Todo
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  name: Todo
+  nameWithType: Todo
+  fullName: HiveSync.Application.Contracts.Entities.Business.Todo
+- uid: HiveSync.Application.Handlers.Todos.Commands
+  commentId: N:HiveSync.Application.Handlers.Todos.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Handlers.Todos.Commands
+  nameWithType: HiveSync.Application.Handlers.Todos.Commands
+  fullName: HiveSync.Application.Handlers.Todos.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Handlers
+    name: Handlers
+    href: HiveSync.Application.Handlers.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Todos
+    name: Todos
+    href: HiveSync.Application.Handlers.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Handlers.Todos.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Handlers
+    name: Handlers
+    href: HiveSync.Application.Handlers.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Todos
+    name: Todos
+    href: HiveSync.Application.Handlers.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Handlers.Todos.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  commentId: T:MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`1
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  name: IRequestHandler<DeleteTodoCommand>
+  nameWithType: IRequestHandler<DeleteTodoCommand>
+  fullName: MediatR.IRequestHandler<HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand>
+  nameWithType.vb: IRequestHandler(Of DeleteTodoCommand)
+  fullName.vb: MediatR.IRequestHandler(Of HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand)
+  name.vb: IRequestHandler(Of DeleteTodoCommand)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`1
+  commentId: T:MediatR.IRequestHandler`1
+  isExternal: true
+  name: IRequestHandler<TRequest>
+  nameWithType: IRequestHandler<TRequest>
+  fullName: MediatR.IRequestHandler<TRequest>
+  nameWithType.vb: IRequestHandler(Of TRequest)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest)
+  name.vb: IRequestHandler(Of TRequest)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor*
+  commentId: Overload:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.#ctor
+  href: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.html#HiveSync_Application_Handlers_Todos_Commands_DeleteTodoCommandHandler__ctor_HiveSync_Application_Contracts_Persistence_IRepository_HiveSync_Application_Contracts_Entities_Business_Todo__HiveSync_Application_Interfaces_ICurrentUserProvider_NodaTime_IClock_
+  name: DeleteTodoCommandHandler
+  nameWithType: DeleteTodoCommandHandler.DeleteTodoCommandHandler
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.DeleteTodoCommandHandler
+  nameWithType.vb: DeleteTodoCommandHandler.New
+  fullName.vb: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.New
+  name.vb: New
+- uid: HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Todo}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  name: IRepository<Todo>
+  nameWithType: IRepository<Todo>
+  fullName: HiveSync.Application.Contracts.Persistence.IRepository<HiveSync.Application.Contracts.Entities.Business.Todo>
+  nameWithType.vb: IRepository(Of Todo)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IRepository(Of HiveSync.Application.Contracts.Entities.Business.Todo)
+  name.vb: IRepository(Of Todo)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: <
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider
+  commentId: T:HiveSync.Application.Interfaces.ICurrentUserProvider
+  parent: HiveSync.Application.Interfaces
+  href: HiveSync.Application.Interfaces.ICurrentUserProvider.html
+  name: ICurrentUserProvider
+  nameWithType: ICurrentUserProvider
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider
+- uid: NodaTime.IClock
+  commentId: T:NodaTime.IClock
+  parent: NodaTime
+  isExternal: true
+  href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/IClock.cs
+  name: IClock
+  nameWithType: IClock
+  fullName: NodaTime.IClock
+- uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: HiveSync.Application.Interfaces
+  commentId: N:HiveSync.Application.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Interfaces
+  nameWithType: HiveSync.Application.Interfaces
+  fullName: HiveSync.Application.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+- uid: NodaTime
+  commentId: N:NodaTime
+  isExternal: true
+  name: NodaTime
+  nameWithType: NodaTime
+  fullName: NodaTime
+- uid: HiveSync.Utilities.Error.NotFoundException
+  commentId: T:HiveSync.Utilities.Error.NotFoundException
+  href: HiveSync.Utilities.Error.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: HiveSync.Utilities.Error.NotFoundException
+- uid: HiveSync.Utilities.Error.ConflictException
+  commentId: T:HiveSync.Utilities.Error.ConflictException
+  href: HiveSync.Utilities.Error.ConflictException.html
+  name: ConflictException
+  nameWithType: ConflictException
+  fullName: HiveSync.Utilities.Error.ConflictException
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle*
+  commentId: Overload:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle
+  href: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.html#HiveSync_Application_Handlers_Todos_Commands_DeleteTodoCommandHandler_Handle_HiveSync_Application_Contracts_Todos_Commands_DeleteTodoCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: DeleteTodoCommandHandler.Handle
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.Handle
+- uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  definition: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  name: Handle(DeleteTodoCommand, CancellationToken)
+  nameWithType: IRequestHandler<DeleteTodoCommand>.Handle(DeleteTodoCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand>.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of DeleteTodoCommand).Handle(DeleteTodoCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand).Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}.Handle(HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  name: DeleteTodoCommand
+  nameWithType: DeleteTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands
+  fullName: HiveSync.Application.Contracts.Todos.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

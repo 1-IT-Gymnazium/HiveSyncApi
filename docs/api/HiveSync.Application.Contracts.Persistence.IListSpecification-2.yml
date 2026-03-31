@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  id: IListSpecification`2
+  parent: HiveSync.Application.Contracts.Persistence
+  children:
+  - HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IListSpecification<T, TResult>
+  nameWithType: IListSpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IListSpecification
+    path: ../src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+    startLine: 16
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: >-
+    Defines a specification pattern for querying a list of entities of type <code class="typeparamref">T</code>
+
+    and projecting them into results of type <code class="typeparamref">TResult</code>.
+  example: []
+  syntax:
+    content: public interface IListSpecification<T, TResult>
+    typeParameters:
+    - id: T
+      description: The entity type.
+    - id: TResult
+      description: The result type after applying the specification.
+    content.vb: Public Interface IListSpecification(Of T, TResult)
+  derivedClasses:
+  - HiveSync.Application.Specifications.DefaultInboxSpecification
+  nameWithType.vb: IListSpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult)
+  name.vb: IListSpecification(Of T, TResult)
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  id: ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  langs:
+  - csharp
+  - vb
+  name: ApplyAsync(IQueryable<T>, CancellationToken)
+  nameWithType: IListSpecification<T, TResult>.ApplyAsync(IQueryable<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>.ApplyAsync(System.Linq.IQueryable<T>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ApplyAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+    startLine: 24
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Applies the specification to a queryable source and returns a list of projected results asynchronously.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<TResult>> ApplyAsync(IQueryable<T> queryable, CancellationToken cancellationToken = default)
+    parameters:
+    - id: queryable
+      type: System.Linq.IQueryable{{T}}
+      description: The source <xref href="System.Linq.IQueryable%601" data-throw-if-not-resolved="false"></xref> to apply the specification to.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResult}}}
+      description: A read-only list of results of type <code class="typeparamref">TResult</code>.
+    content.vb: Function ApplyAsync(queryable As IQueryable(Of T), cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of TResult))
+  overload: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync*
+  nameWithType.vb: IListSpecification(Of T, TResult).ApplyAsync(IQueryable(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult).ApplyAsync(System.Linq.IQueryable(Of T), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of T), CancellationToken)
+references:
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync
+  nameWithType: IListSpecification<T, TResult>.ApplyAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>.ApplyAsync
+  nameWithType.vb: IListSpecification(Of T, TResult).ApplyAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult).ApplyAsync
+- uid: System.Linq.IQueryable{{T}}
+  commentId: T:System.Linq.IQueryable{`0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResult}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<TResult>>
+  nameWithType: Task<IReadOnlyList<TResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<TResult>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of TResult))
+  name.vb: Task(Of IReadOnlyList(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

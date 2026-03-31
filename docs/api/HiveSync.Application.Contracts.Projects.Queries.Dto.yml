@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Projects.Queries.Dto
+  commentId: N:HiveSync.Application.Contracts.Projects.Queries.Dto
+  id: HiveSync.Application.Contracts.Projects.Queries.Dto
+  children:
+  - HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Projects.Queries.Dto
+  nameWithType: HiveSync.Application.Contracts.Projects.Queries.Dto
+  fullName: HiveSync.Application.Contracts.Projects.Queries.Dto
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto
+  commentId: T:HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto
+  href: HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto.html
+  name: ProjectDetailDto
+  nameWithType: ProjectDetailDto
+  fullName: HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto

@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  id: DeleteTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  children:
+  - HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor(System.Guid)
+  - HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id
+  langs:
+  - csharp
+  - vb
+  name: DeleteTodoCommand
+  nameWithType: DeleteTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: DeleteTodoCommand
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: Command to delete a Todo item by its ID.
+  example: []
+  syntax:
+    content: 'public sealed record DeleteTodoCommand : IRequest, IBaseRequest, IEquatable<DeleteTodoCommand>'
+    content.vb: Public NotInheritable Class DeleteTodoCommand Implements IRequest, IBaseRequest, IEquatable(Of DeleteTodoCommand)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest
+  - MediatR.IBaseRequest
+  - System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor(System.Guid)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor(System.Guid)
+  id: '#ctor(System.Guid)'
+  parent: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  langs:
+  - csharp
+  - vb
+  name: DeleteTodoCommand(Guid)
+  nameWithType: DeleteTodoCommand.DeleteTodoCommand(Guid)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.DeleteTodoCommand(System.Guid)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: Command to delete a Todo item by its ID.
+  example: []
+  syntax:
+    content: public DeleteTodoCommand(Guid Id)
+    parameters:
+    - id: Id
+      type: System.Guid
+      description: Unique identifier of the Todo item to delete.
+    content.vb: Public Sub New(Id As Guid)
+  overload: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor*
+  nameWithType.vb: DeleteTodoCommand.New(Guid)
+  fullName.vb: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.New(System.Guid)
+  name.vb: New(Guid)
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id
+  commentId: P:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id
+  id: Id
+  parent: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: DeleteTodoCommand.Id
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Id
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/DeleteTodoCommand.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: Unique identifier of the Todo item to delete.
+  example: []
+  syntax:
+    content: public Guid Id { get; init; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id*
+references:
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands
+  fullName: HiveSync.Application.Contracts.Todos.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest
+  commentId: T:MediatR.IRequest
+  parent: MediatR
+  isExternal: true
+  name: IRequest
+  nameWithType: IRequest
+  fullName: MediatR.IRequest
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  commentId: T:System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DeleteTodoCommand>
+  nameWithType: IEquatable<DeleteTodoCommand>
+  fullName: System.IEquatable<HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand>
+  nameWithType.vb: IEquatable(Of DeleteTodoCommand)
+  fullName.vb: System.IEquatable(Of HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand)
+  name.vb: IEquatable(Of DeleteTodoCommand)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor*
+  commentId: Overload:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.#ctor
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html#HiveSync_Application_Contracts_Todos_Commands_DeleteTodoCommand__ctor_System_Guid_
+  name: DeleteTodoCommand
+  nameWithType: DeleteTodoCommand.DeleteTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.DeleteTodoCommand
+  nameWithType.vb: DeleteTodoCommand.New
+  fullName.vb: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id*
+  commentId: Overload:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html#HiveSync_Application_Contracts_Todos_Commands_DeleteTodoCommand_Id
+  name: Id
+  nameWithType: DeleteTodoCommand.Id
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.Id

@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  id: TodoPriority
+  parent: HiveSync.Application.Contracts.Entities.Business
+  children:
+  - HiveSync.Application.Contracts.Entities.Business.TodoPriority.High
+  - HiveSync.Application.Contracts.Entities.Business.TodoPriority.Low
+  - HiveSync.Application.Contracts.Entities.Business.TodoPriority.Medium
+  langs:
+  - csharp
+  - vb
+  name: TodoPriority
+  nameWithType: TodoPriority
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  type: Enum
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoPriority
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+    startLine: 8
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Represents the priority level of a Todo item.
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonStringEnumConverter))]
+
+      public enum TodoPriority
+    content.vb: >-
+      <JsonConverter(GetType(JsonStringEnumConverter))>
+
+      Public Enum TodoPriority
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.Text.Json.Serialization.JsonStringEnumConverter
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority.Low
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoPriority.Low
+  id: Low
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  langs:
+  - csharp
+  - vb
+  name: Low
+  nameWithType: TodoPriority.Low
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority.Low
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Low
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+    startLine: 14
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Low priority; can be done later.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("low")]
+
+      Low = 1000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+    content.vb: >-
+      <JsonPropertyName("low")>
+
+      Low = 1000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: low
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority.Medium
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoPriority.Medium
+  id: Medium
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  langs:
+  - csharp
+  - vb
+  name: Medium
+  nameWithType: TodoPriority.Medium
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority.Medium
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Medium
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+    startLine: 20
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Medium priority; should be done in normal course.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("medium")]
+
+      Medium = 2000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+    content.vb: >-
+      <JsonPropertyName("medium")>
+
+      Medium = 2000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: medium
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority.High
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoPriority.High
+  id: High
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  langs:
+  - csharp
+  - vb
+  name: High
+  nameWithType: TodoPriority.High
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority.High
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: High
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoPriority.cs
+    startLine: 26
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: High priority; requires immediate attention.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("high")]
+
+      High = 3000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+    content.vb: >-
+      <JsonPropertyName("high")>
+
+      High = 3000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: high
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.TodoPriority.html
+  name: TodoPriority
+  nameWithType: TodoPriority
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority

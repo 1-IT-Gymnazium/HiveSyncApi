@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  id: AddTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  children:
+  - HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)
+  - HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo
+  langs:
+  - csharp
+  - vb
+  name: AddTodoCommand
+  nameWithType: AddTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddTodoCommand
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: Command to add a new Todo item.
+  example: []
+  syntax:
+    content: 'public sealed record AddTodoCommand : IRequest<Guid>, IBaseRequest, IEquatable<AddTodoCommand>'
+    content.vb: Public NotInheritable Class AddTodoCommand Implements IRequest(Of Guid), IBaseRequest, IEquatable(Of AddTodoCommand)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{System.Guid}
+  - MediatR.IBaseRequest
+  - System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)
+  id: '#ctor(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)'
+  parent: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  langs:
+  - csharp
+  - vb
+  name: AddTodoCommand(AddTodoDto)
+  nameWithType: AddTodoCommand.AddTodoCommand(AddTodoDto)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.AddTodoCommand(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: Command to add a new Todo item.
+  example: []
+  syntax:
+    content: public AddTodoCommand(AddTodoDto NewTodo)
+    parameters:
+    - id: NewTodo
+      type: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+      description: DTO containing the details of the new Todo.
+    content.vb: Public Sub New(NewTodo As AddTodoDto)
+  overload: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor*
+  nameWithType.vb: AddTodoCommand.New(AddTodoDto)
+  fullName.vb: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.New(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto)
+  name.vb: New(AddTodoDto)
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo
+  commentId: P:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo
+  id: NewTodo
+  parent: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  langs:
+  - csharp
+  - vb
+  name: NewTodo
+  nameWithType: AddTodoCommand.NewTodo
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NewTodo
+    path: ../src/HiveSync.Application.Contracts/Todos/Commands/AddTodoCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Commands
+  summary: DTO containing the details of the new Todo.
+  example: []
+  syntax:
+    content: public AddTodoDto NewTodo { get; init; }
+    parameters: []
+    return:
+      type: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    content.vb: Public Property NewTodo As AddTodoDto
+  overload: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo*
+references:
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands
+  fullName: HiveSync.Application.Contracts.Todos.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{System.Guid}
+  commentId: T:MediatR.IRequest{System.Guid}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: IRequest<Guid>
+  nameWithType: IRequest<Guid>
+  fullName: MediatR.IRequest<System.Guid>
+  nameWithType.vb: IRequest(Of Guid)
+  fullName.vb: MediatR.IRequest(Of System.Guid)
+  name.vb: IRequest(Of Guid)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand}
+  commentId: T:System.IEquatable{HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AddTodoCommand>
+  nameWithType: IEquatable<AddTodoCommand>
+  fullName: System.IEquatable<HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand>
+  nameWithType.vb: IEquatable(Of AddTodoCommand)
+  fullName.vb: System.IEquatable(Of HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand)
+  name.vb: IEquatable(Of AddTodoCommand)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+    name: AddTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+    name: AddTodoCommand
+    href: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor*
+  commentId: Overload:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.#ctor
+  href: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html#HiveSync_Application_Contracts_Todos_Commands_AddTodoCommand__ctor_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_
+  name: AddTodoCommand
+  nameWithType: AddTodoCommand.AddTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.AddTodoCommand
+  nameWithType.vb: AddTodoCommand.New
+  fullName.vb: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.New
+  name.vb: New
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+  parent: HiveSync.Application.Contracts.Todos.Commands.Dto
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html
+  name: AddTodoDto
+  nameWithType: AddTodoDto
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.html
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo*
+  commentId: Overload:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo
+  href: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html#HiveSync_Application_Contracts_Todos_Commands_AddTodoCommand_NewTodo
+  name: NewTodo
+  nameWithType: AddTodoCommand.NewTodo
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.NewTodo

@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Data
+  commentId: N:HiveSync.Data
+  id: HiveSync.Data
+  children:
+  - HiveSync.Data.AppDbContext
+  - HiveSync.Data.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Data
+  nameWithType: HiveSync.Data
+  fullName: HiveSync.Data
+  type: Namespace
+  assemblies:
+  - HiveSync.Data
+references:
+- uid: HiveSync.Data.AppDbContext
+  commentId: T:HiveSync.Data.AppDbContext
+  parent: HiveSync.Data
+  href: HiveSync.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: HiveSync.Data.AppDbContext
+- uid: HiveSync.Data.ServiceCollectionExtensions
+  commentId: T:HiveSync.Data.ServiceCollectionExtensions
+  href: HiveSync.Data.ServiceCollectionExtensions.html
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: HiveSync.Data.ServiceCollectionExtensions
+- uid: HiveSync.Data
+  commentId: N:HiveSync.Data
+  href: HiveSync.html
+  name: HiveSync.Data
+  nameWithType: HiveSync.Data
+  fullName: HiveSync.Data
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Data
+    name: Data
+    href: HiveSync.Data.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Data
+    name: Data
+    href: HiveSync.Data.html

@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto
+  commentId: N:HiveSync.Application.Contracts.Todos.Queries.Dto
+  id: HiveSync.Application.Contracts.Todos.Queries.Dto
+  children:
+  - HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+  - HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions
+  - HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Todos.Queries.Dto
+  nameWithType: HiveSync.Application.Contracts.Todos.Queries.Dto
+  fullName: HiveSync.Application.Contracts.Todos.Queries.Dto
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+  href: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.html
+  name: TodoDetailDto
+  nameWithType: TodoDetailDto
+  fullName: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions
+  href: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions.html
+  name: TodoDetailDtoExtensions
+  nameWithType: TodoDetailDtoExtensions
+  fullName: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter
+  parent: HiveSync.Application.Contracts.Todos.Queries.Dto
+  href: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter.html
+  name: TodoFilter
+  nameWithType: TodoFilter
+  fullName: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto
+  commentId: N:HiveSync.Application.Contracts.Todos.Queries.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Queries.Dto
+  nameWithType: HiveSync.Application.Contracts.Todos.Queries.Dto
+  fullName: HiveSync.Application.Contracts.Todos.Queries.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Queries.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Queries.Dto.html

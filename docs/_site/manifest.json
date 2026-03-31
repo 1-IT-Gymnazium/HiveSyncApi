@@ -1,0 +1,2380 @@
+{
+  "source_base_path": "C:/Users/janek/Desktop/CodeHive/HiveSync/hivesyncapi/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.AuthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.AuthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.AuthController",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.Auth.AuthController.yml\" sourcestartlinenumber=\"1\">API controller responsible for authentication and authorization operations.\nHandles user registration, login, token management, logout, and email confirmation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.Models.LoggedUserModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.Models.LoggedUserModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.Models.LoggedUserModel",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.Auth.Models.LoggedUserModel.yml\" sourcestartlinenumber=\"1\">Represents the logged-in user information returned to the frontend.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.Models.LoginModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.Models.LoginModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.Models.LoginModel",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.Auth.Models.LoginModel.yml\" sourcestartlinenumber=\"1\">Model used for user login.\nContains email and password.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.Models.RegisterModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.Models.RegisterModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.Models.RegisterModel",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.Auth.Models.RegisterModel.yml\" sourcestartlinenumber=\"1\">Model used for user registration.\nContains email, password, and display name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.Models.TokenModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.Models.TokenModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.Models.TokenModel",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.Auth.Models.TokenModel.yml\" sourcestartlinenumber=\"1\">Model used for email confirmation requests.\nContains the user's email and the confirmation token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.Auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.Auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.ProjectController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.ProjectController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.ProjectController",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.ProjectController.yml\" sourcestartlinenumber=\"1\">API controller responsible for managing projects.\nProvides endpoints for creating, retrieving, updating, and deleting projects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.SectionController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.SectionController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.SectionController",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.SectionController.yml\" sourcestartlinenumber=\"1\">API controller responsible for managing sections.\nProvides endpoints for creating, retrieving, updating, and deleting sections.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.TodoController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.TodoController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers.TodoController",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Controllers.TodoController.yml\" sourcestartlinenumber=\"1\">API controller responsible for managing Todo items.\nProvides endpoints for creating, retrieving, updating, and deleting todos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Program",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Program.yml\" sourcestartlinenumber=\"1\">Application entry point for HiveSync.\nResponsible for creating the host, loading configuration, running database migrations,\nand starting the web application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.Startup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api.Startup",
+      "Summary": "<p sourcefile=\"api/HiveSync.Api.Startup.yml\" sourcestartlinenumber=\"1\">Application startup configuration responsible for registering services\nand configuring the HTTP request pipeline.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Api.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Api",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.BackgroundServices.EmailSenderBackgroundService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.BackgroundServices.EmailSenderBackgroundService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.BackgroundServices.EmailSenderBackgroundService",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.BackgroundServices.EmailSenderBackgroundService.yml\" sourcestartlinenumber=\"1\">Background service that periodically sends unsent emails using <xref href=\"HiveSync.Application.Services.EmailSenderService\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.BackgroundServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.BackgroundServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.BackgroundServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Constants.SeedDataIds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Constants.SeedDataIds",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"1\">Contains deterministic identifiers used for database seed data.</p>\n<p sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"3\">These GUIDs ensure:</p>\n<ul sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"4\">\n<li sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"4\">Stable references across migrations</li>\n<li sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"5\">Consistent relationships between seeded entities</li>\n<li sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"6\">Safe usage in integration tests</li>\n</ul>\n<p sourcefile=\"api/HiveSync.Application.Contracts.Constants.SeedDataIds.yml\" sourcestartlinenumber=\"8\">IMPORTANT:\nNever modify existing GUID values once deployed to production,\nas this would break referential integrity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Constants.StringLengthConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Constants.StringLengthConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Constants.StringLengthConstants",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Constants.StringLengthConstants.yml\" sourcestartlinenumber=\"1\">Centralized string length constraints used across domain entities.\nThese constants ensure consistent validation rules and database limits.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Client.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.Client",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.Client.yml\" sourcestartlinenumber=\"1\">Represents a client entity that can own multiple projects.\nSupports auditing, ownership through <xref href=\"HiveSync.Application.Contracts.Interfaces.IBaseEntity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Project.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Project.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.Project",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.Project.yml\" sourcestartlinenumber=\"1\">Represents a project that groups todos, sections, and discussions.\nImplements <xref href=\"HiveSync.Application.Contracts.Interfaces.IBaseEntity\" data-throw-if-not-resolved=\"false\"></xref> to support auditing, ownership.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.ProjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.ProjectExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.ProjectExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.ProjectExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Section.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Section.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.Section",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.Section.yml\" sourcestartlinenumber=\"1\">Represents a section within a project that can contain todos and discussions.\nImplements <xref href=\"HiveSync.Application.Contracts.Interfaces.IBaseEntity\" data-throw-if-not-resolved=\"false\"></xref> to track ownership, and audit information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.SectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.SectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.SectionExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.SectionExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Todo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.Todo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.Todo",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.Todo.yml\" sourcestartlinenumber=\"1\">Represents a task or Todo item in a project management system.\nImplements <xref href=\"HiveSync.Application.Contracts.Interfaces.IBaseEntity\" data-throw-if-not-resolved=\"false\"></xref> to track ownership.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.TodoExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.TodoExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoPriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.TodoPriority",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.TodoPriority.yml\" sourcestartlinenumber=\"1\">Represents the priority level of a Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.TodoState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business.TodoState",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Business.TodoState.yml\" sourcestartlinenumber=\"1\">Represents the current state of a Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Business.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Business.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Business",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.AppUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.AppUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Identity.AppUser",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Identity.AppUser.yml\" sourcestartlinenumber=\"1\">Represents an application user in the system.\nInherits from IdentityUser with Guid as the primary key.\nImplements ITrackable for auditing purposes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.EmailMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.EmailMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Identity.EmailMessage",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Entities.Identity.EmailMessage.yml\" sourcestartlinenumber=\"1\">Represents an email message that can be tracked, sent, and stored in the system.\nImplements tracking, ownership, and base entity interfaces.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.RefreshToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.RefreshToken.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Identity.RefreshToken",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Entities.Identity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Entities.Identity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Interfaces.IBaseEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Interfaces.IBaseEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Interfaces.IBaseEntity",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Interfaces.IBaseEntity.yml\" sourcestartlinenumber=\"1\">Represents a base entity with tracking, ownership, and tenancy information.\nAll core domain entities should implement this interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Interfaces.IOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Interfaces.IOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Interfaces.IOwner",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Interfaces.IOwner.yml\" sourcestartlinenumber=\"1\">Interface for entities that have an owning user.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Interfaces.ITrackable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Interfaces.ITrackable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Interfaces.ITrackable",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Interfaces.ITrackable.yml\" sourcestartlinenumber=\"1\">Interface for entities that support auditing and soft deletes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Interfaces.ITrackableExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for ITrackable to manage system/user auditing and soft deletes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.IListSpecification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.IListSpecification-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.IListSpecification<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.IListSpecification-1.yml\" sourcestartlinenumber=\"1\">Marker interface for list specifications returning the same type <code class=\"typeparamref\">T</code> as the result.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.IListSpecification-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.IListSpecification-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.IListSpecification-2.yml\" sourcestartlinenumber=\"1\">Defines a specification pattern for querying a list of entities of type <code class=\"typeparamref\">T</code>\nand projecting them into results of type <code class=\"typeparamref\">TResult</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.yml\" sourcestartlinenumber=\"1\">Defines read-only operations for a repository of entities of type <code class=\"typeparamref\">T</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.IRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.IRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.IRepository<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.IRepository-1.yml\" sourcestartlinenumber=\"1\">Generic repository interface that supports read and write operations for <code class=\"typeparamref\">T</code> entities.\nExtends <xref href=\"HiveSync.Application.Contracts.Persistence.IReadOnlyRepository%601\" data-throw-if-not-resolved=\"false\"></xref> for read-only operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.ISpecification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.ISpecification-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.ISpecification<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.ISpecification-1.yml\" sourcestartlinenumber=\"1\">Marker interface for a specification that returns entities of type <code class=\"typeparamref\">T</code>.\nInherits from <xref href=\"HiveSync.Application.Contracts.Persistence.ISpecification%602\" data-throw-if-not-resolved=\"false\"></xref> with TResult = T.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.ISpecification-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.ISpecification-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.ISpecification-2.yml\" sourcestartlinenumber=\"1\">Defines a specification pattern for querying entities of type <code class=\"typeparamref\">T</code>.\nCan transform the queryable into a result of type <code class=\"typeparamref\">TResult</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.ISystemRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence.ISystemRepository<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Persistence.ISystemRepository-1.yml\" sourcestartlinenumber=\"1\">Repository interface for system-level entities that are trackable and have a base entity structure.\nSupports basic read, add, save, and transactional operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Persistence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Persistence",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.yml\" sourcestartlinenumber=\"1\">Command for creating a new project.\nReturns the ID of the newly created project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand.yml\" sourcestartlinenumber=\"1\">Command for deleting a project.\nIncludes the project ID and the current user performing the action.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for creating a new project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for mapping <xref href=\"HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for updating an existing project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.yml\" sourcestartlinenumber=\"1\">Extension methods for mapping <xref href=\"HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand.yml\" sourcestartlinenumber=\"1\">Command for updating an existing project.\nContains the project ID and the updated values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for project details.\nUsed to expose project information in queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Queries.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a list of all projects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a single project by its unique identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Projects.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Projects.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.yml\" sourcestartlinenumber=\"1\">Command to add a new section to a project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand.yml\" sourcestartlinenumber=\"1\">Command to delete a section by its unique identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.yml\" sourcestartlinenumber=\"1\">DTO for creating a new section.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for converting <xref href=\"HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.yml\" sourcestartlinenumber=\"1\">DTO for updating an existing section.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.yml\" sourcestartlinenumber=\"1\">Extension methods for applying updates from <xref href=\"HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand.yml\" sourcestartlinenumber=\"1\">Command to update an existing section.\nContains the section ID and the data to update.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object representing a Section entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListByProjectQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListByProjectQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListByProjectQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListByProjectQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a list of all sections with the same parental project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a list of all sections.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a single section by its unique identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Sections.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Sections.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.yml\" sourcestartlinenumber=\"1\">Command to add a new Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.yml\" sourcestartlinenumber=\"1\">Command to delete a Todo item by its ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for creating a new Todo item.\nContains all required and optional fields for creation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.yml\" sourcestartlinenumber=\"1\">Extension to map AddTodoDto to a Todo entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.yml\" sourcestartlinenumber=\"1\">DTO for updating an existing Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.yml\" sourcestartlinenumber=\"1\">Updates the target <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entity with values from the source DTO.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand.yml\" sourcestartlinenumber=\"1\">Command to update an existing Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.yml\" sourcestartlinenumber=\"1\">Detailed representation of a Todo item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter.yml\" sourcestartlinenumber=\"1\">Filter criteria for querying Todo items.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.Dto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.Dto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery.yml\" sourcestartlinenumber=\"1\">Get a list of all todos with the same parental project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery.yml\" sourcestartlinenumber=\"1\">Get a list of all todos with the same parental section.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving a list of all Todo items with detailed information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery.yml\" sourcestartlinenumber=\"1\">Query for retrieving detailed information about a specific Todo item by its ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Contracts.Todos.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Contracts.Todos.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.CurrentUserProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.CurrentUserProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.CurrentUserProvider",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"1\">Provides access to information about the currently authenticated user\nbased on claims stored in the HTTP context.</p>\n<p sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"4\">This implementation relies on JWT claims and assumes that:</p>\n<ul sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"5\">\n<li sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"5\"><xref href=\"System.Security.Claims.ClaimTypes.NameIdentifier\" data-throw-if-not-resolved=\"false\"></xref> contains the user ID (GUID)</li>\n<li sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"6\">A custom claim &quot;inbox_id&quot; contains the default Inbox project ID (GUID)</li>\n<li sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"7\"><xref href=\"System.Security.Claims.ClaimTypes.Email\" data-throw-if-not-resolved=\"false\"></xref> contains the user's email</li>\n</ul>\n<p sourcefile=\"api/HiveSync.Application.CurrentUserProvider.yml\" sourcestartlinenumber=\"9\">Throws <xref href=\"System.UnauthorizedAccessException\" data-throw-if-not-resolved=\"false\"></xref> if required claims\nare missing or the user is not authenticated.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.AddProjectCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.AddProjectCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Commands.AddProjectCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Projects.Commands.AddProjectCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles creation of a new <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.DeleteProjectCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.DeleteProjectCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Commands.DeleteProjectCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Projects.Commands.DeleteProjectCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles deletion of a <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entity including all related sections and todos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.UpdateProjectCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.UpdateProjectCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Commands.UpdateProjectCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Projects.Commands.UpdateProjectCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles updating an existing <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoListQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoListQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoListQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoListQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of all <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> entities and maps them to <xref href=\"HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a single <xref href=\"HiveSync.Application.Contracts.Entities.Business.Project\" data-throw-if-not-resolved=\"false\"></xref> and maps it to <xref href=\"HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Projects.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Projects.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles creation of a new <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> within a project.\nPerforms validation, uniqueness checks and assigns the correct order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles deletion of a <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> including soft deletion of all related <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> items.\nThe operation runs inside a transaction to guarantee consistency.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles updating an existing <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a list of <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entities projected to <xref href=\"HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto\" data-throw-if-not-resolved=\"false\"></xref> for a specific project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a list of <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entities projected to <xref href=\"HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a single <xref href=\"HiveSync.Application.Contracts.Entities.Business.Section\" data-throw-if-not-resolved=\"false\"></xref> entity\nprojected to <xref href=\"HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Sections.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Sections.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles the creation of a new <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles the deletion of a <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler.yml\" sourcestartlinenumber=\"1\">Handles the <xref href=\"HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand\" data-throw-if-not-resolved=\"false\"></xref> command and updates a Todo entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a list of <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entities projected to <xref href=\"HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto\" data-throw-if-not-resolved=\"false\"></xref> for a specific project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a list of <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> entities projected to <xref href=\"HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto\" data-throw-if-not-resolved=\"false\"></xref> for a specific section.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of all Todos as <xref href=\"HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto\" data-throw-if-not-resolved=\"false\"></xref> list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler.yml\" sourcestartlinenumber=\"1\">Handles retrieval of a single <xref href=\"HiveSync.Application.Contracts.Entities.Business.Todo\" data-throw-if-not-resolved=\"false\"></xref> as <xref href=\"HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto\" data-throw-if-not-resolved=\"false\"></xref> by its ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Handlers.Todos.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Handlers.Todos.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Interfaces.ICurrentUserProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Interfaces.ICurrentUserProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Interfaces.ICurrentUserProvider",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Interfaces.ICurrentUserProvider.yml\" sourcestartlinenumber=\"1\">Provides information about the currently authenticated user.\nTypically used in repositories and services to enforce ownership or track actions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.MediatrHandlerResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.MediatrHandlerResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.MediatrHandlerResolver",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.MediatrHandlerResolver.yml\" sourcestartlinenumber=\"1\">Helper class to register MediatR handlers from the assembly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Services.EmailSenderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Services.EmailSenderService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Services.EmailSenderService",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Services.EmailSenderService.yml\" sourcestartlinenumber=\"1\">Service for managing and sending email messages.\nStores unsent emails in the database and sends them via SMTP.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Specifications.DefaultInboxSpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Specifications.DefaultInboxSpecification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Specifications.DefaultInboxSpecification",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Specifications.DefaultInboxSpecification.yml\" sourcestartlinenumber=\"1\">Specification to retrieve the default inbox project for a given user.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Specifications.UniqueFieldSpec-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Specifications.UniqueFieldSpec-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Application.Specifications.UniqueFieldSpec-1.yml\" sourcestartlinenumber=\"1\">Specification to check whether a given string field value is unique within a set of entities.\nSupports optional scoping and ignoring a specific entity by ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.Specifications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.Specifications.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application.Specifications",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Auth.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Auth.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Auth.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.AppDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.AppDbContext",
+      "Summary": "<p sourcefile=\"api/HiveSync.Data.AppDbContext.yml\" sourcestartlinenumber=\"1\">Main application database context for HiveSync.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.Migrations.Init.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.Migrations.Init.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.Migrations.Init",
+      "Summary": "<p sourcefile=\"api/HiveSync.Data.Migrations.Init.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.Repositories.EfRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.Repositories.EfRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.Repositories.EfRepository<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Data.Repositories.EfRepository-1.yml\" sourcestartlinenumber=\"1\">Generic repository for user-owned, trackable entities with soft-delete support.\nAutomatically filters entities by <xref href=\"HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"HiveSync.Application.Contracts.Interfaces.IOwner.OwnerId\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.Repositories.EfSystemRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.Repositories.EfSystemRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.Repositories.EfSystemRepository<T>",
+      "Summary": "<p sourcefile=\"api/HiveSync.Data.Repositories.EfSystemRepository-1.yml\" sourcestartlinenumber=\"1\">Generic repository for system-level operations on trackable entities.\nAutomatically filters out soft-deleted records (<xref href=\"HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt\" data-throw-if-not-resolved=\"false\"></xref> != null).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data.ServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Data.ServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for configuring HiveSync data layer services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.ApplicationMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.ApplicationMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.ApplicationMapper",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.ApplicationMapper.yml\" sourcestartlinenumber=\"1\">Provides application-wide contextual mapping utilities and access to\nenvironment configuration and current time abstraction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.ClaimsPrincipalExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.ClaimsPrincipalExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.ClaimsPrincipalExtensions",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.ClaimsPrincipalExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for extracting strongly-typed information\nfrom an authenticated <xref href=\"System.Security.Claims.ClaimsPrincipal\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ApiErrorItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ApiErrorItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ApiErrorItem",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ApiErrorItem.yml\" sourcestartlinenumber=\"1\">Represents a single structured error item for API responses in HiveSync.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ApiErrorResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ApiErrorResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ApiErrorResponse",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ApiErrorResponse.yml\" sourcestartlinenumber=\"1\">Standardized response model for returning API errors in HiveSync.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ApiValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ApiValidationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ApiValidationException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ApiValidationException.yml\" sourcestartlinenumber=\"1\">Represents an HTTP 400 (Bad Request) exception for validation errors in HiveSync API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ConflictException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ConflictException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ConflictException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ConflictException.yml\" sourcestartlinenumber=\"1\">Represents an HTTP 409 (Conflict) application-specific exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ErrorMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ErrorMessages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ErrorMessages",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ErrorMessages.yml\" sourcestartlinenumber=\"1\">Central repository of error messages for HiveSync API.\nProvides both static messages for common errors and dynamic helpers for field-specific validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ExceptionMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ExceptionMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ExceptionMiddleware",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ExceptionMiddleware.yml\" sourcestartlinenumber=\"1\">Middleware for handling exceptions globally and converting them\ninto structured API error responses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ForbiddenException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ForbiddenException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ForbiddenException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ForbiddenException.yml\" sourcestartlinenumber=\"1\">Represents an HTTP 403 (Forbidden) application-specific exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.HiveSyncException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.HiveSyncException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.HiveSyncException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.HiveSyncException.yml\" sourcestartlinenumber=\"1\">Base class for all application-specific exceptions in HiveSync,\nproviding structured error information for API responses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.NotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.NotFoundException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.NotFoundException.yml\" sourcestartlinenumber=\"1\">Represents an HTTP 404 (Not Found) application-specific exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.UnauthorizedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.UnauthorizedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.UnauthorizedException",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.UnauthorizedException.yml\" sourcestartlinenumber=\"1\">Represents an HTTP 401 (Unauthorized) application-specific exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ValidationErrorBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ValidationErrorBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ValidationErrorBuilder",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ValidationErrorBuilder.yml\" sourcestartlinenumber=\"1\">Provides a fluent builder for constructing structured validation error collections.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.ValidationErrorItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.ValidationErrorItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error.ValidationErrorItem",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Error.ValidationErrorItem.yml\" sourcestartlinenumber=\"1\">Represents a validation error entry for a specific field,\nincluding all associated validation messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Error.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Error",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Interfaces.IApplicationMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Interfaces.IApplicationMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Interfaces.IApplicationMapper",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Interfaces.IApplicationMapper.yml\" sourcestartlinenumber=\"1\">Defines a contract for application-level mapping utilities and shared contextual services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Settings.EnvironmentSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Settings.EnvironmentSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Settings.EnvironmentSettings",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Settings.EnvironmentSettings.yml\" sourcestartlinenumber=\"1\">Represents environment-specific configuration values used by the application,\nprimarily for frontend integration and email communication.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Settings.JwtSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Settings.JwtSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Settings.JwtSettings",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Settings.JwtSettings.yml\" sourcestartlinenumber=\"1\">Represents configuration settings required for JWT authentication and token generation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Settings.SmtpSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Settings.SmtpSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Settings.SmtpSettings",
+      "Summary": "<p sourcefile=\"api/HiveSync.Utilities.Settings.SmtpSettings.yml\" sourcestartlinenumber=\"1\">Represents SMTP configuration settings used for sending emails.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.Settings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities.Settings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HiveSync.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HiveSync.Utilities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HiveSync.Utilities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.IScopedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.IScopedService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.IScopedService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ISingletonService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ISingletonService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.ISingletonService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ITransientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ITransientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.ITransientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

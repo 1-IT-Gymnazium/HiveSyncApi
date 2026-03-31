@@ -1,0 +1,763 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Services.EmailSenderService
+  commentId: T:HiveSync.Application.Services.EmailSenderService
+  id: EmailSenderService
+  parent: HiveSync.Application.Services
+  children:
+  - HiveSync.Application.Services.EmailSenderService.#ctor(NodaTime.IClock,HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings})
+  - HiveSync.Application.Services.EmailSenderService.AddEmail(System.String,System.String,System.String,System.String,System.String,System.String)
+  - HiveSync.Application.Services.EmailSenderService.SendEmailsAsync
+  langs:
+  - csharp
+  - vb
+  name: EmailSenderService
+  nameWithType: EmailSenderService
+  fullName: HiveSync.Application.Services.EmailSenderService
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application/Services/EmailSenderService.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: EmailSenderService
+    path: ../src/HiveSync.Application/Services/EmailSenderService.cs
+    startLine: 12
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Services
+  summary: >-
+    Service for managing and sending email messages.
+
+    Stores unsent emails in the database and sends them via SMTP.
+  example: []
+  syntax:
+    content: public class EmailSenderService
+    content.vb: Public Class EmailSenderService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Services.EmailSenderService.#ctor(NodaTime.IClock,HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings})
+  commentId: M:HiveSync.Application.Services.EmailSenderService.#ctor(NodaTime.IClock,HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings})
+  id: '#ctor(NodaTime.IClock,HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings},Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings})'
+  parent: HiveSync.Application.Services.EmailSenderService
+  langs:
+  - csharp
+  - vb
+  name: EmailSenderService(IClock, ISystemRepository<EmailMessage>, IOptions<EnvironmentSettings>, IOptions<SmtpSettings>)
+  nameWithType: EmailSenderService.EmailSenderService(IClock, ISystemRepository<EmailMessage>, IOptions<EnvironmentSettings>, IOptions<SmtpSettings>)
+  fullName: HiveSync.Application.Services.EmailSenderService.EmailSenderService(NodaTime.IClock, HiveSync.Application.Contracts.Persistence.ISystemRepository<HiveSync.Application.Contracts.Entities.Identity.EmailMessage>, Microsoft.Extensions.Options.IOptions<HiveSync.Utilities.Settings.EnvironmentSettings>, Microsoft.Extensions.Options.IOptions<HiveSync.Utilities.Settings.SmtpSettings>)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application/Services/EmailSenderService.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application/Services/EmailSenderService.cs
+    startLine: 26
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Services
+  summary: Initializes a new instance of the <xref href="HiveSync.Application.Services.EmailSenderService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EmailSenderService(IClock clock, ISystemRepository<EmailMessage> emailRepository, IOptions<EnvironmentSettings> envOptions, IOptions<SmtpSettings> options)
+    parameters:
+    - id: clock
+      type: NodaTime.IClock
+      description: Clock service for current timestamps.
+    - id: emailRepository
+      type: HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage}
+      description: Repository for persisting email messages.
+    - id: envOptions
+      type: Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings}
+      description: Environment settings (sender info).
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings}
+      description: SMTP settings.
+    content.vb: Public Sub New(clock As IClock, emailRepository As ISystemRepository(Of EmailMessage), envOptions As IOptions(Of EnvironmentSettings), options As IOptions(Of SmtpSettings))
+  overload: HiveSync.Application.Services.EmailSenderService.#ctor*
+  nameWithType.vb: EmailSenderService.New(IClock, ISystemRepository(Of EmailMessage), IOptions(Of EnvironmentSettings), IOptions(Of SmtpSettings))
+  fullName.vb: HiveSync.Application.Services.EmailSenderService.New(NodaTime.IClock, HiveSync.Application.Contracts.Persistence.ISystemRepository(Of HiveSync.Application.Contracts.Entities.Identity.EmailMessage), Microsoft.Extensions.Options.IOptions(Of HiveSync.Utilities.Settings.EnvironmentSettings), Microsoft.Extensions.Options.IOptions(Of HiveSync.Utilities.Settings.SmtpSettings))
+  name.vb: New(IClock, ISystemRepository(Of EmailMessage), IOptions(Of EnvironmentSettings), IOptions(Of SmtpSettings))
+- uid: HiveSync.Application.Services.EmailSenderService.AddEmail(System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:HiveSync.Application.Services.EmailSenderService.AddEmail(System.String,System.String,System.String,System.String,System.String,System.String)
+  id: AddEmail(System.String,System.String,System.String,System.String,System.String,System.String)
+  parent: HiveSync.Application.Services.EmailSenderService
+  langs:
+  - csharp
+  - vb
+  name: AddEmail(string, string, string, string?, string?, string?)
+  nameWithType: EmailSenderService.AddEmail(string, string, string, string?, string?, string?)
+  fullName: HiveSync.Application.Services.EmailSenderService.AddEmail(string, string, string, string?, string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application/Services/EmailSenderService.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddEmail
+    path: ../src/HiveSync.Application/Services/EmailSenderService.cs
+    startLine: 48
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Services
+  summary: Adds a new email to the repository to be sent later.
+  example: []
+  syntax:
+    content: public Task AddEmail(string subject, string body, string recipientEmail, string? recipientName = null, string? fromEmail = null, string? fromName = null)
+    parameters:
+    - id: subject
+      type: System.String
+      description: Email subject.
+    - id: body
+      type: System.String
+      description: Email body (HTML).
+    - id: recipientEmail
+      type: System.String
+      description: Recipient email address.
+    - id: recipientName
+      type: System.String
+      description: Recipient name (optional).
+    - id: fromEmail
+      type: System.String
+      description: Sender email (optional, defaults to environment sender).
+    - id: fromName
+      type: System.String
+      description: Sender name (optional, defaults to environment sender).
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AddEmail(subject As String, body As String, recipientEmail As String, recipientName As String = Nothing, fromEmail As String = Nothing, fromName As String = Nothing) As Task
+  overload: HiveSync.Application.Services.EmailSenderService.AddEmail*
+  nameWithType.vb: EmailSenderService.AddEmail(String, String, String, String, String, String)
+  fullName.vb: HiveSync.Application.Services.EmailSenderService.AddEmail(String, String, String, String, String, String)
+  name.vb: AddEmail(String, String, String, String, String, String)
+- uid: HiveSync.Application.Services.EmailSenderService.SendEmailsAsync
+  commentId: M:HiveSync.Application.Services.EmailSenderService.SendEmailsAsync
+  id: SendEmailsAsync
+  parent: HiveSync.Application.Services.EmailSenderService
+  langs:
+  - csharp
+  - vb
+  name: SendEmailsAsync()
+  nameWithType: EmailSenderService.SendEmailsAsync()
+  fullName: HiveSync.Application.Services.EmailSenderService.SendEmailsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application/Services/EmailSenderService.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SendEmailsAsync
+    path: ../src/HiveSync.Application/Services/EmailSenderService.cs
+    startLine: 77
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Services
+  summary: Sends all unsent emails in the repository via SMTP and marks them as sent.
+  example: []
+  syntax:
+    content: public Task SendEmailsAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendEmailsAsync() As Task
+  overload: HiveSync.Application.Services.EmailSenderService.SendEmailsAsync*
+references:
+- uid: HiveSync.Application.Services
+  commentId: N:HiveSync.Application.Services
+  href: HiveSync.html
+  name: HiveSync.Application.Services
+  nameWithType: HiveSync.Application.Services
+  fullName: HiveSync.Application.Services
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Services
+    name: Services
+    href: HiveSync.Application.Services.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Services
+    name: Services
+    href: HiveSync.Application.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Services.EmailSenderService
+  commentId: T:HiveSync.Application.Services.EmailSenderService
+  parent: HiveSync.Application.Services
+  href: HiveSync.Application.Services.EmailSenderService.html
+  name: EmailSenderService
+  nameWithType: EmailSenderService
+  fullName: HiveSync.Application.Services.EmailSenderService
+- uid: HiveSync.Application.Services.EmailSenderService.#ctor*
+  commentId: Overload:HiveSync.Application.Services.EmailSenderService.#ctor
+  href: HiveSync.Application.Services.EmailSenderService.html#HiveSync_Application_Services_EmailSenderService__ctor_NodaTime_IClock_HiveSync_Application_Contracts_Persistence_ISystemRepository_HiveSync_Application_Contracts_Entities_Identity_EmailMessage__Microsoft_Extensions_Options_IOptions_HiveSync_Utilities_Settings_EnvironmentSettings__Microsoft_Extensions_Options_IOptions_HiveSync_Utilities_Settings_SmtpSettings__
+  name: EmailSenderService
+  nameWithType: EmailSenderService.EmailSenderService
+  fullName: HiveSync.Application.Services.EmailSenderService.EmailSenderService
+  nameWithType.vb: EmailSenderService.New
+  fullName.vb: HiveSync.Application.Services.EmailSenderService.New
+  name.vb: New
+- uid: NodaTime.IClock
+  commentId: T:NodaTime.IClock
+  parent: NodaTime
+  isExternal: true
+  href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/IClock.cs
+  name: IClock
+  nameWithType: IClock
+  fullName: NodaTime.IClock
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage}
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISystemRepository{HiveSync.Application.Contracts.Entities.Identity.EmailMessage}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  name: ISystemRepository<EmailMessage>
+  nameWithType: ISystemRepository<EmailMessage>
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<HiveSync.Application.Contracts.Entities.Identity.EmailMessage>
+  nameWithType.vb: ISystemRepository(Of EmailMessage)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of HiveSync.Application.Contracts.Entities.Identity.EmailMessage)
+  name.vb: ISystemRepository(Of EmailMessage)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: <
+  - uid: HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+    name: EmailMessage
+    href: HiveSync.Application.Contracts.Entities.Identity.EmailMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+    name: EmailMessage
+    href: HiveSync.Application.Contracts.Entities.Identity.EmailMessage.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings}
+  commentId: T:Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.EnvironmentSettings}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<EnvironmentSettings>
+  nameWithType: IOptions<EnvironmentSettings>
+  fullName: Microsoft.Extensions.Options.IOptions<HiveSync.Utilities.Settings.EnvironmentSettings>
+  nameWithType.vb: IOptions(Of EnvironmentSettings)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of HiveSync.Utilities.Settings.EnvironmentSettings)
+  name.vb: IOptions(Of EnvironmentSettings)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: HiveSync.Utilities.Settings.EnvironmentSettings
+    name: EnvironmentSettings
+    href: HiveSync.Utilities.Settings.EnvironmentSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Utilities.Settings.EnvironmentSettings
+    name: EnvironmentSettings
+    href: HiveSync.Utilities.Settings.EnvironmentSettings.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings}
+  commentId: T:Microsoft.Extensions.Options.IOptions{HiveSync.Utilities.Settings.SmtpSettings}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<SmtpSettings>
+  nameWithType: IOptions<SmtpSettings>
+  fullName: Microsoft.Extensions.Options.IOptions<HiveSync.Utilities.Settings.SmtpSettings>
+  nameWithType.vb: IOptions(Of SmtpSettings)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of HiveSync.Utilities.Settings.SmtpSettings)
+  name.vb: IOptions(Of SmtpSettings)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: HiveSync.Utilities.Settings.SmtpSettings
+    name: SmtpSettings
+    href: HiveSync.Utilities.Settings.SmtpSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Utilities.Settings.SmtpSettings
+    name: SmtpSettings
+    href: HiveSync.Utilities.Settings.SmtpSettings.html
+  - name: )
+- uid: NodaTime
+  commentId: N:NodaTime
+  isExternal: true
+  name: NodaTime
+  nameWithType: NodaTime
+  fullName: NodaTime
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  name: ISystemRepository<T>
+  nameWithType: ISystemRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>
+  nameWithType.vb: ISystemRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T)
+  name.vb: ISystemRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: HiveSync.Application.Services.EmailSenderService.AddEmail*
+  commentId: Overload:HiveSync.Application.Services.EmailSenderService.AddEmail
+  href: HiveSync.Application.Services.EmailSenderService.html#HiveSync_Application_Services_EmailSenderService_AddEmail_System_String_System_String_System_String_System_String_System_String_System_String_
+  name: AddEmail
+  nameWithType: EmailSenderService.AddEmail
+  fullName: HiveSync.Application.Services.EmailSenderService.AddEmail
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: HiveSync.Application.Services.EmailSenderService.SendEmailsAsync*
+  commentId: Overload:HiveSync.Application.Services.EmailSenderService.SendEmailsAsync
+  href: HiveSync.Application.Services.EmailSenderService.html#HiveSync_Application_Services_EmailSenderService_SendEmailsAsync
+  name: SendEmailsAsync
+  nameWithType: EmailSenderService.SendEmailsAsync
+  fullName: HiveSync.Application.Services.EmailSenderService.SendEmailsAsync

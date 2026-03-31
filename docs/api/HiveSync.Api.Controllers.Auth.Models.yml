@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api.Controllers.Auth.Models
+  commentId: N:HiveSync.Api.Controllers.Auth.Models
+  id: HiveSync.Api.Controllers.Auth.Models
+  children:
+  - HiveSync.Api.Controllers.Auth.Models.LoggedUserModel
+  - HiveSync.Api.Controllers.Auth.Models.LoginModel
+  - HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  - HiveSync.Api.Controllers.Auth.Models.TokenModel
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Api.Controllers.Auth.Models
+  nameWithType: HiveSync.Api.Controllers.Auth.Models
+  fullName: HiveSync.Api.Controllers.Auth.Models
+  type: Namespace
+  assemblies:
+  - HiveSync.Api
+references:
+- uid: HiveSync.Api.Controllers.Auth.Models.LoggedUserModel
+  commentId: T:HiveSync.Api.Controllers.Auth.Models.LoggedUserModel
+  href: HiveSync.Api.Controllers.Auth.Models.LoggedUserModel.html
+  name: LoggedUserModel
+  nameWithType: LoggedUserModel
+  fullName: HiveSync.Api.Controllers.Auth.Models.LoggedUserModel
+- uid: HiveSync.Api.Controllers.Auth.Models.LoginModel
+  commentId: T:HiveSync.Api.Controllers.Auth.Models.LoginModel
+  parent: HiveSync.Api.Controllers.Auth.Models
+  href: HiveSync.Api.Controllers.Auth.Models.LoginModel.html
+  name: LoginModel
+  nameWithType: LoginModel
+  fullName: HiveSync.Api.Controllers.Auth.Models.LoginModel
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  commentId: T:HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  parent: HiveSync.Api.Controllers.Auth.Models
+  href: HiveSync.Api.Controllers.Auth.Models.RegisterModel.html
+  name: RegisterModel
+  nameWithType: RegisterModel
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+- uid: HiveSync.Api.Controllers.Auth.Models.TokenModel
+  commentId: T:HiveSync.Api.Controllers.Auth.Models.TokenModel
+  parent: HiveSync.Api.Controllers.Auth.Models
+  href: HiveSync.Api.Controllers.Auth.Models.TokenModel.html
+  name: TokenModel
+  nameWithType: TokenModel
+  fullName: HiveSync.Api.Controllers.Auth.Models.TokenModel
+- uid: HiveSync.Api.Controllers.Auth.Models
+  commentId: N:HiveSync.Api.Controllers.Auth.Models
+  href: HiveSync.html
+  name: HiveSync.Api.Controllers.Auth.Models
+  nameWithType: HiveSync.Api.Controllers.Auth.Models
+  fullName: HiveSync.Api.Controllers.Auth.Models
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+  - name: .
+  - uid: HiveSync.Api.Controllers
+    name: Controllers
+    href: HiveSync.Api.Controllers.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth
+    name: Auth
+    href: HiveSync.Api.Controllers.Auth.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth.Models
+    name: Models
+    href: HiveSync.Api.Controllers.Auth.Models.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+  - name: .
+  - uid: HiveSync.Api.Controllers
+    name: Controllers
+    href: HiveSync.Api.Controllers.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth
+    name: Auth
+    href: HiveSync.Api.Controllers.Auth.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth.Models
+    name: Models
+    href: HiveSync.Api.Controllers.Auth.Models.html

@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+  commentId: T:HiveSync.Utilities.Interfaces.IApplicationMapper
+  id: IApplicationMapper
+  parent: HiveSync.Utilities.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IApplicationMapper
+  nameWithType: IApplicationMapper
+  fullName: HiveSync.Utilities.Interfaces.IApplicationMapper
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Interfaces/IApplicationMapper.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IApplicationMapper
+    path: ../src/HiveSync.Utilities/Interfaces/IApplicationMapper.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Interfaces
+  summary: Defines a contract for application-level mapping utilities and shared contextual services.
+  remarks: >-
+    Implementations typically provide access to environment configuration
+
+    and time abstraction to ensure consistency and testability across the application.
+  example: []
+  syntax:
+    content: public interface IApplicationMapper
+    content.vb: Public Interface IApplicationMapper
+  derivedClasses:
+  - HiveSync.Utilities.ApplicationMapper
+  extensionMethods:
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  - HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+references:
+- uid: HiveSync.Utilities.Interfaces
+  commentId: N:HiveSync.Utilities.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Utilities.Interfaces
+  nameWithType: HiveSync.Utilities.Interfaces
+  fullName: HiveSync.Utilities.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  commentId: M:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  definition: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  name: FromCreate(IApplicationMapper, AddProjectDto)
+  nameWithType: AddProjectExtensions.FromCreate(IApplicationMapper, AddProjectDto)
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    name: AddProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    name: AddProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  - name: )
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  commentId: M:HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  definition: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  name: ApplyUpdate(IApplicationMapper, Project, UpdateProjectDto)
+  nameWithType: UpdateProjectExtension.ApplyUpdate(IApplicationMapper, Project, UpdateProjectDto)
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Entities.Business.Project, HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+    name: UpdateProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+    name: UpdateProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html
+  - name: )
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  commentId: M:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  definition: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  name: FromCreate(IApplicationMapper, AddSectionDto)
+  nameWithType: AddSectionExtensions.FromCreate(IApplicationMapper, AddSectionDto)
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+    name: AddSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+    name: AddSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  - name: )
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  commentId: M:HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  definition: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  name: ApplyUpdate(IApplicationMapper, Section, UpdateSectionDto)
+  nameWithType: UpdateSectionExtension.ApplyUpdate(IApplicationMapper, Section, UpdateSectionDto)
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Entities.Business.Section, HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+    name: UpdateSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+    name: UpdateSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html
+  - name: )
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  parent: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions
+  definition: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  name: FromCreate(IApplicationMapper, AddTodoDto, Guid)
+  nameWithType: AddTodoExtensions.FromCreate(IApplicationMapper, AddTodoDto, Guid)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto, System.Guid)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    name: AddTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    name: AddTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper.HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+  parent: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions
+  definition: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  name: ApplyUpdate(IApplicationMapper, UpdateTodoDto, Todo)
+  nameWithType: UpdateTodoExtensions.ApplyUpdate(IApplicationMapper, UpdateTodoDto, Todo)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto, HiveSync.Application.Contracts.Entities.Business.Todo)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto
+    name: UpdateTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto
+    name: UpdateTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  commentId: M:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  name: FromCreate(IApplicationMapper, AddProjectDto)
+  nameWithType: AddProjectExtensions.FromCreate(IApplicationMapper, AddProjectDto)
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    name: AddProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html#HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    name: AddProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html
+  name: AddProjectExtensions
+  nameWithType: AddProjectExtensions
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  commentId: M:HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  name: ApplyUpdate(IApplicationMapper, Project, UpdateProjectDto)
+  nameWithType: UpdateProjectExtension.ApplyUpdate(IApplicationMapper, Project, UpdateProjectDto)
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Entities.Business.Project, HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+    name: UpdateProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Project,HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html#HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Project_HiveSync_Application_Contracts_Projects_Commands_Dto_UpdateProjectDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+    name: UpdateProjectDto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html
+  name: UpdateProjectExtension
+  nameWithType: UpdateProjectExtension
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  commentId: M:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  name: FromCreate(IApplicationMapper, AddSectionDto)
+  nameWithType: AddSectionExtensions.FromCreate(IApplicationMapper, AddSectionDto)
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+    name: AddSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+    name: AddSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html
+  name: AddSectionExtensions
+  nameWithType: AddSectionExtensions
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  commentId: M:HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  name: ApplyUpdate(IApplicationMapper, Section, UpdateSectionDto)
+  nameWithType: UpdateSectionExtension.ApplyUpdate(IApplicationMapper, Section, UpdateSectionDto)
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Entities.Business.Section, HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+    name: UpdateSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Entities.Business.Section,HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html#HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionExtension_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Entities_Business_Section_HiveSync_Application_Contracts_Sections_Commands_Dto_UpdateSectionDto_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+    name: UpdateSectionDto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html
+  name: UpdateSectionExtension
+  nameWithType: UpdateSectionExtension
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  name: FromCreate(IApplicationMapper, AddTodoDto, Guid)
+  nameWithType: AddTodoExtensions.FromCreate(IApplicationMapper, AddTodoDto, Guid)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto, System.Guid)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    name: AddTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto,System.Guid)
+    name: FromCreate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_AddTodoDto_System_Guid_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    name: AddTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions
+  parent: HiveSync.Application.Contracts.Todos.Commands.Dto
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions.html
+  name: AddTodoExtensions
+  nameWithType: AddTodoExtensions
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+  commentId: M:HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  name: ApplyUpdate(IApplicationMapper, UpdateTodoDto, Todo)
+  nameWithType: UpdateTodoExtensions.ApplyUpdate(IApplicationMapper, UpdateTodoDto, Todo)
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto, HiveSync.Application.Contracts.Entities.Business.Todo)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto
+    name: UpdateTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.ApplyUpdate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto,HiveSync.Application.Contracts.Entities.Business.Todo)
+    name: ApplyUpdate
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html#HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoExtensions_ApplyUpdate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Todos_Commands_Dto_UpdateTodoDto_HiveSync_Application_Contracts_Entities_Business_Todo_
+  - name: (
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto
+    name: UpdateTodoDto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto.html
+  - name: ','
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions
+  parent: HiveSync.Application.Contracts.Todos.Commands.Dto
+  href: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions.html
+  name: UpdateTodoExtensions
+  nameWithType: UpdateTodoExtensions
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Sections.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Todos.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Todos.Commands.Dto.html

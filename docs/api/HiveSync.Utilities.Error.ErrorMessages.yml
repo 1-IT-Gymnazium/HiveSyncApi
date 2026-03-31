@@ -1,0 +1,2027 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Error.ErrorMessages
+  commentId: T:HiveSync.Utilities.Error.ErrorMessages
+  id: ErrorMessages
+  parent: HiveSync.Utilities.Error
+  children:
+  - HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut
+  - HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed
+  - HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch
+  - HiveSync.Utilities.Error.ErrorMessages.Forbidden
+  - HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected
+  - HiveSync.Utilities.Error.ErrorMessages.InvalidEmail
+  - HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword
+  - HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.InvalidPassword
+  - HiveSync.Utilities.Error.ErrorMessages.InvalidToken
+  - HiveSync.Utilities.Error.ErrorMessages.MaxLength(System.String,System.Int32)
+  - HiveSync.Utilities.Error.ErrorMessages.MinLength(System.String,System.Int32)
+  - HiveSync.Utilities.Error.ErrorMessages.NotDeleted(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.NotFound
+  - HiveSync.Utilities.Error.ErrorMessages.NotFound(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.NotUnique(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted
+  - HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique
+  - HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired
+  - HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired
+  - HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.Required(System.String)
+  - HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted
+  - HiveSync.Utilities.Error.ErrorMessages.SectionNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired
+  - HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique
+  - HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired
+  - HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted
+  - HiveSync.Utilities.Error.ErrorMessages.TodoNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired
+  - HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired
+  - HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired
+  - HiveSync.Utilities.Error.ErrorMessages.Unauthorized
+  - HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists
+  - HiveSync.Utilities.Error.ErrorMessages.UserNotFound
+  - HiveSync.Utilities.Error.ErrorMessages.ValidationError
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessages
+  nameWithType: ErrorMessages
+  fullName: HiveSync.Utilities.Error.ErrorMessages
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ErrorMessages
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: >-
+    Central repository of error messages for HiveSync API.
+
+    Provides both static messages for common errors and dynamic helpers for field-specific validation.
+  remarks: >-
+    This class is intended to standardize error messages across the application
+
+    and simplify API error responses. It covers entities such as Project, Section, Todo,
+
+    general validation, authentication/account issues, refresh token handling, and user confirmation.
+  example: []
+  syntax:
+    content: public static class ErrorMessages
+    content.vb: Public Module ErrorMessages
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound
+  id: ProjectNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ProjectNotFound()
+  nameWithType: ErrorMessages.ProjectNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ProjectNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 16
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Project entity was not found.
+  example: []
+  syntax:
+    content: public static string ProjectNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ProjectNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique
+  id: ProjectTitleNotUnique
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ProjectTitleNotUnique()
+  nameWithType: ErrorMessages.ProjectTitleNotUnique()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ProjectTitleNotUnique
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 19
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Name of the project must be unique.
+  example: []
+  syntax:
+    content: public static string ProjectTitleNotUnique()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ProjectTitleNotUnique() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique*
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired
+  id: ProjectTitleRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ProjectTitleRequired()
+  nameWithType: ErrorMessages.ProjectTitleRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ProjectTitleRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 22
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Name of the project is required.
+  example: []
+  syntax:
+    content: public static string ProjectTitleRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ProjectTitleRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound
+  id: ClientForProjectNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ClientForProjectNotFound()
+  nameWithType: ErrorMessages.ClientForProjectNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ClientForProjectNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 25
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Client for project could not be found.
+  example: []
+  syntax:
+    content: public static string ClientForProjectNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ClientForProjectNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted
+  id: ProjectNotDeleted
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ProjectNotDeleted()
+  nameWithType: ErrorMessages.ProjectNotDeleted()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ProjectNotDeleted
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 28
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Project could not be deleted.
+  example: []
+  syntax:
+    content: public static string ProjectNotDeleted()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ProjectNotDeleted() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted*
+- uid: HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected
+  id: InboxProjectProtected
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InboxProjectProtected()
+  nameWithType: ErrorMessages.InboxProjectProtected()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InboxProjectProtected
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 31
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Inbox project cannot be modified or deleted.
+  example: []
+  syntax:
+    content: public static string InboxProjectProtected()
+    return:
+      type: System.String
+    content.vb: Public Shared Function InboxProjectProtected() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected*
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.SectionNotFound
+  id: SectionNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: SectionNotFound()
+  nameWithType: ErrorMessages.SectionNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SectionNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 38
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Section entity was not found.
+  example: []
+  syntax:
+    content: public static string SectionNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SectionNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.SectionNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique
+  id: SectionTitleNotUnique
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: SectionTitleNotUnique()
+  nameWithType: ErrorMessages.SectionTitleNotUnique()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SectionTitleNotUnique
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 41
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Name of the section must be unique.
+  example: []
+  syntax:
+    content: public static string SectionTitleNotUnique()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SectionTitleNotUnique() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique*
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired
+  id: SectionTitleRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: SectionTitleRequired()
+  nameWithType: ErrorMessages.SectionTitleRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SectionTitleRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 44
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Name of the section is required.
+  example: []
+  syntax:
+    content: public static string SectionTitleRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SectionTitleRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted
+  id: SectionNotDeleted
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: SectionNotDeleted()
+  nameWithType: ErrorMessages.SectionNotDeleted()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SectionNotDeleted
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 47
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Section could not be deleted.
+  example: []
+  syntax:
+    content: public static string SectionNotDeleted()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SectionNotDeleted() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted*
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired
+  id: SectionParentProjectRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: SectionParentProjectRequired()
+  nameWithType: ErrorMessages.SectionParentProjectRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SectionParentProjectRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 50
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Section must have a parental project.
+  example: []
+  syntax:
+    content: public static string SectionParentProjectRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SectionParentProjectRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoNotFound
+  id: TodoNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoNotFound()
+  nameWithType: ErrorMessages.TodoNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 57
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Task entity was not found.
+  example: []
+  syntax:
+    content: public static string TodoNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired
+  id: TodoSummaryRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoSummaryRequired()
+  nameWithType: ErrorMessages.TodoSummaryRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoSummaryRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 60
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Name of the task is required.
+  example: []
+  syntax:
+    content: public static string TodoSummaryRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoSummaryRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted
+  id: TodoNotDeleted
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoNotDeleted()
+  nameWithType: ErrorMessages.TodoNotDeleted()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoNotDeleted
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 63
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Task could not be deleted.
+  example: []
+  syntax:
+    content: public static string TodoNotDeleted()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoNotDeleted() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound
+  id: TodoPriorityNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoPriorityNotFound()
+  nameWithType: ErrorMessages.TodoPriorityNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoPriorityNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 66
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Selected priority for this task was not found.
+  example: []
+  syntax:
+    content: public static string TodoPriorityNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoPriorityNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound
+  id: TodoProjectNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoProjectNotFound()
+  nameWithType: ErrorMessages.TodoProjectNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoProjectNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 69
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Selected project for this task was not found.
+  example: []
+  syntax:
+    content: public static string TodoProjectNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoProjectNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired
+  id: TodoParentProjectRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoParentProjectRequired()
+  nameWithType: ErrorMessages.TodoParentProjectRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoParentProjectRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 72
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: A parental project is required for this task.
+  example: []
+  syntax:
+    content: public static string TodoParentProjectRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoParentProjectRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound
+  id: TodoSectionNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoSectionNotFound()
+  nameWithType: ErrorMessages.TodoSectionNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoSectionNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 75
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Selected section for this task was not found.
+  example: []
+  syntax:
+    content: public static string TodoSectionNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoSectionNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired
+  id: TodoStatusIsRequired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoStatusIsRequired()
+  nameWithType: ErrorMessages.TodoStatusIsRequired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoStatusIsRequired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 78
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Status for this task is required.
+  example: []
+  syntax:
+    content: public static string TodoStatusIsRequired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoStatusIsRequired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound
+  id: TodoStatusNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: TodoStatusNotFound()
+  nameWithType: ErrorMessages.TodoStatusNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoStatusNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 81
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Selected status for this task was not found.
+  example: []
+  syntax:
+    content: public static string TodoStatusNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TodoStatusNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.ValidationError
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.ValidationError
+  id: ValidationError
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: ValidationError()
+  nameWithType: ErrorMessages.ValidationError()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ValidationError()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ValidationError
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 88
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Validation failed unexpectedly.
+  example: []
+  syntax:
+    content: public static string ValidationError()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ValidationError() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.ValidationError*
+- uid: HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists
+  id: UserAlreadyExists
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: UserAlreadyExists()
+  nameWithType: ErrorMessages.UserAlreadyExists()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: UserAlreadyExists
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 91
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Email is already in use.
+  example: []
+  syntax:
+    content: public static string UserAlreadyExists()
+    return:
+      type: System.String
+    content.vb: Public Shared Function UserAlreadyExists() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists*
+- uid: HiveSync.Utilities.Error.ErrorMessages.Unauthorized
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.Unauthorized
+  id: Unauthorized
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: Unauthorized()
+  nameWithType: ErrorMessages.Unauthorized()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Unauthorized()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Unauthorized
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 94
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: User is not authorized.
+  example: []
+  syntax:
+    content: public static string Unauthorized()
+    return:
+      type: System.String
+    content.vb: Public Shared Function Unauthorized() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.Unauthorized*
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.NotFound
+  id: NotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: NotFound()
+  nameWithType: ErrorMessages.NotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 97
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Resource not found.
+  example: []
+  syntax:
+    content: public static string NotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function NotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.NotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.Forbidden
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.Forbidden
+  id: Forbidden
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: Forbidden()
+  nameWithType: ErrorMessages.Forbidden()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Forbidden()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Forbidden
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 100
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Operation is forbidden.
+  example: []
+  syntax:
+    content: public static string Forbidden()
+    return:
+      type: System.String
+    content.vb: Public Shared Function Forbidden() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.Forbidden*
+- uid: HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch
+  id: EmailDoesNotMatch
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: EmailDoesNotMatch()
+  nameWithType: ErrorMessages.EmailDoesNotMatch()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: EmailDoesNotMatch
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 107
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: No account matches this email.
+  example: []
+  syntax:
+    content: public static string EmailDoesNotMatch()
+    return:
+      type: System.String
+    content.vb: Public Shared Function EmailDoesNotMatch() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch*
+- uid: HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut
+  id: AccountLockedOut
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: AccountLockedOut()
+  nameWithType: ErrorMessages.AccountLockedOut()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AccountLockedOut
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 110
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Account is locked out.
+  example: []
+  syntax:
+    content: public static string AccountLockedOut()
+    return:
+      type: System.String
+    content.vb: Public Shared Function AccountLockedOut() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut*
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword
+  id: InvalidEmailOrPassword
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidEmailOrPassword()
+  nameWithType: ErrorMessages.InvalidEmailOrPassword()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InvalidEmailOrPassword
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 113
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Invalid email or password combination.
+  example: []
+  syntax:
+    content: public static string InvalidEmailOrPassword()
+    return:
+      type: System.String
+    content.vb: Public Shared Function InvalidEmailOrPassword() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword*
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidPassword
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InvalidPassword
+  id: InvalidPassword
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidPassword()
+  nameWithType: ErrorMessages.InvalidPassword()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidPassword()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InvalidPassword
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 116
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Password does not meet complexity requirements.
+  example: []
+  syntax:
+    content: public static string InvalidPassword()
+    return:
+      type: System.String
+    content.vb: Public Shared Function InvalidPassword() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InvalidPassword*
+- uid: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound
+  id: RefreshTokenNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenNotFound()
+  nameWithType: ErrorMessages.RefreshTokenNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: RefreshTokenNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 123
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Refresh token not found in request or storage.
+  example: []
+  syntax:
+    content: public static string RefreshTokenNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function RefreshTokenNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired
+  id: RefreshTokenInvalidOrExpired
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenInvalidOrExpired()
+  nameWithType: ErrorMessages.RefreshTokenInvalidOrExpired()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: RefreshTokenInvalidOrExpired
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 126
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Refresh token is invalid or has expired.
+  example: []
+  syntax:
+    content: public static string RefreshTokenInvalidOrExpired()
+    return:
+      type: System.String
+    content.vb: Public Shared Function RefreshTokenInvalidOrExpired() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired*
+- uid: HiveSync.Utilities.Error.ErrorMessages.UserNotFound
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.UserNotFound
+  id: UserNotFound
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: UserNotFound()
+  nameWithType: ErrorMessages.UserNotFound()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.UserNotFound()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: UserNotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 129
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: User associated with refresh token was not found.
+  example: []
+  syntax:
+    content: public static string UserNotFound()
+    return:
+      type: System.String
+    content.vb: Public Shared Function UserNotFound() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.UserNotFound*
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidToken
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InvalidToken
+  id: InvalidToken
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidToken()
+  nameWithType: ErrorMessages.InvalidToken()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidToken()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InvalidToken
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 136
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Token provided for confirmation is invalid.
+  example: []
+  syntax:
+    content: public static string InvalidToken()
+    return:
+      type: System.String
+    content.vb: Public Shared Function InvalidToken() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InvalidToken*
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidEmail
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InvalidEmail
+  id: InvalidEmail
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidEmail()
+  nameWithType: ErrorMessages.InvalidEmail()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidEmail()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InvalidEmail
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 139
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Email provided is invalid.
+  example: []
+  syntax:
+    content: public static string InvalidEmail()
+    return:
+      type: System.String
+    content.vb: Public Shared Function InvalidEmail() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InvalidEmail*
+- uid: HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed
+  id: AlreadyConfirmed
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: AlreadyConfirmed()
+  nameWithType: ErrorMessages.AlreadyConfirmed()
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed()
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AlreadyConfirmed
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 142
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Email has already been confirmed.
+  example: []
+  syntax:
+    content: public static string AlreadyConfirmed()
+    return:
+      type: System.String
+    content.vb: Public Shared Function AlreadyConfirmed() As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed*
+- uid: HiveSync.Utilities.Error.ErrorMessages.Required(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.Required(System.String)
+  id: Required(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: Required(string)
+  nameWithType: ErrorMessages.Required(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Required(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Required
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 150
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates a required field error message.
+  example: []
+  syntax:
+    content: public static string Required(string field)
+    parameters:
+    - id: field
+      type: System.String
+      description: Name of the field.
+    return:
+      type: System.String
+    content.vb: Public Shared Function Required(field As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.Required*
+  nameWithType.vb: ErrorMessages.Required(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.Required(String)
+  name.vb: Required(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.MinLength(System.String,System.Int32)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.MinLength(System.String,System.Int32)
+  id: MinLength(System.String,System.Int32)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: MinLength(string, int)
+  nameWithType: ErrorMessages.MinLength(string, int)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.MinLength(string, int)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: MinLength
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 155
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates a minimum length error message for a field.
+  example: []
+  syntax:
+    content: public static string MinLength(string field, int length)
+    parameters:
+    - id: field
+      type: System.String
+      description: Name of the field.
+    - id: length
+      type: System.Int32
+      description: Minimum required length.
+    return:
+      type: System.String
+    content.vb: Public Shared Function MinLength(field As String, length As Integer) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.MinLength*
+  nameWithType.vb: ErrorMessages.MinLength(String, Integer)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.MinLength(String, Integer)
+  name.vb: MinLength(String, Integer)
+- uid: HiveSync.Utilities.Error.ErrorMessages.MaxLength(System.String,System.Int32)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.MaxLength(System.String,System.Int32)
+  id: MaxLength(System.String,System.Int32)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: MaxLength(string, int)
+  nameWithType: ErrorMessages.MaxLength(string, int)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.MaxLength(string, int)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: MaxLength
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 160
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates a maximum length error message for a field.
+  example: []
+  syntax:
+    content: public static string MaxLength(string field, int length)
+    parameters:
+    - id: field
+      type: System.String
+      description: Name of the field.
+    - id: length
+      type: System.Int32
+      description: Maximum allowed length.
+    return:
+      type: System.String
+    content.vb: Public Shared Function MaxLength(field As String, length As Integer) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.MaxLength*
+  nameWithType.vb: ErrorMessages.MaxLength(String, Integer)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.MaxLength(String, Integer)
+  name.vb: MaxLength(String, Integer)
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotFound(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.NotFound(System.String)
+  id: NotFound(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: NotFound(string)
+  nameWithType: ErrorMessages.NotFound(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotFound(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NotFound
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 164
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates a not found error message for a specific entity.
+  example: []
+  syntax:
+    content: public static string NotFound(string entity)
+    parameters:
+    - id: entity
+      type: System.String
+      description: Name of the entity.
+    return:
+      type: System.String
+    content.vb: Public Shared Function NotFound(entity As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.NotFound*
+  nameWithType.vb: ErrorMessages.NotFound(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.NotFound(String)
+  name.vb: NotFound(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(System.String)
+  id: AlreadyExists(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: AlreadyExists(string)
+  nameWithType: ErrorMessages.AlreadyExists(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AlreadyExists
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 168
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates an already exists error message for a specific entity.
+  example: []
+  syntax:
+    content: public static string AlreadyExists(string entity)
+    parameters:
+    - id: entity
+      type: System.String
+      description: Name of the entity.
+    return:
+      type: System.String
+    content.vb: Public Shared Function AlreadyExists(entity As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists*
+  nameWithType.vb: ErrorMessages.AlreadyExists(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(String)
+  name.vb: AlreadyExists(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotUnique(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.NotUnique(System.String)
+  id: NotUnique(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: NotUnique(string)
+  nameWithType: ErrorMessages.NotUnique(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotUnique(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NotUnique
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 172
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates an error message indicating that a field value must be unique.
+  example: []
+  syntax:
+    content: public static string NotUnique(string field)
+    parameters:
+    - id: field
+      type: System.String
+      description: Name of the field that must be unique.
+    return:
+      type: System.String
+    content.vb: Public Shared Function NotUnique(field As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.NotUnique*
+  nameWithType.vb: ErrorMessages.NotUnique(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.NotUnique(String)
+  name.vb: NotUnique(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotDeleted(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.NotDeleted(System.String)
+  id: NotDeleted(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: NotDeleted(string)
+  nameWithType: ErrorMessages.NotDeleted(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotDeleted(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NotDeleted
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 176
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Generates a not deleted error message for a specific entity.
+  example: []
+  syntax:
+    content: public static string NotDeleted(string entity)
+    parameters:
+    - id: entity
+      type: System.String
+      description: Name of the entity.
+    return:
+      type: System.String
+    content.vb: Public Shared Function NotDeleted(entity As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.NotDeleted*
+  nameWithType.vb: ErrorMessages.NotDeleted(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.NotDeleted(String)
+  name.vb: NotDeleted(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(System.String)
+  id: InvalidGuid(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidGuid(string)
+  nameWithType: ErrorMessages.InvalidGuid(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InvalidGuid
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 180
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Returns a standardized message indicating that the provided value is not a valid GUID.
+  example: []
+  syntax:
+    content: public static string InvalidGuid(string field)
+    parameters:
+    - id: field
+      type: System.String
+      description: Name of the field.
+    return:
+      type: System.String
+    content.vb: Public Shared Function InvalidGuid(field As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid*
+  nameWithType.vb: ErrorMessages.InvalidGuid(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(String)
+  name.vb: InvalidGuid(String)
+- uid: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(System.String)
+  commentId: M:HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(System.String)
+  id: DoesNotBelongToProject(System.String)
+  parent: HiveSync.Utilities.Error.ErrorMessages
+  langs:
+  - csharp
+  - vb
+  name: DoesNotBelongToProject(string)
+  nameWithType: ErrorMessages.DoesNotBelongToProject(string)
+  fullName: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(string)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ErrorMessages.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: DoesNotBelongToProject
+    path: ../src/HiveSync.Utilities/Error/ErrorMessages.cs
+    startLine: 182
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  syntax:
+    content: public static string DoesNotBelongToProject(string entity)
+    parameters:
+    - id: entity
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DoesNotBelongToProject(entity As String) As String
+  overload: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject*
+  nameWithType.vb: ErrorMessages.DoesNotBelongToProject(String)
+  fullName.vb: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(String)
+  name.vb: DoesNotBelongToProject(String)
+references:
+- uid: HiveSync.Utilities.Error
+  commentId: N:HiveSync.Utilities.Error
+  href: HiveSync.html
+  name: HiveSync.Utilities.Error
+  nameWithType: HiveSync.Utilities.Error
+  fullName: HiveSync.Utilities.Error
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ProjectNotFound
+  name: ProjectNotFound
+  nameWithType: ErrorMessages.ProjectNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ProjectTitleNotUnique
+  name: ProjectTitleNotUnique
+  nameWithType: ErrorMessages.ProjectTitleNotUnique
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ProjectTitleRequired
+  name: ProjectTitleRequired
+  nameWithType: ErrorMessages.ProjectTitleRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ClientForProjectNotFound
+  name: ClientForProjectNotFound
+  nameWithType: ErrorMessages.ClientForProjectNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ProjectNotDeleted
+  name: ProjectNotDeleted
+  nameWithType: ErrorMessages.ProjectNotDeleted
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted
+- uid: HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InboxProjectProtected
+  name: InboxProjectProtected
+  nameWithType: ErrorMessages.InboxProjectProtected
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.SectionNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_SectionNotFound
+  name: SectionNotFound
+  nameWithType: ErrorMessages.SectionNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_SectionTitleNotUnique
+  name: SectionTitleNotUnique
+  nameWithType: ErrorMessages.SectionTitleNotUnique
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_SectionTitleRequired
+  name: SectionTitleRequired
+  nameWithType: ErrorMessages.SectionTitleRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_SectionNotDeleted
+  name: SectionNotDeleted
+  nameWithType: ErrorMessages.SectionNotDeleted
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted
+- uid: HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_SectionParentProjectRequired
+  name: SectionParentProjectRequired
+  nameWithType: ErrorMessages.SectionParentProjectRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoNotFound
+  name: TodoNotFound
+  nameWithType: ErrorMessages.TodoNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoSummaryRequired
+  name: TodoSummaryRequired
+  nameWithType: ErrorMessages.TodoSummaryRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoNotDeleted
+  name: TodoNotDeleted
+  nameWithType: ErrorMessages.TodoNotDeleted
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoPriorityNotFound
+  name: TodoPriorityNotFound
+  nameWithType: ErrorMessages.TodoPriorityNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoProjectNotFound
+  name: TodoProjectNotFound
+  nameWithType: ErrorMessages.TodoProjectNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoParentProjectRequired
+  name: TodoParentProjectRequired
+  nameWithType: ErrorMessages.TodoParentProjectRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoSectionNotFound
+  name: TodoSectionNotFound
+  nameWithType: ErrorMessages.TodoSectionNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoStatusIsRequired
+  name: TodoStatusIsRequired
+  nameWithType: ErrorMessages.TodoStatusIsRequired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired
+- uid: HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_TodoStatusNotFound
+  name: TodoStatusNotFound
+  nameWithType: ErrorMessages.TodoStatusNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.ValidationError*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.ValidationError
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_ValidationError
+  name: ValidationError
+  nameWithType: ErrorMessages.ValidationError
+  fullName: HiveSync.Utilities.Error.ErrorMessages.ValidationError
+- uid: HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_UserAlreadyExists
+  name: UserAlreadyExists
+  nameWithType: ErrorMessages.UserAlreadyExists
+  fullName: HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists
+- uid: HiveSync.Utilities.Error.ErrorMessages.Unauthorized*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.Unauthorized
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_Unauthorized
+  name: Unauthorized
+  nameWithType: ErrorMessages.Unauthorized
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Unauthorized
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.NotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_NotFound
+  name: NotFound
+  nameWithType: ErrorMessages.NotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.Forbidden*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.Forbidden
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_Forbidden
+  name: Forbidden
+  nameWithType: ErrorMessages.Forbidden
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Forbidden
+- uid: HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_EmailDoesNotMatch
+  name: EmailDoesNotMatch
+  nameWithType: ErrorMessages.EmailDoesNotMatch
+  fullName: HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch
+- uid: HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_AccountLockedOut
+  name: AccountLockedOut
+  nameWithType: ErrorMessages.AccountLockedOut
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InvalidEmailOrPassword
+  name: InvalidEmailOrPassword
+  nameWithType: ErrorMessages.InvalidEmailOrPassword
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidPassword*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InvalidPassword
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InvalidPassword
+  name: InvalidPassword
+  nameWithType: ErrorMessages.InvalidPassword
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidPassword
+- uid: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_RefreshTokenNotFound
+  name: RefreshTokenNotFound
+  nameWithType: ErrorMessages.RefreshTokenNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_RefreshTokenInvalidOrExpired
+  name: RefreshTokenInvalidOrExpired
+  nameWithType: ErrorMessages.RefreshTokenInvalidOrExpired
+  fullName: HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired
+- uid: HiveSync.Utilities.Error.ErrorMessages.UserNotFound*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.UserNotFound
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_UserNotFound
+  name: UserNotFound
+  nameWithType: ErrorMessages.UserNotFound
+  fullName: HiveSync.Utilities.Error.ErrorMessages.UserNotFound
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidToken*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InvalidToken
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InvalidToken
+  name: InvalidToken
+  nameWithType: ErrorMessages.InvalidToken
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidToken
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidEmail*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InvalidEmail
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InvalidEmail
+  name: InvalidEmail
+  nameWithType: ErrorMessages.InvalidEmail
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidEmail
+- uid: HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_AlreadyConfirmed
+  name: AlreadyConfirmed
+  nameWithType: ErrorMessages.AlreadyConfirmed
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed
+- uid: HiveSync.Utilities.Error.ErrorMessages.Required*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.Required
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_Required_System_String_
+  name: Required
+  nameWithType: ErrorMessages.Required
+  fullName: HiveSync.Utilities.Error.ErrorMessages.Required
+- uid: HiveSync.Utilities.Error.ErrorMessages.MinLength*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.MinLength
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_MinLength_System_String_System_Int32_
+  name: MinLength
+  nameWithType: ErrorMessages.MinLength
+  fullName: HiveSync.Utilities.Error.ErrorMessages.MinLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HiveSync.Utilities.Error.ErrorMessages.MaxLength*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.MaxLength
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_MaxLength_System_String_System_Int32_
+  name: MaxLength
+  nameWithType: ErrorMessages.MaxLength
+  fullName: HiveSync.Utilities.Error.ErrorMessages.MaxLength
+- uid: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.AlreadyExists
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_AlreadyExists_System_String_
+  name: AlreadyExists
+  nameWithType: ErrorMessages.AlreadyExists
+  fullName: HiveSync.Utilities.Error.ErrorMessages.AlreadyExists
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotUnique*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.NotUnique
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_NotUnique_System_String_
+  name: NotUnique
+  nameWithType: ErrorMessages.NotUnique
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotUnique
+- uid: HiveSync.Utilities.Error.ErrorMessages.NotDeleted*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.NotDeleted
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_NotDeleted_System_String_
+  name: NotDeleted
+  nameWithType: ErrorMessages.NotDeleted
+  fullName: HiveSync.Utilities.Error.ErrorMessages.NotDeleted
+- uid: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.InvalidGuid
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_InvalidGuid_System_String_
+  name: InvalidGuid
+  nameWithType: ErrorMessages.InvalidGuid
+  fullName: HiveSync.Utilities.Error.ErrorMessages.InvalidGuid
+- uid: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject*
+  commentId: Overload:HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject
+  href: HiveSync.Utilities.Error.ErrorMessages.html#HiveSync_Utilities_Error_ErrorMessages_DoesNotBelongToProject_System_String_
+  name: DoesNotBelongToProject
+  nameWithType: ErrorMessages.DoesNotBelongToProject
+  fullName: HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject

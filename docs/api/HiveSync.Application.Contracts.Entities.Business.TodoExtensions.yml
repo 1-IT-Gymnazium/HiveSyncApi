@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  id: TodoExtensions
+  parent: HiveSync.Application.Contracts.Entities.Business
+  children:
+  - HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted(System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo})
+  langs:
+  - csharp
+  - vb
+  name: TodoExtensions
+  nameWithType: TodoExtensions
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/Todo.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoExtensions
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/Todo.cs
+    startLine: 116
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Extension methods for <xref href="HiveSync.Application.Contracts.Entities.Business.Todo" data-throw-if-not-resolved="false"></xref> entities.
+  example: []
+  syntax:
+    content: public static class TodoExtensions
+    content.vb: Public Module TodoExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted(System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo})
+  commentId: M:HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted(System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo})
+  id: FilterDeleted(System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo})
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  langs:
+  - csharp
+  - vb
+  name: FilterDeleted(IQueryable<Todo>)
+  nameWithType: TodoExtensions.FilterDeleted(IQueryable<Todo>)
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted(System.Linq.IQueryable<HiveSync.Application.Contracts.Entities.Business.Todo>)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/Todo.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: FilterDeleted
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/Todo.cs
+    startLine: 123
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Filters out deleted Todo items from a queryable sequence.
+  example: []
+  syntax:
+    content: public static IQueryable<Todo> FilterDeleted(this IQueryable<Todo> query)
+    parameters:
+    - id: query
+      type: System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo}
+      description: The source queryable.
+    return:
+      type: System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo}
+      description: Queryable containing only non-deleted Todo items.
+    content.vb: Public Shared Function FilterDeleted(query As IQueryable(Of Todo)) As IQueryable(Of Todo)
+  overload: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted*
+  nameWithType.vb: TodoExtensions.FilterDeleted(IQueryable(Of Todo))
+  fullName.vb: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted(System.Linq.IQueryable(Of HiveSync.Application.Contracts.Entities.Business.Todo))
+  name.vb: FilterDeleted(IQueryable(Of Todo))
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business.Todo
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Todo
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  name: Todo
+  nameWithType: Todo
+  fullName: HiveSync.Application.Contracts.Entities.Business.Todo
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted*
+  commentId: Overload:HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted
+  href: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.html#HiveSync_Application_Contracts_Entities_Business_TodoExtensions_FilterDeleted_System_Linq_IQueryable_HiveSync_Application_Contracts_Entities_Business_Todo__
+  name: FilterDeleted
+  nameWithType: TodoExtensions.FilterDeleted
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.FilterDeleted
+- uid: System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo}
+  commentId: T:System.Linq.IQueryable{HiveSync.Application.Contracts.Entities.Business.Todo}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<Todo>
+  nameWithType: IQueryable<Todo>
+  fullName: System.Linq.IQueryable<HiveSync.Application.Contracts.Entities.Business.Todo>
+  nameWithType.vb: IQueryable(Of Todo)
+  fullName.vb: System.Linq.IQueryable(Of HiveSync.Application.Contracts.Entities.Business.Todo)
+  name.vb: IQueryable(Of Todo)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  - name: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq

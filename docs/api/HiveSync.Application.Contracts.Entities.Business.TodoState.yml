@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoState
+  id: TodoState
+  parent: HiveSync.Application.Contracts.Entities.Business
+  children:
+  - HiveSync.Application.Contracts.Entities.Business.TodoState.Done
+  - HiveSync.Application.Contracts.Entities.Business.TodoState.InProgress
+  - HiveSync.Application.Contracts.Entities.Business.TodoState.ToDo
+  langs:
+  - csharp
+  - vb
+  name: TodoState
+  nameWithType: TodoState
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState
+  type: Enum
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: TodoState
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+    startLine: 8
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Represents the current state of a Todo item.
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonStringEnumConverter))]
+
+      public enum TodoState
+    content.vb: >-
+      <JsonConverter(GetType(JsonStringEnumConverter))>
+
+      Public Enum TodoState
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.Text.Json.Serialization.JsonStringEnumConverter
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState.ToDo
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoState.ToDo
+  id: ToDo
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoState
+  langs:
+  - csharp
+  - vb
+  name: ToDo
+  nameWithType: TodoState.ToDo
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState.ToDo
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ToDo
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+    startLine: 14
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Todo has been created but not yet started.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("todo")]
+
+      ToDo = 1000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoState
+    content.vb: >-
+      <JsonPropertyName("todo")>
+
+      ToDo = 1000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: todo
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState.InProgress
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoState.InProgress
+  id: InProgress
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoState
+  langs:
+  - csharp
+  - vb
+  name: InProgress
+  nameWithType: TodoState.InProgress
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState.InProgress
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InProgress
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+    startLine: 20
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Todo is currently in progress.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("in_progress")]
+
+      InProgress = 2000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoState
+    content.vb: >-
+      <JsonPropertyName("in_progress")>
+
+      InProgress = 2000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: in_progress
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState.Done
+  commentId: F:HiveSync.Application.Contracts.Entities.Business.TodoState.Done
+  id: Done
+  parent: HiveSync.Application.Contracts.Entities.Business.TodoState
+  langs:
+  - csharp
+  - vb
+  name: Done
+  nameWithType: TodoState.Done
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState.Done
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Done
+    path: ../src/HiveSync.Application.Contracts/Entities/Business/TodoState.cs
+    startLine: 26
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Entities.Business
+  summary: Todo has been completed.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("done")]
+
+      Done = 3000
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.TodoState
+    content.vb: >-
+      <JsonPropertyName("done")>
+
+      Done = 3000
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: done
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoState
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.TodoState.html
+  name: TodoState
+  nameWithType: TodoState
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState

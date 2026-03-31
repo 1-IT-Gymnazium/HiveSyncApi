@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Sections.Commands
+  commentId: N:HiveSync.Application.Handlers.Sections.Commands
+  id: HiveSync.Application.Handlers.Sections.Commands
+  children:
+  - HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  - HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler
+  - HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Handlers.Sections.Commands
+  nameWithType: HiveSync.Application.Handlers.Sections.Commands
+  fullName: HiveSync.Application.Handlers.Sections.Commands
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  href: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.html
+  name: AddSectionCommandHandler
+  nameWithType: AddSectionCommandHandler
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+- uid: HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler
+  href: HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler.html
+  name: DeleteSectionCommandHandler
+  nameWithType: DeleteSectionCommandHandler
+  fullName: HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler
+- uid: HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler
+  href: HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler.html
+  name: UpdateSectionCommandHandler
+  nameWithType: UpdateSectionCommandHandler
+  fullName: HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler

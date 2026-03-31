@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands.Dto
+  id: HiveSync.Application.Contracts.Projects.Commands.Dto
+  children:
+  - HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+  - HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  - HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+  - HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Projects.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  name: AddProjectDto
+  nameWithType: AddProjectDto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions.html
+  name: AddProjectExtensions
+  nameWithType: AddProjectExtensions
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto.html
+  name: UpdateProjectDto
+  nameWithType: UpdateProjectDto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension.html
+  name: UpdateProjectExtension
+  nameWithType: UpdateProjectExtension
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html

@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Error.ApiErrorResponse
+  commentId: T:HiveSync.Utilities.Error.ApiErrorResponse
+  id: ApiErrorResponse
+  parent: HiveSync.Utilities.Error
+  children:
+  - HiveSync.Utilities.Error.ApiErrorResponse.Errors
+  langs:
+  - csharp
+  - vb
+  name: ApiErrorResponse
+  nameWithType: ApiErrorResponse
+  fullName: HiveSync.Utilities.Error.ApiErrorResponse
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ApiErrorResponse.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ApiErrorResponse
+    path: ../src/HiveSync.Utilities/Error/ApiErrorResponse.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Standardized response model for returning API errors in HiveSync.
+  remarks: >-
+    Encapsulates a collection of <xref href="HiveSync.Utilities.Error.ApiErrorItem" data-throw-if-not-resolved="false"></xref> instances
+
+    to provide structured error information in HTTP responses.
+
+    Typically used by the <xref href="HiveSync.Utilities.Error.ExceptionMiddleware" data-throw-if-not-resolved="false"></xref> to return
+
+    errors to clients in a consistent format.
+  example: []
+  syntax:
+    content: public class ApiErrorResponse
+    content.vb: Public Class ApiErrorResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Utilities.Error.ApiErrorResponse.Errors
+  commentId: P:HiveSync.Utilities.Error.ApiErrorResponse.Errors
+  id: Errors
+  parent: HiveSync.Utilities.Error.ApiErrorResponse
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: ApiErrorResponse.Errors
+  fullName: HiveSync.Utilities.Error.ApiErrorResponse.Errors
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Error/ApiErrorResponse.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Errors
+    path: ../src/HiveSync.Utilities/Error/ApiErrorResponse.cs
+    startLine: 16
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Error
+  summary: Gets or initializes the list of structured error items.
+  example: []
+  syntax:
+    content: public List<ApiErrorItem> Errors { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HiveSync.Utilities.Error.ApiErrorItem}
+    content.vb: Public Property Errors As List(Of ApiErrorItem)
+  overload: HiveSync.Utilities.Error.ApiErrorResponse.Errors*
+references:
+- uid: HiveSync.Utilities.Error.ApiErrorItem
+  commentId: T:HiveSync.Utilities.Error.ApiErrorItem
+  href: HiveSync.Utilities.Error.ApiErrorItem.html
+  name: ApiErrorItem
+  nameWithType: ApiErrorItem
+  fullName: HiveSync.Utilities.Error.ApiErrorItem
+- uid: HiveSync.Utilities.Error.ExceptionMiddleware
+  commentId: T:HiveSync.Utilities.Error.ExceptionMiddleware
+  href: HiveSync.Utilities.Error.ExceptionMiddleware.html
+  name: ExceptionMiddleware
+  nameWithType: ExceptionMiddleware
+  fullName: HiveSync.Utilities.Error.ExceptionMiddleware
+- uid: HiveSync.Utilities.Error
+  commentId: N:HiveSync.Utilities.Error
+  href: HiveSync.html
+  name: HiveSync.Utilities.Error
+  nameWithType: HiveSync.Utilities.Error
+  fullName: HiveSync.Utilities.Error
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Utilities.Error.ApiErrorResponse.Errors*
+  commentId: Overload:HiveSync.Utilities.Error.ApiErrorResponse.Errors
+  href: HiveSync.Utilities.Error.ApiErrorResponse.html#HiveSync_Utilities_Error_ApiErrorResponse_Errors
+  name: Errors
+  nameWithType: ApiErrorResponse.Errors
+  fullName: HiveSync.Utilities.Error.ApiErrorResponse.Errors
+- uid: System.Collections.Generic.List{HiveSync.Utilities.Error.ApiErrorItem}
+  commentId: T:System.Collections.Generic.List{HiveSync.Utilities.Error.ApiErrorItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ApiErrorItem>
+  nameWithType: List<ApiErrorItem>
+  fullName: System.Collections.Generic.List<HiveSync.Utilities.Error.ApiErrorItem>
+  nameWithType.vb: List(Of ApiErrorItem)
+  fullName.vb: System.Collections.Generic.List(Of HiveSync.Utilities.Error.ApiErrorItem)
+  name.vb: List(Of ApiErrorItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HiveSync.Utilities.Error.ApiErrorItem
+    name: ApiErrorItem
+    href: HiveSync.Utilities.Error.ApiErrorItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Utilities.Error.ApiErrorItem
+    name: ApiErrorItem
+    href: HiveSync.Utilities.Error.ApiErrorItem.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

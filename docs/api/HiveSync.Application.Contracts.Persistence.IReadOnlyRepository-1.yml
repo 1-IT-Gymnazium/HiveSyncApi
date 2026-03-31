@@ -1,0 +1,1062 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  id: IReadOnlyRepository`1
+  parent: HiveSync.Application.Contracts.Persistence
+  children:
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync(System.Guid,System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync(System.Guid,System.Threading.CancellationToken,System.Func{System.Exception})
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken,System.Func{System.Exception})
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken,System.Func{System.Exception})
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification{`0},System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync``1(HiveSync.Application.Contracts.Persistence.IListSpecification{`0,``0},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IReadOnlyRepository<T>
+  nameWithType: IReadOnlyRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IReadOnlyRepository
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Defines read-only operations for a repository of entities of type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public interface IReadOnlyRepository<T> where T : class'
+    typeParameters:
+    - id: T
+      description: The type of entity.
+    content.vb: Public Interface IReadOnlyRepository(Of T As Class)
+  derivedClasses:
+  - HiveSync.Data.Repositories.EfRepository`1
+  nameWithType.vb: IReadOnlyRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T)
+  name.vb: IReadOnlyRepository(Of T)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync(System.Guid,System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync(System.Guid,System.Threading.CancellationToken)
+  id: GetByIdAsync(System.Guid,System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid, CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.GetByIdAsync(Guid, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetByIdAsync(System.Guid, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetByIdAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 14
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves an entity by its unique identifier.
+  example: []
+  syntax:
+    content: Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The ID of the entity.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The entity if found; otherwise <code>null</code>.
+    content.vb: Function GetByIdAsync(id As Guid, cancellationToken As CancellationToken = Nothing) As Task(Of T)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetByIdAsync(Guid, CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetByIdAsync(System.Guid, System.Threading.CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken)
+  id: GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetBySpecAsync(ISpecification<T>, CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.GetBySpecAsync(ISpecification<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification<T>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetBySpecAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 22
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves an entity matching the provided specification.
+  example: []
+  syntax:
+    content: Task<T?> GetBySpecAsync(ISpecification<T> specification, CancellationToken cancellationToken = default)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.ISpecification{{T}}
+      description: The specification to filter entities.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The matching entity if found; otherwise <code>null</code>.
+    content.vb: Function GetBySpecAsync(specification As ISpecification(Of T), cancellationToken As CancellationToken = Nothing) As Task(Of T)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetBySpecAsync(ISpecification(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification(Of T), System.Threading.CancellationToken)
+  name.vb: GetBySpecAsync(ISpecification(Of T), CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken)
+  id: GetBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetBySpecAsync<TResult>(ISpecification<T, TResult>, CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.GetBySpecAsync<TResult>(ISpecification<T, TResult>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetBySpecAsync<TResult>(HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetBySpecAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 31
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves a projected result matching the provided specification.
+  example: []
+  syntax:
+    content: Task<TResult?> GetBySpecAsync<TResult>(ISpecification<T, TResult> specification, CancellationToken cancellationToken = default)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.ISpecification{{T},{TResult}}
+      description: The specification to filter and project the entity.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: TResult
+      description: The type of the result after applying the specification.
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: The projected result if found; otherwise <code>null</code>.
+    content.vb: Function GetBySpecAsync(Of TResult)(specification As ISpecification(Of T, TResult), cancellationToken As CancellationToken = Nothing) As Task(Of TResult)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetBySpecAsync(Of TResult)(ISpecification(Of T, TResult), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetBySpecAsync(Of TResult)(HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult), System.Threading.CancellationToken)
+  name.vb: GetBySpecAsync(Of TResult)(ISpecification(Of T, TResult), CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.ListAsync(CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ListAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 38
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Returns all entities in the repository.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<T>> ListAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{T}}}
+      description: A read-only list of entities.
+    content.vb: Function ListAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of T))
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).ListAsync(CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).ListAsync(System.Threading.CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification{`0},System.Threading.CancellationToken)
+  id: ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IListSpecification<T>, CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.ListAsync(IListSpecification<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification<T>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ListAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 46
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Returns entities that match the given list specification.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<T>> ListAsync(IListSpecification<T> specification, CancellationToken cancellationToken = default)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.IListSpecification{{T}}
+      description: The list specification to filter entities.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{T}}}
+      description: A read-only list of entities.
+    content.vb: Function ListAsync(specification As IListSpecification(Of T), cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of T))
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).ListAsync(IListSpecification(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).ListAsync(HiveSync.Application.Contracts.Persistence.IListSpecification(Of T), System.Threading.CancellationToken)
+  name.vb: ListAsync(IListSpecification(Of T), CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync``1(HiveSync.Application.Contracts.Persistence.IListSpecification{`0,``0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync``1(HiveSync.Application.Contracts.Persistence.IListSpecification{`0,``0},System.Threading.CancellationToken)
+  id: ListAsync``1(HiveSync.Application.Contracts.Persistence.IListSpecification{`0,``0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: ListAsync<TResult>(IListSpecification<T, TResult>, CancellationToken)
+  nameWithType: IReadOnlyRepository<T>.ListAsync<TResult>(IListSpecification<T, TResult>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.ListAsync<TResult>(HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ListAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 55
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Returns projected results that match the given list specification.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<TResult>> ListAsync<TResult>(IListSpecification<T, TResult> specification, CancellationToken cancellationToken = default)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{TResult}}
+      description: The list specification to filter and project entities.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: TResult
+      description: The type of the projected result.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResult}}}
+      description: A read-only list of projected results.
+    content.vb: Function ListAsync(Of TResult)(specification As IListSpecification(Of T, TResult), cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of TResult))
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).ListAsync(Of TResult)(IListSpecification(Of T, TResult), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).ListAsync(Of TResult)(HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult), System.Threading.CancellationToken)
+  name.vb: ListAsync(Of TResult)(IListSpecification(Of T, TResult), CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync(System.Guid,System.Threading.CancellationToken,System.Func{System.Exception})
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync(System.Guid,System.Threading.CancellationToken,System.Func{System.Exception})
+  id: GetRequiredByIdAsync(System.Guid,System.Threading.CancellationToken,System.Func{System.Exception})
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredByIdAsync(Guid, CancellationToken, Func<Exception>?)
+  nameWithType: IReadOnlyRepository<T>.GetRequiredByIdAsync(Guid, CancellationToken, Func<Exception>?)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetRequiredByIdAsync(System.Guid, System.Threading.CancellationToken, System.Func<System.Exception>?)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetRequiredByIdAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 66
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves an entity by ID or throws an exception if not found.
+  example: []
+  syntax:
+    content: Task<T> GetRequiredByIdAsync(Guid id, CancellationToken cancellationToken = default, Func<Exception>? exceptionFactory = null)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The entity ID.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    - id: exceptionFactory
+      type: System.Func{System.Exception}
+      description: Optional factory to create a custom exception.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The entity if found.
+    content.vb: Function GetRequiredByIdAsync(id As Guid, cancellationToken As CancellationToken = Nothing, exceptionFactory As Func(Of Exception) = Nothing) As Task(Of T)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetRequiredByIdAsync(Guid, CancellationToken, Func(Of Exception))
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetRequiredByIdAsync(System.Guid, System.Threading.CancellationToken, System.Func(Of System.Exception))
+  name.vb: GetRequiredByIdAsync(Guid, CancellationToken, Func(Of Exception))
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken,System.Func{System.Exception})
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken,System.Func{System.Exception})
+  id: GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification{`0},System.Threading.CancellationToken,System.Func{System.Exception})
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredBySpecAsync(ISpecification<T>, CancellationToken, Func<Exception>?)
+  nameWithType: IReadOnlyRepository<T>.GetRequiredBySpecAsync(ISpecification<T>, CancellationToken, Func<Exception>?)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification<T>, System.Threading.CancellationToken, System.Func<System.Exception>?)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetRequiredBySpecAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 79
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves an entity matching the specification or throws an exception if not found.
+  example: []
+  syntax:
+    content: Task<T> GetRequiredBySpecAsync(ISpecification<T> specification, CancellationToken cancellationToken = default, Func<Exception>? exceptionFactory = null)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.ISpecification{{T}}
+      description: The specification to match the entity.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    - id: exceptionFactory
+      type: System.Func{System.Exception}
+      description: Optional factory to create a custom exception.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The entity if found.
+    content.vb: Function GetRequiredBySpecAsync(specification As ISpecification(Of T), cancellationToken As CancellationToken = Nothing, exceptionFactory As Func(Of Exception) = Nothing) As Task(Of T)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetRequiredBySpecAsync(ISpecification(Of T), CancellationToken, Func(Of Exception))
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetRequiredBySpecAsync(HiveSync.Application.Contracts.Persistence.ISpecification(Of T), System.Threading.CancellationToken, System.Func(Of System.Exception))
+  name.vb: GetRequiredBySpecAsync(ISpecification(Of T), CancellationToken, Func(Of Exception))
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken,System.Func{System.Exception})
+  commentId: M:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken,System.Func{System.Exception})
+  id: GetRequiredBySpecAsync``1(HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0},System.Threading.CancellationToken,System.Func{System.Exception})
+  parent: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredBySpecAsync<TResult>(ISpecification<T, TResult>, CancellationToken, Func<Exception>?)
+  nameWithType: IReadOnlyRepository<T>.GetRequiredBySpecAsync<TResult>(ISpecification<T, TResult>, CancellationToken, Func<Exception>?)
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetRequiredBySpecAsync<TResult>(HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>, System.Threading.CancellationToken, System.Func<System.Exception>?)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetRequiredBySpecAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/IReadOnlyRespository.cs
+    startLine: 93
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Retrieves a projected result matching the specification or throws an exception if not found.
+  example: []
+  syntax:
+    content: Task<TResult> GetRequiredBySpecAsync<TResult>(ISpecification<T, TResult> specification, CancellationToken cancellationToken = default, Func<Exception>? exceptionFactory = null)
+    parameters:
+    - id: specification
+      type: HiveSync.Application.Contracts.Persistence.ISpecification{{T},{TResult}}
+      description: The specification to match and project the entity.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    - id: exceptionFactory
+      type: System.Func{System.Exception}
+      description: Optional factory to create a custom exception.
+    typeParameters:
+    - id: TResult
+      description: The type of the projected result.
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: The projected result if found.
+    content.vb: Function GetRequiredBySpecAsync(Of TResult)(specification As ISpecification(Of T, TResult), cancellationToken As CancellationToken = Nothing, exceptionFactory As Func(Of Exception) = Nothing) As Task(Of TResult)
+  overload: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync*
+  nameWithType.vb: IReadOnlyRepository(Of T).GetRequiredBySpecAsync(Of TResult)(ISpecification(Of T, TResult), CancellationToken, Func(Of Exception))
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetRequiredBySpecAsync(Of TResult)(HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult), System.Threading.CancellationToken, System.Func(Of System.Exception))
+  name.vb: GetRequiredBySpecAsync(Of TResult)(ISpecification(Of T, TResult), CancellationToken, Func(Of Exception))
+references:
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetByIdAsync
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html#HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_1_GetByIdAsync_System_Guid_System_Threading_CancellationToken_
+  name: GetByIdAsync
+  nameWithType: IReadOnlyRepository<T>.GetByIdAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetByIdAsync
+  nameWithType.vb: IReadOnlyRepository(Of T).GetByIdAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetBySpecAsync
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html#HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_1_GetBySpecAsync_HiveSync_Application_Contracts_Persistence_ISpecification__0__System_Threading_CancellationToken_
+  name: GetBySpecAsync
+  nameWithType: IReadOnlyRepository<T>.GetBySpecAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetBySpecAsync
+  nameWithType.vb: IReadOnlyRepository(Of T).GetBySpecAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetBySpecAsync
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification{{T}}
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification{`0}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.ISpecification`1
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  name: ISpecification<T>
+  nameWithType: ISpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T>
+  nameWithType.vb: ISpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T)
+  name.vb: ISpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification`1
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  name: ISpecification<T>
+  nameWithType: ISpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T>
+  nameWithType.vb: ISpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T)
+  name.vb: ISpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification{{T},{TResult}}
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification{`0,``0}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.ISpecification`2
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  name: ISpecification<T, TResult>
+  nameWithType: ISpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>
+  nameWithType.vb: ISpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult)
+  name.vb: ISpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification`2
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  name: ISpecification<T, TResult>
+  nameWithType: ISpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>
+  nameWithType.vb: ISpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult)
+  name.vb: ISpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.ListAsync
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html#HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_1_ListAsync_System_Threading_CancellationToken_
+  name: ListAsync
+  nameWithType: IReadOnlyRepository<T>.ListAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.ListAsync
+  nameWithType.vb: IReadOnlyRepository(Of T).ListAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).ListAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<T>>
+  nameWithType: Task<IReadOnlyList<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<T>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of T))
+  name.vb: Task(Of IReadOnlyList(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification{{T}}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification{`0}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  name: IListSpecification<T>
+  nameWithType: IListSpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T>
+  nameWithType.vb: IListSpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T)
+  name.vb: IListSpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  name: IListSpecification<T>
+  nameWithType: IListSpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T>
+  nameWithType.vb: IListSpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T)
+  name.vb: IListSpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{TResult}}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification{`0,``0}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  name: IListSpecification<T, TResult>
+  nameWithType: IListSpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>
+  nameWithType.vb: IListSpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult)
+  name.vb: IListSpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResult}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<TResult>>
+  nameWithType: Task<IReadOnlyList<TResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<TResult>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of TResult))
+  name.vb: Task(Of IReadOnlyList(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  name: IListSpecification<T, TResult>
+  nameWithType: IListSpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>
+  nameWithType.vb: IListSpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult)
+  name.vb: IListSpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredByIdAsync
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html#HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_1_GetRequiredByIdAsync_System_Guid_System_Threading_CancellationToken_System_Func_System_Exception__
+  name: GetRequiredByIdAsync
+  nameWithType: IReadOnlyRepository<T>.GetRequiredByIdAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetRequiredByIdAsync
+  nameWithType.vb: IReadOnlyRepository(Of T).GetRequiredByIdAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetRequiredByIdAsync
+- uid: System.Func{System.Exception}
+  commentId: T:System.Func{System.Exception}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Exception>
+  nameWithType: Func<Exception>
+  fullName: System.Func<System.Exception>
+  nameWithType.vb: Func(Of Exception)
+  fullName.vb: System.Func(Of System.Exception)
+  name.vb: Func(Of Exception)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1.GetRequiredBySpecAsync
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html#HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_1_GetRequiredBySpecAsync_HiveSync_Application_Contracts_Persistence_ISpecification__0__System_Threading_CancellationToken_System_Func_System_Exception__
+  name: GetRequiredBySpecAsync
+  nameWithType: IReadOnlyRepository<T>.GetRequiredBySpecAsync
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>.GetRequiredBySpecAsync
+  nameWithType.vb: IReadOnlyRepository(Of T).GetRequiredBySpecAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T).GetRequiredBySpecAsync

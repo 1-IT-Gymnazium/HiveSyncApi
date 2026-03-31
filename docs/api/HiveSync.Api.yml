@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api
+  commentId: N:HiveSync.Api
+  id: HiveSync.Api
+  children:
+  - HiveSync.Api.Program
+  - HiveSync.Api.Startup
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Api
+  nameWithType: HiveSync.Api
+  fullName: HiveSync.Api
+  type: Namespace
+  assemblies:
+  - HiveSync.Api
+references:
+- uid: HiveSync.Api.Program
+  commentId: T:HiveSync.Api.Program
+  href: HiveSync.Api.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: HiveSync.Api.Program
+- uid: HiveSync.Api.Startup
+  commentId: T:HiveSync.Api.Startup
+  href: HiveSync.Api.Startup.html
+  name: Startup
+  nameWithType: Startup
+  fullName: HiveSync.Api.Startup

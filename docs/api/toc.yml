@@ -1,0 +1,533 @@
+### YamlMime:TableOfContent
+items:
+- uid: HiveSync.Api
+  name: HiveSync.Api
+  type: Namespace
+  items:
+  - uid: HiveSync.Api.Program
+    name: Program
+    type: Class
+  - uid: HiveSync.Api.Startup
+    name: Startup
+    type: Class
+- uid: HiveSync.Api.Controllers
+  name: HiveSync.Api.Controllers
+  type: Namespace
+  items:
+  - uid: HiveSync.Api.Controllers.ProjectController
+    name: ProjectController
+    type: Class
+  - uid: HiveSync.Api.Controllers.SectionController
+    name: SectionController
+    type: Class
+  - uid: HiveSync.Api.Controllers.TodoController
+    name: TodoController
+    type: Class
+- uid: HiveSync.Api.Controllers.Auth
+  name: HiveSync.Api.Controllers.Auth
+  type: Namespace
+  items:
+  - uid: HiveSync.Api.Controllers.Auth.AuthController
+    name: AuthController
+    type: Class
+- uid: HiveSync.Api.Controllers.Auth.Models
+  name: HiveSync.Api.Controllers.Auth.Models
+  type: Namespace
+  items:
+  - uid: HiveSync.Api.Controllers.Auth.Models.LoggedUserModel
+    name: LoggedUserModel
+    type: Class
+  - uid: HiveSync.Api.Controllers.Auth.Models.LoginModel
+    name: LoginModel
+    type: Class
+  - uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+    name: RegisterModel
+    type: Class
+  - uid: HiveSync.Api.Controllers.Auth.Models.TokenModel
+    name: TokenModel
+    type: Class
+- uid: HiveSync.Application
+  name: HiveSync.Application
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.CurrentUserProvider
+    name: CurrentUserProvider
+    type: Class
+  - uid: HiveSync.Application.MediatrHandlerResolver
+    name: MediatrHandlerResolver
+    type: Class
+- uid: HiveSync.Application.BackgroundServices
+  name: HiveSync.Application.BackgroundServices
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.BackgroundServices.EmailSenderBackgroundService
+    name: EmailSenderBackgroundService
+    type: Class
+- uid: HiveSync.Application.Contracts.Constants
+  name: HiveSync.Application.Contracts.Constants
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Constants.SeedDataIds
+    name: SeedDataIds
+    type: Class
+  - uid: HiveSync.Application.Contracts.Constants.StringLengthConstants
+    name: StringLengthConstants
+    type: Class
+- uid: HiveSync.Application.Contracts.Entities.Business
+  name: HiveSync.Application.Contracts.Entities.Business
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Entities.Business.Client
+    name: Client
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.ProjectExtensions
+    name: ProjectExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.SectionExtensions
+    name: SectionExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.Todo
+    name: Todo
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+    name: TodoExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+    name: TodoPriority
+    type: Enum
+  - uid: HiveSync.Application.Contracts.Entities.Business.TodoState
+    name: TodoState
+    type: Enum
+- uid: HiveSync.Application.Contracts.Entities.Identity
+  name: HiveSync.Application.Contracts.Entities.Identity
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Entities.Identity.AppUser
+    name: AppUser
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+    name: EmailMessage
+    type: Class
+  - uid: HiveSync.Application.Contracts.Entities.Identity.RefreshToken
+    name: RefreshToken
+    type: Class
+- uid: HiveSync.Application.Contracts.Interfaces
+  name: HiveSync.Application.Contracts.Interfaces
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Interfaces.IOwner
+    name: IOwner
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackable
+    name: ITrackable
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+    name: ITrackableExtensions
+    type: Class
+- uid: HiveSync.Application.Contracts.Persistence
+  name: HiveSync.Application.Contracts.Persistence
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification<T>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification<T, TResult>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository<T>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository<T>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification<T>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification<T, TResult>
+    type: Interface
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository<T>
+    type: Interface
+- uid: HiveSync.Application.Contracts.Projects.Commands
+  name: HiveSync.Application.Contracts.Projects.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+    name: AddProjectCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand
+    name: DeleteProjectCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand
+    name: UpdateProjectCommand
+    type: Class
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+  name: HiveSync.Application.Contracts.Projects.Commands.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    name: AddProjectDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectExtensions
+    name: AddProjectExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectDto
+    name: UpdateProjectDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto.UpdateProjectExtension
+    name: UpdateProjectExtension
+    type: Class
+- uid: HiveSync.Application.Contracts.Projects.Queries
+  name: HiveSync.Application.Contracts.Projects.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery
+    name: GetProjectDtoListQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery
+    name: GetProjectDtoQuery
+    type: Class
+- uid: HiveSync.Application.Contracts.Projects.Queries.Dto
+  name: HiveSync.Application.Contracts.Projects.Queries.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Projects.Queries.Dto.ProjectDetailDto
+    name: ProjectDetailDto
+    type: Class
+- uid: HiveSync.Application.Contracts.Sections.Commands
+  name: HiveSync.Application.Contracts.Sections.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+    name: AddSectionCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand
+    name: DeleteSectionCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand
+    name: UpdateSectionCommand
+    type: Class
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+  name: HiveSync.Application.Contracts.Sections.Commands.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+    name: AddSectionDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+    name: AddSectionExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+    name: UpdateSectionDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+    name: UpdateSectionExtension
+    type: Class
+- uid: HiveSync.Application.Contracts.Sections.Queries
+  name: HiveSync.Application.Contracts.Sections.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListByProjectQuery
+    name: GetSectionDtoListByProjectQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoListQuery
+    name: GetSectionDtoListQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Sections.Queries.GetSectionDtoQuery
+    name: GetSectionDtoQuery
+    type: Class
+- uid: HiveSync.Application.Contracts.Sections.Queries.Dto
+  name: HiveSync.Application.Contracts.Sections.Queries.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto
+    name: SectionDetailDto
+    type: Class
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  name: HiveSync.Application.Contracts.Todos.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+    name: AddTodoCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+    name: DeleteTodoCommand
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand
+    name: UpdateTodoCommand
+    type: Class
+- uid: HiveSync.Application.Contracts.Todos.Commands.Dto
+  name: HiveSync.Application.Contracts.Todos.Commands.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoDto
+    name: AddTodoDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.AddTodoExtensions
+    name: AddTodoExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoDto
+    name: UpdateTodoDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Commands.Dto.UpdateTodoExtensions
+    name: UpdateTodoExtensions
+    type: Class
+- uid: HiveSync.Application.Contracts.Todos.Queries
+  name: HiveSync.Application.Contracts.Todos.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery
+    name: GetTodoDtoListByProjectQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery
+    name: GetTodoDtoListBySectionQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+    name: GetTodoDtoListQuery
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery
+    name: GetTodoDtoQuery
+    type: Class
+- uid: HiveSync.Application.Contracts.Todos.Queries.Dto
+  name: HiveSync.Application.Contracts.Todos.Queries.Dto
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+    name: TodoDetailDto
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDtoExtensions
+    name: TodoDetailDtoExtensions
+    type: Class
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoFilter
+    name: TodoFilter
+    type: Class
+- uid: HiveSync.Application.Handlers.Projects.Commands
+  name: HiveSync.Application.Handlers.Projects.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Projects.Commands.AddProjectCommandHandler
+    name: AddProjectCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Projects.Commands.DeleteProjectCommandHandler
+    name: DeleteProjectCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Projects.Commands.UpdateProjectCommandHandler
+    name: UpdateProjectCommandHandler
+    type: Class
+- uid: HiveSync.Application.Handlers.Projects.Queries
+  name: HiveSync.Application.Handlers.Projects.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoListQueryHandler
+    name: GetProjectDtoListQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Projects.Queries.GetProjectDtoQueryHandler
+    name: GetProjectDtoQueryHandler
+    type: Class
+- uid: HiveSync.Application.Handlers.Sections.Commands
+  name: HiveSync.Application.Handlers.Sections.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+    name: AddSectionCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Sections.Commands.DeleteSectionCommandHandler
+    name: DeleteSectionCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Sections.Commands.UpdateSectionCommandHandler
+    name: UpdateSectionCommandHandler
+    type: Class
+- uid: HiveSync.Application.Handlers.Sections.Queries
+  name: HiveSync.Application.Handlers.Sections.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler
+    name: GetSectionDtoListByProjectQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler
+    name: GetSectionDtoListQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler
+    name: GetSectionDtoQueryHandler
+    type: Class
+- uid: HiveSync.Application.Handlers.Todos.Commands
+  name: HiveSync.Application.Handlers.Todos.Commands
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler
+    name: AddTodoCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+    name: DeleteTodoCommandHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler
+    name: UpdateTodoCommandHandler
+    type: Class
+- uid: HiveSync.Application.Handlers.Todos.Queries
+  name: HiveSync.Application.Handlers.Todos.Queries
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler
+    name: GetTodoDtoListByProjectQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler
+    name: GetTodoDtoListBySectionQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler
+    name: GetTodoDtoListQueryHandler
+    type: Class
+  - uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler
+    name: GetTodoDtoQueryHandler
+    type: Class
+- uid: HiveSync.Application.Interfaces
+  name: HiveSync.Application.Interfaces
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Interfaces.ICurrentUserProvider
+    name: ICurrentUserProvider
+    type: Interface
+- uid: HiveSync.Application.Services
+  name: HiveSync.Application.Services
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Services.EmailSenderService
+    name: EmailSenderService
+    type: Class
+- uid: HiveSync.Application.Specifications
+  name: HiveSync.Application.Specifications
+  type: Namespace
+  items:
+  - uid: HiveSync.Application.Specifications.DefaultInboxSpecification
+    name: DefaultInboxSpecification
+    type: Class
+  - uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+    name: UniqueFieldSpec<TEntity>
+    type: Class
+- uid: HiveSync.Auth
+  name: HiveSync.Auth
+  type: Namespace
+  items:
+  - uid: HiveSync.Auth.Program
+    name: Program
+    type: Class
+- uid: HiveSync.Data
+  name: HiveSync.Data
+  type: Namespace
+  items:
+  - uid: HiveSync.Data.AppDbContext
+    name: AppDbContext
+    type: Class
+  - uid: HiveSync.Data.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+    type: Class
+- uid: HiveSync.Data.Migrations
+  name: HiveSync.Data.Migrations
+  type: Namespace
+  items:
+  - uid: HiveSync.Data.Migrations.Init
+    name: Init
+    type: Class
+- uid: HiveSync.Data.Repositories
+  name: HiveSync.Data.Repositories
+  type: Namespace
+  items:
+  - uid: HiveSync.Data.Repositories.EfRepository`1
+    name: EfRepository<T>
+    type: Class
+  - uid: HiveSync.Data.Repositories.EfSystemRepository`1
+    name: EfSystemRepository<T>
+    type: Class
+- uid: HiveSync.Utilities
+  name: HiveSync.Utilities
+  type: Namespace
+  items:
+  - uid: HiveSync.Utilities.ApplicationMapper
+    name: ApplicationMapper
+    type: Class
+  - uid: HiveSync.Utilities.ClaimsPrincipalExtensions
+    name: ClaimsPrincipalExtensions
+    type: Class
+- uid: HiveSync.Utilities.Error
+  name: HiveSync.Utilities.Error
+  type: Namespace
+  items:
+  - uid: HiveSync.Utilities.Error.ApiErrorItem
+    name: ApiErrorItem
+    type: Class
+  - uid: HiveSync.Utilities.Error.ApiErrorResponse
+    name: ApiErrorResponse
+    type: Class
+  - uid: HiveSync.Utilities.Error.ApiValidationException
+    name: ApiValidationException
+    type: Class
+  - uid: HiveSync.Utilities.Error.ConflictException
+    name: ConflictException
+    type: Class
+  - uid: HiveSync.Utilities.Error.ErrorMessages
+    name: ErrorMessages
+    type: Class
+  - uid: HiveSync.Utilities.Error.ExceptionMiddleware
+    name: ExceptionMiddleware
+    type: Class
+  - uid: HiveSync.Utilities.Error.ForbiddenException
+    name: ForbiddenException
+    type: Class
+  - uid: HiveSync.Utilities.Error.HiveSyncException
+    name: HiveSyncException
+    type: Class
+  - uid: HiveSync.Utilities.Error.NotFoundException
+    name: NotFoundException
+    type: Class
+  - uid: HiveSync.Utilities.Error.UnauthorizedException
+    name: UnauthorizedException
+    type: Class
+  - uid: HiveSync.Utilities.Error.ValidationErrorBuilder
+    name: ValidationErrorBuilder
+    type: Class
+  - uid: HiveSync.Utilities.Error.ValidationErrorItem
+    name: ValidationErrorItem
+    type: Class
+- uid: HiveSync.Utilities.Interfaces
+  name: HiveSync.Utilities.Interfaces
+  type: Namespace
+  items:
+  - uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+    name: IApplicationMapper
+    type: Interface
+- uid: HiveSync.Utilities.Settings
+  name: HiveSync.Utilities.Settings
+  type: Namespace
+  items:
+  - uid: HiveSync.Utilities.Settings.EnvironmentSettings
+    name: EnvironmentSettings
+    type: Class
+  - uid: HiveSync.Utilities.Settings.JwtSettings
+    name: JwtSettings
+    type: Class
+  - uid: HiveSync.Utilities.Settings.SmtpSettings
+    name: SmtpSettings
+    type: Class
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  type: Namespace
+  items:
+  - uid: Microsoft.Extensions.DependencyInjection.IScopedService
+    name: IScopedService
+    type: Interface
+  - uid: Microsoft.Extensions.DependencyInjection.ISingletonService
+    name: ISingletonService
+    type: Interface
+  - uid: Microsoft.Extensions.DependencyInjection.ITransientService
+    name: ITransientService
+    type: Interface
+memberLayout: SamePage

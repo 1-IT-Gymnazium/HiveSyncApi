@@ -4,10 +4,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiveSync.Api", "HiveSync.Api\HiveSync.Api.csproj", "{38FA1F1F-9F16-4D8F-B87F-69648CC97650}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeHive.Utility", "CodeHive.Utility\CodeHive.Utility.csproj", "{0ECDB490-8E6D-4569-BEC2-D31D5C4D13B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{044432E5-C90F-47D3-8373-83B6B690D863} = {044432E5-C90F-47D3-8373-83B6B690D863}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiveSync.Data", "HiveSync.Data\HiveSync.Data.csproj", "{B95ED69B-F0D3-4DBA-A3BD-5444CCFADF1E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095} = {03135F1F-AC3F-45DB-902B-5A8CF1FC9095}
+		{0A06A349-8AD1-434C-A644-AD5346921BEA} = {0A06A349-8AD1-434C-A644-AD5346921BEA}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiveSync.Utilities", "HiveSync.Utilities\HiveSync.Utilities.csproj", "{4BAFE6DD-5959-436D-A772-6ED9F69D594C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiveSync.Application", "HiveSync.Application\HiveSync.Application.csproj", "{044432E5-C90F-47D3-8373-83B6B690D863}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095} = {03135F1F-AC3F-45DB-902B-5A8CF1FC9095}
+		{4BAFE6DD-5959-436D-A772-6ED9F69D594C} = {4BAFE6DD-5959-436D-A772-6ED9F69D594C}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiveSync.Application.Contracts", "HiveSync.Application.Contracts\HiveSync.Application.Contracts.csproj", "{03135F1F-AC3F-45DB-902B-5A8CF1FC9095}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A06A349-8AD1-434C-A644-AD5346921BEA} = {0A06A349-8AD1-434C-A644-AD5346921BEA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiveSync.Application.Contracts.Interfaces", "HiveSync.Application.Contracts.Interfaces\HiveSync.Application.Contracts.Interfaces.csproj", "{0A06A349-8AD1-434C-A644-AD5346921BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +39,26 @@ Global
 		{38FA1F1F-9F16-4D8F-B87F-69648CC97650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38FA1F1F-9F16-4D8F-B87F-69648CC97650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38FA1F1F-9F16-4D8F-B87F-69648CC97650}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0ECDB490-8E6D-4569-BEC2-D31D5C4D13B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ECDB490-8E6D-4569-BEC2-D31D5C4D13B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ECDB490-8E6D-4569-BEC2-D31D5C4D13B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ECDB490-8E6D-4569-BEC2-D31D5C4D13B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B95ED69B-F0D3-4DBA-A3BD-5444CCFADF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B95ED69B-F0D3-4DBA-A3BD-5444CCFADF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B95ED69B-F0D3-4DBA-A3BD-5444CCFADF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B95ED69B-F0D3-4DBA-A3BD-5444CCFADF1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAFE6DD-5959-436D-A772-6ED9F69D594C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAFE6DD-5959-436D-A772-6ED9F69D594C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAFE6DD-5959-436D-A772-6ED9F69D594C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAFE6DD-5959-436D-A772-6ED9F69D594C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044432E5-C90F-47D3-8373-83B6B690D863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044432E5-C90F-47D3-8373-83B6B690D863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044432E5-C90F-47D3-8373-83B6B690D863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044432E5-C90F-47D3-8373-83B6B690D863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03135F1F-AC3F-45DB-902B-5A8CF1FC9095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A06A349-8AD1-434C-A644-AD5346921BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A06A349-8AD1-434C-A644-AD5346921BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A06A349-8AD1-434C-A644-AD5346921BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A06A349-8AD1-434C-A644-AD5346921BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Settings
+  commentId: N:HiveSync.Utilities.Settings
+  id: HiveSync.Utilities.Settings
+  children:
+  - HiveSync.Utilities.Settings.EnvironmentSettings
+  - HiveSync.Utilities.Settings.JwtSettings
+  - HiveSync.Utilities.Settings.SmtpSettings
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Utilities.Settings
+  nameWithType: HiveSync.Utilities.Settings
+  fullName: HiveSync.Utilities.Settings
+  type: Namespace
+  assemblies:
+  - HiveSync.Utilities
+references:
+- uid: HiveSync.Utilities.Settings.EnvironmentSettings
+  commentId: T:HiveSync.Utilities.Settings.EnvironmentSettings
+  href: HiveSync.Utilities.Settings.EnvironmentSettings.html
+  name: EnvironmentSettings
+  nameWithType: EnvironmentSettings
+  fullName: HiveSync.Utilities.Settings.EnvironmentSettings
+- uid: HiveSync.Utilities.Settings.JwtSettings
+  commentId: T:HiveSync.Utilities.Settings.JwtSettings
+  href: HiveSync.Utilities.Settings.JwtSettings.html
+  name: JwtSettings
+  nameWithType: JwtSettings
+  fullName: HiveSync.Utilities.Settings.JwtSettings
+- uid: HiveSync.Utilities.Settings.SmtpSettings
+  commentId: T:HiveSync.Utilities.Settings.SmtpSettings
+  href: HiveSync.Utilities.Settings.SmtpSettings.html
+  name: SmtpSettings
+  nameWithType: SmtpSettings
+  fullName: HiveSync.Utilities.Settings.SmtpSettings

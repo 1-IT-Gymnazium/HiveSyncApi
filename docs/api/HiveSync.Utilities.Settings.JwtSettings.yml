@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Settings.JwtSettings
+  commentId: T:HiveSync.Utilities.Settings.JwtSettings
+  id: JwtSettings
+  parent: HiveSync.Utilities.Settings
+  children:
+  - HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+  - HiveSync.Utilities.Settings.JwtSettings.Audience
+  - HiveSync.Utilities.Settings.JwtSettings.Issuer
+  - HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays
+  - HiveSync.Utilities.Settings.JwtSettings.SecretKey
+  langs:
+  - csharp
+  - vb
+  name: JwtSettings
+  nameWithType: JwtSettings
+  fullName: HiveSync.Utilities.Settings.JwtSettings
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: JwtSettings
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Represents configuration settings required for JWT authentication and token generation.
+  remarks: >-
+    This class is typically bound from application configuration (e.g., appsettings.json)
+
+    and used to configure token issuance and validation.
+  example: []
+  syntax:
+    content: public class JwtSettings
+    content.vb: Public Class JwtSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Utilities.Settings.JwtSettings.SecretKey
+  commentId: P:HiveSync.Utilities.Settings.JwtSettings.SecretKey
+  id: SecretKey
+  parent: HiveSync.Utilities.Settings.JwtSettings
+  langs:
+  - csharp
+  - vb
+  name: SecretKey
+  nameWithType: JwtSettings.SecretKey
+  fullName: HiveSync.Utilities.Settings.JwtSettings.SecretKey
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SecretKey
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 18
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Gets or sets the secret key used to sign JWT tokens.
+  remarks: >-
+    This key must be sufficiently long and securely stored.
+
+    It is used to create a symmetric security key for HMAC signing.
+  example: []
+  syntax:
+    content: public required string SecretKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecretKey As String
+  overload: HiveSync.Utilities.Settings.JwtSettings.SecretKey*
+- uid: HiveSync.Utilities.Settings.JwtSettings.Issuer
+  commentId: P:HiveSync.Utilities.Settings.JwtSettings.Issuer
+  id: Issuer
+  parent: HiveSync.Utilities.Settings.JwtSettings
+  langs:
+  - csharp
+  - vb
+  name: Issuer
+  nameWithType: JwtSettings.Issuer
+  fullName: HiveSync.Utilities.Settings.JwtSettings.Issuer
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Issuer
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 26
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Gets or sets the expected issuer of the JWT token.
+  remarks: This value is validated during token verification.
+  example: []
+  syntax:
+    content: public required string Issuer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Issuer As String
+  overload: HiveSync.Utilities.Settings.JwtSettings.Issuer*
+- uid: HiveSync.Utilities.Settings.JwtSettings.Audience
+  commentId: P:HiveSync.Utilities.Settings.JwtSettings.Audience
+  id: Audience
+  parent: HiveSync.Utilities.Settings.JwtSettings
+  langs:
+  - csharp
+  - vb
+  name: Audience
+  nameWithType: JwtSettings.Audience
+  fullName: HiveSync.Utilities.Settings.JwtSettings.Audience
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Audience
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 34
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Gets or sets the intended audience of the JWT token.
+  remarks: This value is validated during token verification.
+  example: []
+  syntax:
+    content: public required string Audience { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Audience As String
+  overload: HiveSync.Utilities.Settings.JwtSettings.Audience*
+- uid: HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+  commentId: P:HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+  id: AccessTokenExpirationInMinutes
+  parent: HiveSync.Utilities.Settings.JwtSettings
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenExpirationInMinutes
+  nameWithType: JwtSettings.AccessTokenExpirationInMinutes
+  fullName: HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AccessTokenExpirationInMinutes
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 42
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Gets or sets the lifetime of the access token in minutes.
+  remarks: Access tokens are short-lived and typically used for API authorization.
+  example: []
+  syntax:
+    content: public required int AccessTokenExpirationInMinutes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AccessTokenExpirationInMinutes As Integer
+  overload: HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes*
+- uid: HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays
+  commentId: P:HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays
+  id: RefreshTokenExpirationInDays
+  parent: HiveSync.Utilities.Settings.JwtSettings
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenExpirationInDays
+  nameWithType: JwtSettings.RefreshTokenExpirationInDays
+  fullName: HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Utilities/Settings/JwtSettings.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: RefreshTokenExpirationInDays
+    path: ../src/HiveSync.Utilities/Settings/JwtSettings.cs
+    startLine: 51
+  assemblies:
+  - HiveSync.Utilities
+  namespace: HiveSync.Utilities.Settings
+  summary: Gets or sets the lifetime of the refresh token in days.
+  remarks: >-
+    Refresh tokens are long-lived and used to issue new access tokens
+
+    without requiring the user to re-authenticate.
+  example: []
+  syntax:
+    content: public required int RefreshTokenExpirationInDays { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RefreshTokenExpirationInDays As Integer
+  overload: HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays*
+references:
+- uid: HiveSync.Utilities.Settings
+  commentId: N:HiveSync.Utilities.Settings
+  href: HiveSync.html
+  name: HiveSync.Utilities.Settings
+  nameWithType: HiveSync.Utilities.Settings
+  fullName: HiveSync.Utilities.Settings
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Settings
+    name: Settings
+    href: HiveSync.Utilities.Settings.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Settings
+    name: Settings
+    href: HiveSync.Utilities.Settings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Utilities.Settings.JwtSettings.SecretKey*
+  commentId: Overload:HiveSync.Utilities.Settings.JwtSettings.SecretKey
+  href: HiveSync.Utilities.Settings.JwtSettings.html#HiveSync_Utilities_Settings_JwtSettings_SecretKey
+  name: SecretKey
+  nameWithType: JwtSettings.SecretKey
+  fullName: HiveSync.Utilities.Settings.JwtSettings.SecretKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Utilities.Settings.JwtSettings.Issuer*
+  commentId: Overload:HiveSync.Utilities.Settings.JwtSettings.Issuer
+  href: HiveSync.Utilities.Settings.JwtSettings.html#HiveSync_Utilities_Settings_JwtSettings_Issuer
+  name: Issuer
+  nameWithType: JwtSettings.Issuer
+  fullName: HiveSync.Utilities.Settings.JwtSettings.Issuer
+- uid: HiveSync.Utilities.Settings.JwtSettings.Audience*
+  commentId: Overload:HiveSync.Utilities.Settings.JwtSettings.Audience
+  href: HiveSync.Utilities.Settings.JwtSettings.html#HiveSync_Utilities_Settings_JwtSettings_Audience
+  name: Audience
+  nameWithType: JwtSettings.Audience
+  fullName: HiveSync.Utilities.Settings.JwtSettings.Audience
+- uid: HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes*
+  commentId: Overload:HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+  href: HiveSync.Utilities.Settings.JwtSettings.html#HiveSync_Utilities_Settings_JwtSettings_AccessTokenExpirationInMinutes
+  name: AccessTokenExpirationInMinutes
+  nameWithType: JwtSettings.AccessTokenExpirationInMinutes
+  fullName: HiveSync.Utilities.Settings.JwtSettings.AccessTokenExpirationInMinutes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays*
+  commentId: Overload:HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays
+  href: HiveSync.Utilities.Settings.JwtSettings.html#HiveSync_Utilities_Settings_JwtSettings_RefreshTokenExpirationInDays
+  name: RefreshTokenExpirationInDays
+  nameWithType: JwtSettings.RefreshTokenExpirationInDays
+  fullName: HiveSync.Utilities.Settings.JwtSettings.RefreshTokenExpirationInDays

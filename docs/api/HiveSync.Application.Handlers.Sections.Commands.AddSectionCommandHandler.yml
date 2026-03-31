@@ -1,0 +1,1104 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  id: AddSectionCommandHandler
+  parent: HiveSync.Application.Handlers.Sections.Commands
+  children:
+  - HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section},HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project},HiveSync.Application.Interfaces.ICurrentUserProvider,HiveSync.Utilities.Interfaces.IApplicationMapper,NodaTime.IClock)
+  - HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: AddSectionCommandHandler
+  nameWithType: AddSectionCommandHandler
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddSectionCommandHandler
+    path: ../src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+    startLine: 18
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Sections.Commands
+  summary: >-
+    Handles creation of a new <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> within a project.
+
+    Performs validation, uniqueness checks and assigns the correct order.
+  example: []
+  syntax:
+    content: 'public class AddSectionCommandHandler : IRequestHandler<AddSectionCommand, Guid>'
+    content.vb: Public Class AddSectionCommandHandler Implements IRequestHandler(Of AddSectionCommand, Guid)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section},HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project},HiveSync.Application.Interfaces.ICurrentUserProvider,HiveSync.Utilities.Interfaces.IApplicationMapper,NodaTime.IClock)
+  commentId: M:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section},HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project},HiveSync.Application.Interfaces.ICurrentUserProvider,HiveSync.Utilities.Interfaces.IApplicationMapper,NodaTime.IClock)
+  id: '#ctor(HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section},HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project},HiveSync.Application.Interfaces.ICurrentUserProvider,HiveSync.Utilities.Interfaces.IApplicationMapper,NodaTime.IClock)'
+  parent: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: AddSectionCommandHandler(IRepository<Section>, IReadOnlyRepository<Project>, ICurrentUserProvider, IApplicationMapper, IClock)
+  nameWithType: AddSectionCommandHandler.AddSectionCommandHandler(IRepository<Section>, IReadOnlyRepository<Project>, ICurrentUserProvider, IApplicationMapper, IClock)
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.AddSectionCommandHandler(HiveSync.Application.Contracts.Persistence.IRepository<HiveSync.Application.Contracts.Entities.Business.Section>, HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<HiveSync.Application.Contracts.Entities.Business.Project>, HiveSync.Application.Interfaces.ICurrentUserProvider, HiveSync.Utilities.Interfaces.IApplicationMapper, NodaTime.IClock)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+    startLine: 18
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Sections.Commands
+  summary: >-
+    Handles creation of a new <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> within a project.
+
+    Performs validation, uniqueness checks and assigns the correct order.
+  example: []
+  syntax:
+    content: public AddSectionCommandHandler(IRepository<Section> sectionRepository, IReadOnlyRepository<Project> projectRepository, ICurrentUserProvider currentUserProvider, IApplicationMapper mapper, IClock clock)
+    parameters:
+    - id: sectionRepository
+      type: HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section}
+      description: Repository used for persisting <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> entities.
+    - id: projectRepository
+      type: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project}
+      description: Read-only repository used to verify existence of the target <xref href="HiveSync.Application.Contracts.Entities.Business.Project" data-throw-if-not-resolved="false"></xref>.
+    - id: currentUserProvider
+      type: HiveSync.Application.Interfaces.ICurrentUserProvider
+    - id: mapper
+      type: HiveSync.Utilities.Interfaces.IApplicationMapper
+      description: Application mapper used to convert DTO objects into domain entities.
+    - id: clock
+      type: NodaTime.IClock
+      description: Clock used to generate consistent system timestamps.
+    content.vb: Public Sub New(sectionRepository As IRepository(Of Section), projectRepository As IReadOnlyRepository(Of Project), currentUserProvider As ICurrentUserProvider, mapper As IApplicationMapper, clock As IClock)
+  overload: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor*
+  nameWithType.vb: AddSectionCommandHandler.New(IRepository(Of Section), IReadOnlyRepository(Of Project), ICurrentUserProvider, IApplicationMapper, IClock)
+  fullName.vb: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.New(HiveSync.Application.Contracts.Persistence.IRepository(Of HiveSync.Application.Contracts.Entities.Business.Section), HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of HiveSync.Application.Contracts.Entities.Business.Project), HiveSync.Application.Interfaces.ICurrentUserProvider, HiveSync.Utilities.Interfaces.IApplicationMapper, NodaTime.IClock)
+  name.vb: New(IRepository(Of Section), IReadOnlyRepository(Of Project), ICurrentUserProvider, IApplicationMapper, IClock)
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  id: Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  parent: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(AddSectionCommand, CancellationToken)
+  nameWithType: AddSectionCommandHandler.Handle(AddSectionCommand, CancellationToken)
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Handle
+    path: ../src/HiveSync.Application/Handlers/Sections/Commands/AddSectionCommandHandler.cs
+    startLine: 36
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Handlers.Sections.Commands
+  summary: Processes the command that creates a new section.
+  example: []
+  syntax:
+    content: public Task<Guid> Handle(AddSectionCommand request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+      description: Command containing the section data.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Token used to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Guid}
+      description: The identifier of the newly created <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Handle(request As AddSectionCommand, cancellationToken As CancellationToken) As Task(Of Guid)
+  overload: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle*
+  exceptions:
+  - type: HiveSync.Utilities.Error.ApiValidationException
+    commentId: T:HiveSync.Utilities.Error.ApiValidationException
+    description: Thrown when the provided data fails validation.
+  - type: HiveSync.Utilities.Error.ConflictException
+    commentId: T:HiveSync.Utilities.Error.ConflictException
+    description: Thrown when a section with the same name already exists within the project.
+  - type: HiveSync.Utilities.Error.NotFoundException
+    commentId: T:HiveSync.Utilities.Error.NotFoundException
+    description: Thrown when the specified <xref href="HiveSync.Application.Contracts.Entities.Business.Project" data-throw-if-not-resolved="false"></xref> does not exist.
+  implements:
+  - MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business.Section
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Section
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  name: Section
+  nameWithType: Section
+  fullName: HiveSync.Application.Contracts.Entities.Business.Section
+- uid: HiveSync.Application.Contracts.Entities.Business.Project
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Project
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  name: Project
+  nameWithType: Project
+  fullName: HiveSync.Application.Contracts.Entities.Business.Project
+- uid: HiveSync.Application.Handlers.Sections.Commands
+  commentId: N:HiveSync.Application.Handlers.Sections.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Handlers.Sections.Commands
+  nameWithType: HiveSync.Application.Handlers.Sections.Commands
+  fullName: HiveSync.Application.Handlers.Sections.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Handlers
+    name: Handlers
+    href: HiveSync.Application.Handlers.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Sections
+    name: Sections
+    href: HiveSync.Application.Handlers.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Handlers.Sections.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Handlers
+    name: Handlers
+    href: HiveSync.Application.Handlers.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Sections
+    name: Sections
+    href: HiveSync.Application.Handlers.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Handlers.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Handlers.Sections.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}
+  commentId: T:MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  name: IRequestHandler<AddSectionCommand, Guid>
+  nameWithType: IRequestHandler<AddSectionCommand, Guid>
+  fullName: MediatR.IRequestHandler<HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Guid>
+  nameWithType.vb: IRequestHandler(Of AddSectionCommand, Guid)
+  fullName.vb: MediatR.IRequestHandler(Of HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Guid)
+  name.vb: IRequestHandler(Of AddSectionCommand, Guid)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+    name: AddSectionCommand
+    href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+    name: AddSectionCommand
+    href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor*
+  commentId: Overload:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.#ctor
+  href: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.html#HiveSync_Application_Handlers_Sections_Commands_AddSectionCommandHandler__ctor_HiveSync_Application_Contracts_Persistence_IRepository_HiveSync_Application_Contracts_Entities_Business_Section__HiveSync_Application_Contracts_Persistence_IReadOnlyRepository_HiveSync_Application_Contracts_Entities_Business_Project__HiveSync_Application_Interfaces_ICurrentUserProvider_HiveSync_Utilities_Interfaces_IApplicationMapper_NodaTime_IClock_
+  name: AddSectionCommandHandler
+  nameWithType: AddSectionCommandHandler.AddSectionCommandHandler
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.AddSectionCommandHandler
+  nameWithType.vb: AddSectionCommandHandler.New
+  fullName.vb: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.New
+  name.vb: New
+- uid: HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IRepository{HiveSync.Application.Contracts.Entities.Business.Section}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  name: IRepository<Section>
+  nameWithType: IRepository<Section>
+  fullName: HiveSync.Application.Contracts.Persistence.IRepository<HiveSync.Application.Contracts.Entities.Business.Section>
+  nameWithType.vb: IRepository(Of Section)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IRepository(Of HiveSync.Application.Contracts.Entities.Business.Section)
+  name.vb: IRepository(Of Section)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: <
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Section
+    name: Section
+    href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository{HiveSync.Application.Contracts.Entities.Business.Project}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  name: IReadOnlyRepository<Project>
+  nameWithType: IReadOnlyRepository<Project>
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<HiveSync.Application.Contracts.Entities.Business.Project>
+  nameWithType.vb: IReadOnlyRepository(Of Project)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of HiveSync.Application.Contracts.Entities.Business.Project)
+  name.vb: IReadOnlyRepository(Of Project)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: <
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Entities.Business.Project
+    name: Project
+    href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  - name: )
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider
+  commentId: T:HiveSync.Application.Interfaces.ICurrentUserProvider
+  parent: HiveSync.Application.Interfaces
+  href: HiveSync.Application.Interfaces.ICurrentUserProvider.html
+  name: ICurrentUserProvider
+  nameWithType: ICurrentUserProvider
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+  commentId: T:HiveSync.Utilities.Interfaces.IApplicationMapper
+  parent: HiveSync.Utilities.Interfaces
+  href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  name: IApplicationMapper
+  nameWithType: IApplicationMapper
+  fullName: HiveSync.Utilities.Interfaces.IApplicationMapper
+- uid: NodaTime.IClock
+  commentId: T:NodaTime.IClock
+  parent: NodaTime
+  isExternal: true
+  href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/IClock.cs
+  name: IClock
+  nameWithType: IClock
+  fullName: NodaTime.IClock
+- uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  name: IReadOnlyRepository<T>
+  nameWithType: IReadOnlyRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>
+  nameWithType.vb: IReadOnlyRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T)
+  name.vb: IReadOnlyRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Interfaces
+  commentId: N:HiveSync.Application.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Interfaces
+  nameWithType: HiveSync.Application.Interfaces
+  fullName: HiveSync.Application.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+- uid: HiveSync.Utilities.Interfaces
+  commentId: N:HiveSync.Utilities.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Utilities.Interfaces
+  nameWithType: HiveSync.Utilities.Interfaces
+  fullName: HiveSync.Utilities.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+- uid: NodaTime
+  commentId: N:NodaTime
+  isExternal: true
+  name: NodaTime
+  nameWithType: NodaTime
+  fullName: NodaTime
+- uid: HiveSync.Utilities.Error.ApiValidationException
+  commentId: T:HiveSync.Utilities.Error.ApiValidationException
+  href: HiveSync.Utilities.Error.ApiValidationException.html
+  name: ApiValidationException
+  nameWithType: ApiValidationException
+  fullName: HiveSync.Utilities.Error.ApiValidationException
+- uid: HiveSync.Utilities.Error.ConflictException
+  commentId: T:HiveSync.Utilities.Error.ConflictException
+  href: HiveSync.Utilities.Error.ConflictException.html
+  name: ConflictException
+  nameWithType: ConflictException
+  fullName: HiveSync.Utilities.Error.ConflictException
+- uid: HiveSync.Utilities.Error.NotFoundException
+  commentId: T:HiveSync.Utilities.Error.NotFoundException
+  href: HiveSync.Utilities.Error.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: HiveSync.Utilities.Error.NotFoundException
+- uid: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle*
+  commentId: Overload:HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle
+  href: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.html#HiveSync_Application_Handlers_Sections_Commands_AddSectionCommandHandler_Handle_HiveSync_Application_Contracts_Sections_Commands_AddSectionCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: AddSectionCommandHandler.Handle
+  fullName: HiveSync.Application.Handlers.Sections.Commands.AddSectionCommandHandler.Handle
+- uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  name: Handle(AddSectionCommand, CancellationToken)
+  nameWithType: IRequestHandler<AddSectionCommand, Guid>.Handle(AddSectionCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Guid>.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of AddSectionCommand, Guid).Handle(AddSectionCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Guid).Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+    name: AddSectionCommand
+    href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Guid}.Handle(HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+    name: AddSectionCommand
+    href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+  parent: HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  name: AddSectionCommand
+  nameWithType: AddSectionCommand
+  fullName: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Guid}
+  commentId: T:System.Threading.Tasks.Task{System.Guid}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Guid>
+  nameWithType: Task<Guid>
+  fullName: System.Threading.Tasks.Task<System.Guid>
+  nameWithType.vb: Task(Of Guid)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Guid)
+  name.vb: Task(Of Guid)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Sections.Commands
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Sections.Commands
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands
+  fullName: HiveSync.Application.Contracts.Sections.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

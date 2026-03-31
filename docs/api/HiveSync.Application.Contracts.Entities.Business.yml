@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  id: HiveSync.Application.Contracts.Entities.Business
+  children:
+  - HiveSync.Application.Contracts.Entities.Business.Client
+  - HiveSync.Application.Contracts.Entities.Business.Project
+  - HiveSync.Application.Contracts.Entities.Business.ProjectExtensions
+  - HiveSync.Application.Contracts.Entities.Business.Section
+  - HiveSync.Application.Contracts.Entities.Business.SectionExtensions
+  - HiveSync.Application.Contracts.Entities.Business.Todo
+  - HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  - HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  - HiveSync.Application.Contracts.Entities.Business.TodoState
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Entities.Business.Client
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Client
+  href: HiveSync.Application.Contracts.Entities.Business.Client.html
+  name: Client
+  nameWithType: Client
+  fullName: HiveSync.Application.Contracts.Entities.Business.Client
+- uid: HiveSync.Application.Contracts.Entities.Business.Project
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Project
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Project.html
+  name: Project
+  nameWithType: Project
+  fullName: HiveSync.Application.Contracts.Entities.Business.Project
+- uid: HiveSync.Application.Contracts.Entities.Business.ProjectExtensions
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.ProjectExtensions
+  href: HiveSync.Application.Contracts.Entities.Business.ProjectExtensions.html
+  name: ProjectExtensions
+  nameWithType: ProjectExtensions
+  fullName: HiveSync.Application.Contracts.Entities.Business.ProjectExtensions
+- uid: HiveSync.Application.Contracts.Entities.Business.Section
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Section
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  name: Section
+  nameWithType: Section
+  fullName: HiveSync.Application.Contracts.Entities.Business.Section
+- uid: HiveSync.Application.Contracts.Entities.Business.SectionExtensions
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.SectionExtensions
+  href: HiveSync.Application.Contracts.Entities.Business.SectionExtensions.html
+  name: SectionExtensions
+  nameWithType: SectionExtensions
+  fullName: HiveSync.Application.Contracts.Entities.Business.SectionExtensions
+- uid: HiveSync.Application.Contracts.Entities.Business.Todo
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Todo
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Todo.html
+  name: Todo
+  nameWithType: Todo
+  fullName: HiveSync.Application.Contracts.Entities.Business.Todo
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+  href: HiveSync.Application.Contracts.Entities.Business.TodoExtensions.html
+  name: TodoExtensions
+  nameWithType: TodoExtensions
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoExtensions
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoPriority
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.TodoPriority.html
+  name: TodoPriority
+  nameWithType: TodoPriority
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoPriority
+- uid: HiveSync.Application.Contracts.Entities.Business.TodoState
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.TodoState
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.TodoState.html
+  name: TodoState
+  nameWithType: TodoState
+  fullName: HiveSync.Application.Contracts.Entities.Business.TodoState
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html

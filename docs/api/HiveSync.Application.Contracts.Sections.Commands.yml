@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Sections.Commands
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands
+  id: HiveSync.Application.Contracts.Sections.Commands
+  children:
+  - HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+  - HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand
+  - HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Sections.Commands
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands
+  fullName: HiveSync.Application.Contracts.Sections.Commands
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+  parent: HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand.html
+  name: AddSectionCommand
+  nameWithType: AddSectionCommand
+  fullName: HiveSync.Application.Contracts.Sections.Commands.AddSectionCommand
+- uid: HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand
+  parent: HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand.html
+  name: DeleteSectionCommand
+  nameWithType: DeleteSectionCommand
+  fullName: HiveSync.Application.Contracts.Sections.Commands.DeleteSectionCommand
+- uid: HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand
+  parent: HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand.html
+  name: UpdateSectionCommand
+  nameWithType: UpdateSectionCommand
+  fullName: HiveSync.Application.Contracts.Sections.Commands.UpdateSectionCommand
+- uid: HiveSync.Application.Contracts.Sections.Commands
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Sections.Commands
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands
+  fullName: HiveSync.Application.Contracts.Sections.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html

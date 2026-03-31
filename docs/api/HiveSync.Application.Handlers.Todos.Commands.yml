@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Todos.Commands
+  commentId: N:HiveSync.Application.Handlers.Todos.Commands
+  id: HiveSync.Application.Handlers.Todos.Commands
+  children:
+  - HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler
+  - HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  - HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Handlers.Todos.Commands
+  nameWithType: HiveSync.Application.Handlers.Todos.Commands
+  fullName: HiveSync.Application.Handlers.Todos.Commands
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler
+  href: HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler.html
+  name: AddTodoCommandHandler
+  nameWithType: AddTodoCommandHandler
+  fullName: HiveSync.Application.Handlers.Todos.Commands.AddTodoCommandHandler
+- uid: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+  href: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler.html
+  name: DeleteTodoCommandHandler
+  nameWithType: DeleteTodoCommandHandler
+  fullName: HiveSync.Application.Handlers.Todos.Commands.DeleteTodoCommandHandler
+- uid: HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler
+  href: HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler.html
+  name: UpdateTodoCommandHandler
+  nameWithType: UpdateTodoCommandHandler
+  fullName: HiveSync.Application.Handlers.Todos.Commands.UpdateTodoCommandHandler

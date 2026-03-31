@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  id: HiveSync.Application.Contracts.Interfaces
+  children:
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  - HiveSync.Application.Contracts.Interfaces.IOwner
+  - HiveSync.Application.Contracts.Interfaces.ITrackable
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+references:
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  name: IBaseEntity
+  nameWithType: IBaseEntity
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+- uid: HiveSync.Application.Contracts.Interfaces.IOwner
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IOwner
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.IOwner.html
+  name: IOwner
+  nameWithType: IOwner
+  fullName: HiveSync.Application.Contracts.Interfaces.IOwner
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackable
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html
+  name: ITrackable
+  nameWithType: ITrackable
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html
+  name: ITrackableExtensions
+  nameWithType: ITrackableExtensions
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html

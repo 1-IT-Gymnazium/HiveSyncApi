@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  id: HiveSync.Application.Contracts.Persistence
+  children:
+  - HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  - HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  - HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  - HiveSync.Application.Contracts.Persistence.IRepository`1
+  - HiveSync.Application.Contracts.Persistence.ISpecification`1
+  - HiveSync.Application.Contracts.Persistence.ISpecification`2
+  - HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  name: IListSpecification<T>
+  nameWithType: IListSpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T>
+  nameWithType.vb: IListSpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T)
+  name.vb: IListSpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  name: IListSpecification<T, TResult>
+  nameWithType: IListSpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>
+  nameWithType.vb: IListSpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult)
+  name.vb: IListSpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  name: IReadOnlyRepository<T>
+  nameWithType: IReadOnlyRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository<T>
+  nameWithType.vb: IReadOnlyRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository(Of T)
+  name.vb: IReadOnlyRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository`1
+    name: IReadOnlyRepository
+    href: HiveSync.Application.Contracts.Persistence.IReadOnlyRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IRepository`1
+  href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IRepository`1
+    name: IRepository
+    href: HiveSync.Application.Contracts.Persistence.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification`1
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  name: ISpecification<T>
+  nameWithType: ISpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T>
+  nameWithType.vb: ISpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T)
+  name.vb: ISpecification(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`1
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification`2
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  name: ISpecification<T, TResult>
+  nameWithType: ISpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>
+  nameWithType.vb: ISpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult)
+  name.vb: ISpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  name: ISystemRepository<T>
+  nameWithType: ISystemRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>
+  nameWithType.vb: ISystemRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T)
+  name.vb: ISystemRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+    name: ISystemRepository
+    href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Constants
+  commentId: N:HiveSync.Application.Contracts.Constants
+  id: HiveSync.Application.Contracts.Constants
+  children:
+  - HiveSync.Application.Contracts.Constants.SeedDataIds
+  - HiveSync.Application.Contracts.Constants.StringLengthConstants
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Constants
+  nameWithType: HiveSync.Application.Contracts.Constants
+  fullName: HiveSync.Application.Contracts.Constants
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Constants.SeedDataIds
+  commentId: T:HiveSync.Application.Contracts.Constants.SeedDataIds
+  href: HiveSync.Application.Contracts.Constants.SeedDataIds.html
+  name: SeedDataIds
+  nameWithType: SeedDataIds
+  fullName: HiveSync.Application.Contracts.Constants.SeedDataIds
+- uid: HiveSync.Application.Contracts.Constants.StringLengthConstants
+  commentId: T:HiveSync.Application.Contracts.Constants.StringLengthConstants
+  href: HiveSync.Application.Contracts.Constants.StringLengthConstants.html
+  name: StringLengthConstants
+  nameWithType: StringLengthConstants
+  fullName: HiveSync.Application.Contracts.Constants.StringLengthConstants

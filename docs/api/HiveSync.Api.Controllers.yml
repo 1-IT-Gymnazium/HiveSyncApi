@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api.Controllers
+  commentId: N:HiveSync.Api.Controllers
+  id: HiveSync.Api.Controllers
+  children:
+  - HiveSync.Api.Controllers.ProjectController
+  - HiveSync.Api.Controllers.SectionController
+  - HiveSync.Api.Controllers.TodoController
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Api.Controllers
+  nameWithType: HiveSync.Api.Controllers
+  fullName: HiveSync.Api.Controllers
+  type: Namespace
+  assemblies:
+  - HiveSync.Api
+references:
+- uid: HiveSync.Api.Controllers.ProjectController
+  commentId: T:HiveSync.Api.Controllers.ProjectController
+  href: HiveSync.Api.Controllers.ProjectController.html
+  name: ProjectController
+  nameWithType: ProjectController
+  fullName: HiveSync.Api.Controllers.ProjectController
+- uid: HiveSync.Api.Controllers.SectionController
+  commentId: T:HiveSync.Api.Controllers.SectionController
+  href: HiveSync.Api.Controllers.SectionController.html
+  name: SectionController
+  nameWithType: SectionController
+  fullName: HiveSync.Api.Controllers.SectionController
+- uid: HiveSync.Api.Controllers.TodoController
+  commentId: T:HiveSync.Api.Controllers.TodoController
+  href: HiveSync.Api.Controllers.TodoController.html
+  name: TodoController
+  nameWithType: TodoController
+  fullName: HiveSync.Api.Controllers.TodoController

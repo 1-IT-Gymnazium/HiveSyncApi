@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  id: ITrackableExtensions
+  parent: HiveSync.Application.Contracts.Interfaces
+  children:
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  langs:
+  - csharp
+  - vb
+  name: ITrackableExtensions
+  nameWithType: ITrackableExtensions
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ITrackableExtensions
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 31
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  summary: Extension methods for ITrackable to manage system/user auditing and soft deletes.
+  example: []
+  syntax:
+    content: public static class ITrackableExtensions
+    content.vb: Public Module ITrackableExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  id: SetCreateBySystem``1(``0,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetCreateBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem<T>(T, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetCreateBySystem
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 35
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetCreateBySystem<T>(this T trackable, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetCreateBySystem(Of T As {Class, ITrackable})(trackable As T, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem*
+  nameWithType.vb: ITrackableExtensions.SetCreateBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetCreateBySystem(Of T)(T, Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  id: SetModifyBySystem``1(``0,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetModifyBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem<T>(T, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetModifyBySystem
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 39
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetModifyBySystem<T>(this T trackable, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetModifyBySystem(Of T As {Class, ITrackable})(trackable As T, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem*
+  nameWithType.vb: ITrackableExtensions.SetModifyBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetModifyBySystem(Of T)(T, Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  id: SetDeleteBySystem``1(``0,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetDeleteBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem<T>(T, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetDeleteBySystem
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 43
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetDeleteBySystem<T>(this T trackable, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetDeleteBySystem(Of T As {Class, ITrackable})(trackable As T, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem*
+  nameWithType.vb: ITrackableExtensions.SetDeleteBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetDeleteBySystem(Of T)(T, Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  id: SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetCreateBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy<T>(T, string, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetCreateBy
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 47
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetCreateBy<T>(this T trackable, string author, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: author
+      type: System.String
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetCreateBy(Of T As {Class, ITrackable})(trackable As T, author As String, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy*
+  nameWithType.vb: ITrackableExtensions.SetCreateBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetCreateBy(Of T)(T, String, Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  id: SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetModifyBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy<T>(T, string, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetModifyBy
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 56
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetModifyBy<T>(this T trackable, string author, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: author
+      type: System.String
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetModifyBy(Of T As {Class, ITrackable})(trackable As T, author As String, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy*
+  nameWithType.vb: ITrackableExtensions.SetModifyBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetModifyBy(Of T)(T, String, Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  id: SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetDeleteBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy<T>(T, string, NodaTime.Instant)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SetDeleteBy
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ITrackable.cs
+    startLine: 64
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  syntax:
+    content: 'public static T SetDeleteBy<T>(this T trackable, string author, Instant now) where T : class, ITrackable'
+    parameters:
+    - id: trackable
+      type: '{T}'
+    - id: author
+      type: System.String
+    - id: now
+      type: NodaTime.Instant
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function SetDeleteBy(Of T As {Class, ITrackable})(trackable As T, author As String, now As Instant) As T
+  overload: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy*
+  nameWithType.vb: ITrackableExtensions.SetDeleteBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetDeleteBy(Of T)(T, String, Instant)
+references:
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  name: SetCreateBySystem
+  nameWithType: ITrackableExtensions.SetCreateBySystem
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: NodaTime.Instant
+  commentId: T:NodaTime.Instant
+  parent: NodaTime
+  isExternal: true
+  href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  name: Instant
+  nameWithType: Instant
+  fullName: NodaTime.Instant
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: NodaTime
+  commentId: N:NodaTime
+  isExternal: true
+  name: NodaTime
+  nameWithType: NodaTime
+  fullName: NodaTime
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  name: SetModifyBySystem
+  nameWithType: ITrackableExtensions.SetModifyBySystem
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  name: SetDeleteBySystem
+  nameWithType: ITrackableExtensions.SetDeleteBySystem
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  name: SetCreateBy
+  nameWithType: ITrackableExtensions.SetCreateBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  name: SetModifyBy
+  nameWithType: ITrackableExtensions.SetModifyBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  name: SetDeleteBy
+  nameWithType: ITrackableExtensions.SetDeleteBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities
+  commentId: N:HiveSync.Utilities
+  id: HiveSync.Utilities
+  children:
+  - HiveSync.Utilities.ApplicationMapper
+  - HiveSync.Utilities.ClaimsPrincipalExtensions
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Utilities
+  nameWithType: HiveSync.Utilities
+  fullName: HiveSync.Utilities
+  type: Namespace
+  assemblies:
+  - HiveSync.Utilities
+references:
+- uid: HiveSync.Utilities.ApplicationMapper
+  commentId: T:HiveSync.Utilities.ApplicationMapper
+  href: HiveSync.Utilities.ApplicationMapper.html
+  name: ApplicationMapper
+  nameWithType: ApplicationMapper
+  fullName: HiveSync.Utilities.ApplicationMapper
+- uid: HiveSync.Utilities.ClaimsPrincipalExtensions
+  commentId: T:HiveSync.Utilities.ClaimsPrincipalExtensions
+  href: HiveSync.Utilities.ClaimsPrincipalExtensions.html
+  name: ClaimsPrincipalExtensions
+  nameWithType: ClaimsPrincipalExtensions
+  fullName: HiveSync.Utilities.ClaimsPrincipalExtensions

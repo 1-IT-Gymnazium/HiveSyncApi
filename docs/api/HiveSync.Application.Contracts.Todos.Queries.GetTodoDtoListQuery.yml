@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  id: GetTodoDtoListQuery
+  parent: HiveSync.Application.Contracts.Todos.Queries
+  children:
+  - HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor
+  langs:
+  - csharp
+  - vb
+  name: GetTodoDtoListQuery
+  nameWithType: GetTodoDtoListQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Queries/GetTodoDtoListQuery.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: GetTodoDtoListQuery
+    path: ../src/HiveSync.Application.Contracts/Todos/Queries/GetTodoDtoListQuery.cs
+    startLine: 7
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Queries
+  summary: Query for retrieving a list of all Todo items with detailed information.
+  example: []
+  syntax:
+    content: 'public sealed record GetTodoDtoListQuery : IRequest<IEnumerable<TodoDetailDto?>>, IBaseRequest, IEquatable<GetTodoDtoListQuery>'
+    content.vb: Public NotInheritable Class GetTodoDtoListQuery Implements IRequest(Of IEnumerable(Of TodoDetailDto)), IBaseRequest, IEquatable(Of GetTodoDtoListQuery)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{System.Collections.Generic.IEnumerable{HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto}}
+  - MediatR.IBaseRequest
+  - System.IEquatable{HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor
+  commentId: M:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor
+  id: '#ctor'
+  parent: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  langs:
+  - csharp
+  - vb
+  name: GetTodoDtoListQuery()
+  nameWithType: GetTodoDtoListQuery.GetTodoDtoListQuery()
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.GetTodoDtoListQuery()
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Todos/Queries/GetTodoDtoListQuery.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application.Contracts/Todos/Queries/GetTodoDtoListQuery.cs
+    startLine: 7
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Todos.Queries
+  summary: Query for retrieving a list of all Todo items with detailed information.
+  example: []
+  syntax:
+    content: public GetTodoDtoListQuery()
+    content.vb: Public Sub New()
+  overload: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor*
+  nameWithType.vb: GetTodoDtoListQuery.New()
+  fullName.vb: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.New()
+  name.vb: New()
+references:
+- uid: HiveSync.Application.Contracts.Todos.Queries
+  commentId: N:HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Queries
+  nameWithType: HiveSync.Application.Contracts.Todos.Queries
+  fullName: HiveSync.Application.Contracts.Todos.Queries
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{System.Collections.Generic.IEnumerable{HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto}}
+  commentId: T:MediatR.IRequest{System.Collections.Generic.IEnumerable{HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IRequest<IEnumerable<TodoDetailDto>>
+  nameWithType: IRequest<IEnumerable<TodoDetailDto>>
+  fullName: MediatR.IRequest<System.Collections.Generic.IEnumerable<HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto>>
+  nameWithType.vb: IRequest(Of IEnumerable(Of TodoDetailDto))
+  fullName.vb: MediatR.IRequest(Of System.Collections.Generic.IEnumerable(Of HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto))
+  name.vb: IRequest(Of IEnumerable(Of TodoDetailDto))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+    name: TodoDetailDto
+    href: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto
+    name: TodoDetailDto
+    href: HiveSync.Application.Contracts.Todos.Queries.Dto.TodoDetailDto.html
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery}
+  commentId: T:System.IEquatable{HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GetTodoDtoListQuery>
+  nameWithType: IEquatable<GetTodoDtoListQuery>
+  fullName: System.IEquatable<HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery>
+  nameWithType.vb: IEquatable(Of GetTodoDtoListQuery)
+  fullName.vb: System.IEquatable(Of HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery)
+  name.vb: IEquatable(Of GetTodoDtoListQuery)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+    name: GetTodoDtoListQuery
+    href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+    name: GetTodoDtoListQuery
+    href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor*
+  commentId: Overload:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.#ctor
+  href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.html#HiveSync_Application_Contracts_Todos_Queries_GetTodoDtoListQuery__ctor
+  name: GetTodoDtoListQuery
+  nameWithType: GetTodoDtoListQuery.GetTodoDtoListQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.GetTodoDtoListQuery
+  nameWithType.vb: GetTodoDtoListQuery.New
+  fullName.vb: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.New
+  name.vb: New

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api.Controllers.Auth
+  commentId: N:HiveSync.Api.Controllers.Auth
+  id: HiveSync.Api.Controllers.Auth
+  children:
+  - HiveSync.Api.Controllers.Auth.AuthController
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Api.Controllers.Auth
+  nameWithType: HiveSync.Api.Controllers.Auth
+  fullName: HiveSync.Api.Controllers.Auth
+  type: Namespace
+  assemblies:
+  - HiveSync.Api
+references:
+- uid: HiveSync.Api.Controllers.Auth.AuthController
+  commentId: T:HiveSync.Api.Controllers.Auth.AuthController
+  href: HiveSync.Api.Controllers.Auth.AuthController.html
+  name: AuthController
+  nameWithType: AuthController
+  fullName: HiveSync.Api.Controllers.Auth.AuthController
