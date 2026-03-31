@@ -25,6 +25,11 @@ public class Program
     {
         var builder = CreateHostBuilder(args);
         var host = builder.Build();
+
+        // TEMPORARY DEBUG - remove after fixing
+        var config = host.Services.GetRequiredService<IConfiguration>();
+        var cs = config.GetConnectionString("DefaultConnection");
+        Console.WriteLine($"CONNECTION STRING: {cs}");
         await MigrateDb(host);
         await host.RunAsync();
     }
