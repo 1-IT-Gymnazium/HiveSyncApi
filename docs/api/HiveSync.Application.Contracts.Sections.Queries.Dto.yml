@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Sections.Queries.Dto
+  commentId: N:HiveSync.Application.Contracts.Sections.Queries.Dto
+  id: HiveSync.Application.Contracts.Sections.Queries.Dto
+  children:
+  - HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Sections.Queries.Dto
+  nameWithType: HiveSync.Application.Contracts.Sections.Queries.Dto
+  fullName: HiveSync.Application.Contracts.Sections.Queries.Dto
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto
+  commentId: T:HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto
+  href: HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto.html
+  name: SectionDetailDto
+  nameWithType: SectionDetailDto
+  fullName: HiveSync.Application.Contracts.Sections.Queries.Dto.SectionDetailDto

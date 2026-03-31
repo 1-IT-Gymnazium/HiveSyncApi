@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`1
+  id: IListSpecification`1
+  parent: HiveSync.Application.Contracts.Persistence
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IListSpecification<T>
+  nameWithType: IListSpecification<T>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T>
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IListSpecification
+    path: ../src/HiveSync.Application.Contracts/Persistence/IListSpecification.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Marker interface for list specifications returning the same type <code class="typeparamref">T</code> as the result.
+  example: []
+  syntax:
+    content: 'public interface IListSpecification<T> : IListSpecification<T, T>'
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    content.vb: Public Interface IListSpecification(Of T) Inherits IListSpecification(Of T, T)
+  derivedClasses:
+  - HiveSync.Application.Specifications.DefaultInboxSpecification
+  inheritedMembers:
+  - HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{T}}.ApplyAsync(System.Linq.IQueryable{{T}},System.Threading.CancellationToken)
+  nameWithType.vb: IListSpecification(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T)
+  name.vb: IListSpecification(Of T)
+references:
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{T}}.ApplyAsync(System.Linq.IQueryable{{T}},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IListSpecification{`0,`0}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{T}}
+  definition: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync(IQueryable<T>, CancellationToken)
+  nameWithType: IListSpecification<T, T>.ApplyAsync(IQueryable<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, T>.ApplyAsync(System.Linq.IQueryable<T>, System.Threading.CancellationToken)
+  nameWithType.vb: IListSpecification(Of T, T).ApplyAsync(IQueryable(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, T).ApplyAsync(System.Linq.IQueryable(Of T), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of T), CancellationToken)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification{`0,`0}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification{`0,`0}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync(IQueryable<T>, CancellationToken)
+  nameWithType: IListSpecification<T, TResult>.ApplyAsync(IQueryable<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>.ApplyAsync(System.Linq.IQueryable<T>, System.Threading.CancellationToken)
+  nameWithType.vb: IListSpecification(Of T, TResult).ApplyAsync(IQueryable(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult).ApplyAsync(System.Linq.IQueryable(Of T), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of T), CancellationToken)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html#HiveSync_Application_Contracts_Persistence_IListSpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification{{T},{T}}
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification{`0,`0}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  name: IListSpecification<T, T>
+  nameWithType: IListSpecification<T, T>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, T>
+  nameWithType.vb: IListSpecification(Of T, T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, T)
+  name.vb: IListSpecification(Of T, T)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.IListSpecification`2
+  href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  name: IListSpecification<T, TResult>
+  nameWithType: IListSpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.IListSpecification<T, TResult>
+  nameWithType.vb: IListSpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.IListSpecification(Of T, TResult)
+  name.vb: IListSpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.IListSpecification`2
+    name: IListSpecification
+    href: HiveSync.Application.Contracts.Persistence.IListSpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

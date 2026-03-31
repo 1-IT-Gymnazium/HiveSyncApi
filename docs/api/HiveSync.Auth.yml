@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Auth
+  commentId: N:HiveSync.Auth
+  id: HiveSync.Auth
+  children:
+  - HiveSync.Auth.Program
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Auth
+  nameWithType: HiveSync.Auth
+  fullName: HiveSync.Auth
+  type: Namespace
+  assemblies:
+  - HiveSync.Auth
+references:
+- uid: HiveSync.Auth.Program
+  commentId: T:HiveSync.Auth.Program
+  href: HiveSync.Auth.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: HiveSync.Auth.Program

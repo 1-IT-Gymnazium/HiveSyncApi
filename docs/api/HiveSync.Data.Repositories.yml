@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Data.Repositories
+  commentId: N:HiveSync.Data.Repositories
+  id: HiveSync.Data.Repositories
+  children:
+  - HiveSync.Data.Repositories.EfRepository`1
+  - HiveSync.Data.Repositories.EfSystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Data.Repositories
+  nameWithType: HiveSync.Data.Repositories
+  fullName: HiveSync.Data.Repositories
+  type: Namespace
+  assemblies:
+  - HiveSync.Data
+references:
+- uid: HiveSync.Data.Repositories.EfRepository`1
+  commentId: T:HiveSync.Data.Repositories.EfRepository`1
+  href: HiveSync.Data.Repositories.EfRepository-1.html
+  name: EfRepository<T>
+  nameWithType: EfRepository<T>
+  fullName: HiveSync.Data.Repositories.EfRepository<T>
+  nameWithType.vb: EfRepository(Of T)
+  fullName.vb: HiveSync.Data.Repositories.EfRepository(Of T)
+  name.vb: EfRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Data.Repositories.EfRepository`1
+    name: EfRepository
+    href: HiveSync.Data.Repositories.EfRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Data.Repositories.EfRepository`1
+    name: EfRepository
+    href: HiveSync.Data.Repositories.EfRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Data.Repositories.EfSystemRepository`1
+  commentId: T:HiveSync.Data.Repositories.EfSystemRepository`1
+  href: HiveSync.Data.Repositories.EfSystemRepository-1.html
+  name: EfSystemRepository<T>
+  nameWithType: EfSystemRepository<T>
+  fullName: HiveSync.Data.Repositories.EfSystemRepository<T>
+  nameWithType.vb: EfSystemRepository(Of T)
+  fullName.vb: HiveSync.Data.Repositories.EfSystemRepository(Of T)
+  name.vb: EfSystemRepository(Of T)
+  spec.csharp:
+  - uid: HiveSync.Data.Repositories.EfSystemRepository`1
+    name: EfSystemRepository
+    href: HiveSync.Data.Repositories.EfSystemRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Data.Repositories.EfSystemRepository`1
+    name: EfSystemRepository
+    href: HiveSync.Data.Repositories.EfSystemRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

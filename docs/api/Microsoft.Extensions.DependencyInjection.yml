@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  id: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.IScopedService
+  - Microsoft.Extensions.DependencyInjection.ISingletonService
+  - Microsoft.Extensions.DependencyInjection.ITransientService
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  type: Namespace
+  assemblies:
+  - CodeHive.Utility
+references:
+- uid: Microsoft.Extensions.DependencyInjection.ITransientService
+  commentId: T:Microsoft.Extensions.DependencyInjection.ITransientService
+  href: Microsoft.Extensions.DependencyInjection.ITransientService.html
+  name: ITransientService
+  nameWithType: ITransientService
+  fullName: Microsoft.Extensions.DependencyInjection.ITransientService
+- uid: Microsoft.Extensions.DependencyInjection.IScopedService
+  commentId: T:Microsoft.Extensions.DependencyInjection.IScopedService
+  href: Microsoft.Extensions.DependencyInjection.IScopedService.html
+  name: IScopedService
+  nameWithType: IScopedService
+  fullName: Microsoft.Extensions.DependencyInjection.IScopedService
+- uid: Microsoft.Extensions.DependencyInjection.ISingletonService
+  commentId: T:Microsoft.Extensions.DependencyInjection.ISingletonService
+  href: Microsoft.Extensions.DependencyInjection.ISingletonService.html
+  name: ISingletonService
+  nameWithType: ISingletonService
+  fullName: Microsoft.Extensions.DependencyInjection.ISingletonService

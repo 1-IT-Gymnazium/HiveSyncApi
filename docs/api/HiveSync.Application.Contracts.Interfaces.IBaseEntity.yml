@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  id: IBaseEntity
+  parent: HiveSync.Application.Contracts.Interfaces
+  children:
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+  langs:
+  - csharp
+  - vb
+  name: IBaseEntity
+  nameWithType: IBaseEntity
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/IBaseEntity.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IBaseEntity
+    path: ../src/HiveSync.Application.Contracts.Interfaces/IBaseEntity.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  summary: >-
+    Represents a base entity with tracking, ownership, and tenancy information.
+
+    All core domain entities should implement this interface.
+  example: []
+  syntax:
+    content: 'public interface IBaseEntity : ITrackable, IOwner'
+    content.vb: Public Interface IBaseEntity Inherits ITrackable, IOwner
+  derivedClasses:
+  - HiveSync.Application.Contracts.Entities.Business.Client
+  - HiveSync.Application.Contracts.Entities.Business.Project
+  - HiveSync.Application.Contracts.Entities.Business.Section
+  - HiveSync.Application.Contracts.Entities.Business.Todo
+  - HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+  inheritedMembers:
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedAt
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedBy
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedAt
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedBy
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt
+  - HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedBy
+  - HiveSync.Application.Contracts.Interfaces.IOwner.OwnerId
+  extensionMethods:
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(System.String,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(System.String,NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(NodaTime.Instant)
+  - HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(System.String,NodaTime.Instant)
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+  commentId: P:HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+  id: Id
+  parent: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IBaseEntity.Id
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/IBaseEntity.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Id
+    path: ../src/HiveSync.Application.Contracts.Interfaces/IBaseEntity.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Contracts.Interfaces
+  summary: Gets or sets the unique identifier of the entity.
+  example: []
+  syntax:
+    content: Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Property Id As Guid
+  overload: HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id*
+references:
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedAt
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedAt
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_CreatedAt
+  name: CreatedAt
+  nameWithType: ITrackable.CreatedAt
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedAt
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedBy
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedBy
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_CreatedBy
+  name: CreatedBy
+  nameWithType: ITrackable.CreatedBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.CreatedBy
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedAt
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedAt
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_ModifiedAt
+  name: ModifiedAt
+  nameWithType: ITrackable.ModifiedAt
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedAt
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedBy
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedBy
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_ModifiedBy
+  name: ModifiedBy
+  nameWithType: ITrackable.ModifiedBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.ModifiedBy
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_DeletedAt
+  name: DeletedAt
+  nameWithType: ITrackable.DeletedAt
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedAt
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedBy
+  commentId: P:HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedBy
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackable
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html#HiveSync_Application_Contracts_Interfaces_ITrackable_DeletedBy
+  name: DeletedBy
+  nameWithType: ITrackable.DeletedBy
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable.DeletedBy
+- uid: HiveSync.Application.Contracts.Interfaces.IOwner.OwnerId
+  commentId: P:HiveSync.Application.Contracts.Interfaces.IOwner.OwnerId
+  parent: HiveSync.Application.Contracts.Interfaces.IOwner
+  href: HiveSync.Application.Contracts.Interfaces.IOwner.html#HiveSync_Application_Contracts_Interfaces_IOwner_OwnerId
+  name: OwnerId
+  nameWithType: IOwner.OwnerId
+  fullName: HiveSync.Application.Contracts.Interfaces.IOwner.OwnerId
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  name: SetCreateBySystem<IBaseEntity>(IBaseEntity, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBySystem<IBaseEntity>(IBaseEntity, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetCreateBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  name.vb: SetCreateBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetCreateBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetCreateBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  name: SetCreateBy<IBaseEntity>(IBaseEntity, string, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBy<IBaseEntity>(IBaseEntity, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetCreateBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, String, NodaTime.Instant)
+  name.vb: SetCreateBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetCreateBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetCreateBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  name: SetDeleteBySystem<IBaseEntity>(IBaseEntity, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBySystem<IBaseEntity>(IBaseEntity, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetDeleteBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  name.vb: SetDeleteBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetDeleteBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetDeleteBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  name: SetDeleteBy<IBaseEntity>(IBaseEntity, string, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBy<IBaseEntity>(IBaseEntity, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetDeleteBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, String, NodaTime.Instant)
+  name.vb: SetDeleteBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetDeleteBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetDeleteBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  name: SetModifyBySystem<IBaseEntity>(IBaseEntity, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBySystem<IBaseEntity>(IBaseEntity, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetModifyBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, NodaTime.Instant)
+  name.vb: SetModifyBySystem(Of IBaseEntity)(IBaseEntity, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetModifyBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,NodaTime.Instant)
+    name: SetModifyBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  parent: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  definition: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  name: SetModifyBy<IBaseEntity>(IBaseEntity, string, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBy<IBaseEntity>(IBaseEntity, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy<HiveSync.Application.Contracts.Interfaces.IBaseEntity>(HiveSync.Application.Contracts.Interfaces.IBaseEntity, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetModifyBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy(Of HiveSync.Application.Contracts.Interfaces.IBaseEntity)(HiveSync.Application.Contracts.Interfaces.IBaseEntity, String, NodaTime.Instant)
+  name.vb: SetModifyBy(Of IBaseEntity)(IBaseEntity, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetModifyBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: '>'
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(HiveSync.Application.Contracts.Interfaces.IBaseEntity,System.String,NodaTime.Instant)
+    name: SetModifyBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: )
+  - name: (
+  - uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+    name: IBaseEntity
+    href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackable
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html
+  name: ITrackable
+  nameWithType: ITrackable
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable
+- uid: HiveSync.Application.Contracts.Interfaces.IOwner
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IOwner
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.IOwner.html
+  name: IOwner
+  nameWithType: IOwner
+  fullName: HiveSync.Application.Contracts.Interfaces.IOwner
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  name: SetCreateBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem<T>(T, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetCreateBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetCreateBySystem(Of T)(T, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+    name: SetCreateBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBySystem``1(``0,NodaTime.Instant)
+    name: SetCreateBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html
+  name: ITrackableExtensions
+  nameWithType: ITrackableExtensions
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  name: SetCreateBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetCreateBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy<T>(T, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetCreateBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetCreateBy(Of T)(T, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+    name: SetCreateBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetCreateBy``1(``0,System.String,NodaTime.Instant)
+    name: SetCreateBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetCreateBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  name: SetDeleteBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem<T>(T, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetDeleteBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetDeleteBySystem(Of T)(T, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+    name: SetDeleteBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBySystem``1(``0,NodaTime.Instant)
+    name: SetDeleteBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  name: SetDeleteBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetDeleteBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy<T>(T, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetDeleteBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetDeleteBy(Of T)(T, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+    name: SetDeleteBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetDeleteBy``1(``0,System.String,NodaTime.Instant)
+    name: SetDeleteBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetDeleteBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  name: SetModifyBySystem<T>(T, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBySystem<T>(T, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem<T>(T, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetModifyBySystem(Of T)(T, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem(Of T)(T, NodaTime.Instant)
+  name.vb: SetModifyBySystem(Of T)(T, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+    name: SetModifyBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBySystem``1(``0,NodaTime.Instant)
+    name: SetModifyBySystem
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBySystem__1___0_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  commentId: M:HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  name: SetModifyBy<T>(T, string, Instant)
+  nameWithType: ITrackableExtensions.SetModifyBy<T>(T, string, Instant)
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy<T>(T, string, NodaTime.Instant)
+  nameWithType.vb: ITrackableExtensions.SetModifyBy(Of T)(T, String, Instant)
+  fullName.vb: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy(Of T)(T, String, NodaTime.Instant)
+  name.vb: SetModifyBy(Of T)(T, String, Instant)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+    name: SetModifyBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.SetModifyBy``1(``0,System.String,NodaTime.Instant)
+    name: SetModifyBy
+    href: HiveSync.Application.Contracts.Interfaces.ITrackableExtensions.html#HiveSync_Application_Contracts_Interfaces_ITrackableExtensions_SetModifyBy__1___0_System_String_NodaTime_Instant_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: NodaTime.Instant
+    name: Instant
+    isExternal: true
+    href: https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id*
+  commentId: Overload:HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+  href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html#HiveSync_Application_Contracts_Interfaces_IBaseEntity_Id
+  name: Id
+  nameWithType: IBaseEntity.Id
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

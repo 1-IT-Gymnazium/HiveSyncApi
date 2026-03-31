@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application
+  commentId: N:HiveSync.Application
+  id: HiveSync.Application
+  children:
+  - HiveSync.Application.CurrentUserProvider
+  - HiveSync.Application.MediatrHandlerResolver
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application
+  nameWithType: HiveSync.Application
+  fullName: HiveSync.Application
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.CurrentUserProvider
+  commentId: T:HiveSync.Application.CurrentUserProvider
+  href: HiveSync.Application.CurrentUserProvider.html
+  name: CurrentUserProvider
+  nameWithType: CurrentUserProvider
+  fullName: HiveSync.Application.CurrentUserProvider
+- uid: HiveSync.Application.MediatrHandlerResolver
+  commentId: T:HiveSync.Application.MediatrHandlerResolver
+  href: HiveSync.Application.MediatrHandlerResolver.html
+  name: MediatrHandlerResolver
+  nameWithType: MediatrHandlerResolver
+  fullName: HiveSync.Application.MediatrHandlerResolver

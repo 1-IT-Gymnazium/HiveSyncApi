@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Projects.Queries
+  commentId: N:HiveSync.Application.Contracts.Projects.Queries
+  id: HiveSync.Application.Contracts.Projects.Queries
+  children:
+  - HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery
+  - HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Projects.Queries
+  nameWithType: HiveSync.Application.Contracts.Projects.Queries
+  fullName: HiveSync.Application.Contracts.Projects.Queries
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery
+  commentId: T:HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery
+  parent: HiveSync.Application.Contracts.Projects.Queries
+  href: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery.html
+  name: GetProjectDtoListQuery
+  nameWithType: GetProjectDtoListQuery
+  fullName: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoListQuery
+- uid: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery
+  commentId: T:HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery
+  parent: HiveSync.Application.Contracts.Projects.Queries
+  href: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery.html
+  name: GetProjectDtoQuery
+  nameWithType: GetProjectDtoQuery
+  fullName: HiveSync.Application.Contracts.Projects.Queries.GetProjectDtoQuery
+- uid: HiveSync.Application.Contracts.Projects.Queries
+  commentId: N:HiveSync.Application.Contracts.Projects.Queries
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Queries
+  nameWithType: HiveSync.Application.Contracts.Projects.Queries
+  fullName: HiveSync.Application.Contracts.Projects.Queries
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Projects.Queries.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Projects.Queries.html

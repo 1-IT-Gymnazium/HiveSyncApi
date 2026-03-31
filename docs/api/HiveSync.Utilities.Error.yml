@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Error
+  commentId: N:HiveSync.Utilities.Error
+  id: HiveSync.Utilities.Error
+  children:
+  - HiveSync.Utilities.Error.ApiErrorItem
+  - HiveSync.Utilities.Error.ApiErrorResponse
+  - HiveSync.Utilities.Error.ApiValidationException
+  - HiveSync.Utilities.Error.ConflictException
+  - HiveSync.Utilities.Error.ErrorMessages
+  - HiveSync.Utilities.Error.ExceptionMiddleware
+  - HiveSync.Utilities.Error.ForbiddenException
+  - HiveSync.Utilities.Error.HiveSyncException
+  - HiveSync.Utilities.Error.NotFoundException
+  - HiveSync.Utilities.Error.UnauthorizedException
+  - HiveSync.Utilities.Error.ValidationErrorBuilder
+  - HiveSync.Utilities.Error.ValidationErrorItem
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Utilities.Error
+  nameWithType: HiveSync.Utilities.Error
+  fullName: HiveSync.Utilities.Error
+  type: Namespace
+  assemblies:
+  - HiveSync.Utilities
+references:
+- uid: HiveSync.Utilities.Error.ApiErrorItem
+  commentId: T:HiveSync.Utilities.Error.ApiErrorItem
+  href: HiveSync.Utilities.Error.ApiErrorItem.html
+  name: ApiErrorItem
+  nameWithType: ApiErrorItem
+  fullName: HiveSync.Utilities.Error.ApiErrorItem
+- uid: HiveSync.Utilities.Error.ApiErrorResponse
+  commentId: T:HiveSync.Utilities.Error.ApiErrorResponse
+  href: HiveSync.Utilities.Error.ApiErrorResponse.html
+  name: ApiErrorResponse
+  nameWithType: ApiErrorResponse
+  fullName: HiveSync.Utilities.Error.ApiErrorResponse
+- uid: HiveSync.Utilities.Error.ApiValidationException
+  commentId: T:HiveSync.Utilities.Error.ApiValidationException
+  href: HiveSync.Utilities.Error.ApiValidationException.html
+  name: ApiValidationException
+  nameWithType: ApiValidationException
+  fullName: HiveSync.Utilities.Error.ApiValidationException
+- uid: HiveSync.Utilities.Error.ConflictException
+  commentId: T:HiveSync.Utilities.Error.ConflictException
+  href: HiveSync.Utilities.Error.ConflictException.html
+  name: ConflictException
+  nameWithType: ConflictException
+  fullName: HiveSync.Utilities.Error.ConflictException
+- uid: HiveSync.Utilities.Error.ErrorMessages
+  commentId: T:HiveSync.Utilities.Error.ErrorMessages
+  href: HiveSync.Utilities.Error.ErrorMessages.html
+  name: ErrorMessages
+  nameWithType: ErrorMessages
+  fullName: HiveSync.Utilities.Error.ErrorMessages
+- uid: HiveSync.Utilities.Error.ExceptionMiddleware
+  commentId: T:HiveSync.Utilities.Error.ExceptionMiddleware
+  href: HiveSync.Utilities.Error.ExceptionMiddleware.html
+  name: ExceptionMiddleware
+  nameWithType: ExceptionMiddleware
+  fullName: HiveSync.Utilities.Error.ExceptionMiddleware
+- uid: HiveSync.Utilities.Error.ForbiddenException
+  commentId: T:HiveSync.Utilities.Error.ForbiddenException
+  href: HiveSync.Utilities.Error.ForbiddenException.html
+  name: ForbiddenException
+  nameWithType: ForbiddenException
+  fullName: HiveSync.Utilities.Error.ForbiddenException
+- uid: HiveSync.Utilities.Error.HiveSyncException
+  commentId: T:HiveSync.Utilities.Error.HiveSyncException
+  parent: HiveSync.Utilities.Error
+  href: HiveSync.Utilities.Error.HiveSyncException.html
+  name: HiveSyncException
+  nameWithType: HiveSyncException
+  fullName: HiveSync.Utilities.Error.HiveSyncException
+- uid: HiveSync.Utilities.Error.NotFoundException
+  commentId: T:HiveSync.Utilities.Error.NotFoundException
+  href: HiveSync.Utilities.Error.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: HiveSync.Utilities.Error.NotFoundException
+- uid: HiveSync.Utilities.Error.UnauthorizedException
+  commentId: T:HiveSync.Utilities.Error.UnauthorizedException
+  href: HiveSync.Utilities.Error.UnauthorizedException.html
+  name: UnauthorizedException
+  nameWithType: UnauthorizedException
+  fullName: HiveSync.Utilities.Error.UnauthorizedException
+- uid: HiveSync.Utilities.Error.ValidationErrorBuilder
+  commentId: T:HiveSync.Utilities.Error.ValidationErrorBuilder
+  parent: HiveSync.Utilities.Error
+  href: HiveSync.Utilities.Error.ValidationErrorBuilder.html
+  name: ValidationErrorBuilder
+  nameWithType: ValidationErrorBuilder
+  fullName: HiveSync.Utilities.Error.ValidationErrorBuilder
+- uid: HiveSync.Utilities.Error.ValidationErrorItem
+  commentId: T:HiveSync.Utilities.Error.ValidationErrorItem
+  href: HiveSync.Utilities.Error.ValidationErrorItem.html
+  name: ValidationErrorItem
+  nameWithType: ValidationErrorItem
+  fullName: HiveSync.Utilities.Error.ValidationErrorItem
+- uid: HiveSync.Utilities.Error
+  commentId: N:HiveSync.Utilities.Error
+  href: HiveSync.html
+  name: HiveSync.Utilities.Error
+  nameWithType: HiveSync.Utilities.Error
+  fullName: HiveSync.Utilities.Error
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Error
+    name: Error
+    href: HiveSync.Utilities.Error.html

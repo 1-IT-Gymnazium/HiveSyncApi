@@ -1,0 +1,516 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  commentId: T:HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  id: RegisterModel
+  parent: HiveSync.Api.Controllers.Auth.Models
+  children:
+  - HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName
+  - HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+  - HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+  langs:
+  - csharp
+  - vb
+  name: RegisterModel
+  nameWithType: RegisterModel
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: RegisterModel
+    path: ../src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+    startLine: 10
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api.Controllers.Auth.Models
+  summary: >-
+    Model used for user registration.
+
+    Contains email, password, and display name.
+  example: []
+  syntax:
+    content: public class RegisterModel
+    content.vb: Public Class RegisterModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+  commentId: P:HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+  id: Email
+  parent: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: RegisterModel.Email
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Email
+    path: ../src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+    startLine: 15
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api.Controllers.Auth.Models
+  summary: User's email address.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [JsonProperty("email")]
+
+      [EmailAddress]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <JsonProperty("email")>
+
+      <EmailAddress>
+
+      Public Property Email As String
+  overload: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: email
+  - type: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+    ctor: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
+    arguments: []
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+  commentId: P:HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+  id: Password
+  parent: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: RegisterModel.Password
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Password
+    path: ../src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+    startLine: 23
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api.Controllers.Auth.Models
+  summary: User's password. Should follow configured password policy.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [JsonProperty("password")]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <JsonProperty("password")>
+
+      Public Property Password As String
+  overload: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: password
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName
+  commentId: P:HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName
+  id: DisplayName
+  parent: HiveSync.Api.Controllers.Auth.Models.RegisterModel
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: RegisterModel.DisplayName
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: DisplayName
+    path: ../src/HiveSync.Api/Controllers/Auth/Models/RegisterModel.cs
+    startLine: 31
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api.Controllers.Auth.Models
+  summary: Display name for the user.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [JsonProperty("displayName")]
+
+      public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <JsonProperty("displayName")>
+
+      Public Property DisplayName As String
+  overload: HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: displayName
+references:
+- uid: HiveSync.Api.Controllers.Auth.Models
+  commentId: N:HiveSync.Api.Controllers.Auth.Models
+  href: HiveSync.html
+  name: HiveSync.Api.Controllers.Auth.Models
+  nameWithType: HiveSync.Api.Controllers.Auth.Models
+  fullName: HiveSync.Api.Controllers.Auth.Models
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+  - name: .
+  - uid: HiveSync.Api.Controllers
+    name: Controllers
+    href: HiveSync.Api.Controllers.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth
+    name: Auth
+    href: HiveSync.Api.Controllers.Auth.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth.Models
+    name: Models
+    href: HiveSync.Api.Controllers.Auth.Models.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+  - name: .
+  - uid: HiveSync.Api.Controllers
+    name: Controllers
+    href: HiveSync.Api.Controllers.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth
+    name: Auth
+    href: HiveSync.Api.Controllers.Auth.html
+  - name: .
+  - uid: HiveSync.Api.Controllers.Auth.Models
+    name: Models
+    href: HiveSync.Api.Controllers.Auth.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email*
+  commentId: Overload:HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+  href: HiveSync.Api.Controllers.Auth.Models.RegisterModel.html#HiveSync_Api_Controllers_Auth_Models_RegisterModel_Email
+  name: Email
+  nameWithType: RegisterModel.Email
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Email
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password*
+  commentId: Overload:HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+  href: HiveSync.Api.Controllers.Auth.Models.RegisterModel.html#HiveSync_Api_Controllers_Auth_Models_RegisterModel_Password
+  name: Password
+  nameWithType: RegisterModel.Password
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.Password
+- uid: HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName*
+  commentId: Overload:HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName
+  href: HiveSync.Api.Controllers.Auth.Models.RegisterModel.html#HiveSync_Api_Controllers_Auth_Models_RegisterModel_DisplayName
+  name: DisplayName
+  nameWithType: RegisterModel.DisplayName
+  fullName: HiveSync.Api.Controllers.Auth.Models.RegisterModel.DisplayName

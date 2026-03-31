@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Todo | HiveSync Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Todo | HiveSync Docs ">
+      
+      <meta name="description" content="Represents a task or Todo item in a project management system. Implements  to track ownership.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="HiveSync Docs">
+            HiveSync Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="HiveSync.Application.Contracts.Entities.Business.Todo">
+
+
+
+  <h1 id="HiveSync_Application_Contracts_Entities_Business_Todo" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo" class="text-break">
+Class Todo  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="HiveSync.html">HiveSync</a>.<a class="xref" href="HiveSync.Application.html">Application</a>.<a class="xref" href="HiveSync.Application.Contracts.html">Contracts</a>.<a class="xref" href="HiveSync.Application.Contracts.Entities.html">Entities</a>.<a class="xref" href="HiveSync.Application.Contracts.Entities.Business.html">Business</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HiveSync.Application.Contracts.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a task or Todo item in a project management system.
+Implements <a class="xref" href="HiveSync.Application.Contracts.Interfaces.IBaseEntity.html">IBaseEntity</a> to track ownership.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Table(&quot;Todo&quot;)]
+public class Todo : IBaseEntity, ITrackable, IOwner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Todo</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="HiveSync.Application.Contracts.Interfaces.IBaseEntity.html">IBaseEntity</a></div>
+      <div><a class="xref" href="HiveSync.Application.Contracts.Interfaces.ITrackable.html">ITrackable</a></div>
+      <div><a class="xref" href="HiveSync.Application.Contracts.Interfaces.IOwner.html">IOwner</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_AssigneeId_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.AssigneeId*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_AssigneeId" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.AssigneeId">
+  AssigneeId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>User assigned to complete this Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid AssigneeId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_CreatedAt_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.CreatedAt*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_CreatedAt" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.CreatedAt">
+  CreatedAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Timestamp when the Todo was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instant CreatedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs">Instant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_CreatedBy_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.CreatedBy*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_CreatedBy" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.CreatedBy">
+  CreatedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Username or system that created the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreatedBy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_DeletedAt_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DeletedAt*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_DeletedAt" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DeletedAt">
+  DeletedAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Timestamp when the Todo was deleted, if applicable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instant? DeletedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs">Instant</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_DeletedBy_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DeletedBy*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_DeletedBy" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DeletedBy">
+  DeletedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Username or system that deleted the Todo, if applicable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DeletedBy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Description_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Description*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Description" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Detailed description of the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MaxLength(3000)]
+public string? Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_DueAt_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DueAt*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_DueAt" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.DueAt">
+  DueAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional due date and time for the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instant? DueAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs">Instant</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Id_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Id*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Id" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unique identifier of the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_ModifiedAt_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ModifiedAt*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_ModifiedAt" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ModifiedAt">
+  ModifiedAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Timestamp of the last modification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instant ModifiedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/nodatime/nodatime/blob/e56daa2599a4d1917065c015bda923e7a352a236/src/NodaTime/Instant.cs">Instant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_ModifiedBy_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ModifiedBy*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_ModifiedBy" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ModifiedBy">
+  ModifiedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Username or system that last modified the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModifiedBy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Order_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Order*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Order" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Order">
+  Order
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sort order within a project or section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Order { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_OwnerId_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.OwnerId*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_OwnerId" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.OwnerId">
+  OwnerId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Identifier of the owner (user who created the Todo).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid OwnerId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Priority_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Priority*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Priority" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Priority">
+  Priority
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Priority of the Todo (Low, Medium, High).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodoPriority Priority { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HiveSync.Application.Contracts.Entities.Business.TodoPriority.html">TodoPriority</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Project_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Project*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Project" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Project">
+  Project
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Navigation property for the related project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Project Project { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HiveSync.Application.Contracts.Entities.Business.Project.html">Project</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_ProjectId_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ProjectId*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_ProjectId" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.ProjectId">
+  ProjectId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Identifier of the project this Todo belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid ProjectId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Section_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Section*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Section" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Section">
+  Section
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Navigation property for the section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Section? Section { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HiveSync.Application.Contracts.Entities.Business.Section.html">Section</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_SectionId_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.SectionId*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_SectionId" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.SectionId">
+  SectionId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional section identifier within a project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid? SectionId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_State_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.State*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_State" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.State">
+  State
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current state of the Todo (e.g., ToDo, InProgress, Done).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodoState State { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HiveSync.Application.Contracts.Entities.Business.TodoState.html">TodoState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Application_Contracts_Entities_Business_Todo_Summary_" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Summary*"></a>
+
+  <h3 id="HiveSync_Application_Contracts_Entities_Business_Todo_Summary" data-uid="HiveSync.Application.Contracts.Entities.Business.Todo.Summary">
+  Summary
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Short summary or title of the Todo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MaxLength(150)]
+public string Summary { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

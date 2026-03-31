@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider
+  commentId: T:HiveSync.Application.Interfaces.ICurrentUserProvider
+  id: ICurrentUserProvider
+  parent: HiveSync.Application.Interfaces
+  children:
+  - HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+  - HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId
+  - HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+  langs:
+  - csharp
+  - vb
+  name: ICurrentUserProvider
+  nameWithType: ICurrentUserProvider
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ICurrentUserProvider
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+    startLine: 6
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Interfaces
+  summary: >-
+    Provides information about the currently authenticated user.
+
+    Typically used in repositories and services to enforce ownership or track actions.
+  example: []
+  syntax:
+    content: public interface ICurrentUserProvider
+    content.vb: Public Interface ICurrentUserProvider
+  derivedClasses:
+  - HiveSync.Application.CurrentUserProvider
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+  commentId: P:HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+  id: UserId
+  parent: HiveSync.Application.Interfaces.ICurrentUserProvider
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: ICurrentUserProvider.UserId
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: UserId
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Interfaces
+  summary: Gets the ID of the currently authenticated user.
+  example: []
+  syntax:
+    content: Guid UserId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property UserId As Guid
+  overload: HiveSync.Application.Interfaces.ICurrentUserProvider.UserId*
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+  commentId: P:HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+  id: Email
+  parent: HiveSync.Application.Interfaces.ICurrentUserProvider
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: ICurrentUserProvider.Email
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Email
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+    startLine: 16
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Interfaces
+  summary: Gets the email of the currently authenticated user, if available.
+  example: []
+  syntax:
+    content: string? Email { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Email As String
+  overload: HiveSync.Application.Interfaces.ICurrentUserProvider.Email*
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId
+  commentId: P:HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId
+  id: InboxId
+  parent: HiveSync.Application.Interfaces.ICurrentUserProvider
+  langs:
+  - csharp
+  - vb
+  name: InboxId
+  nameWithType: ICurrentUserProvider.InboxId
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: InboxId
+    path: ../src/HiveSync.Application.Contracts.Interfaces/ICurrentUserProviedr.cs
+    startLine: 21
+  assemblies:
+  - HiveSync.Application.Contracts.Interfaces
+  namespace: HiveSync.Application.Interfaces
+  summary: Gets the ID of the user's default inbox project.
+  example: []
+  syntax:
+    content: Guid InboxId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property InboxId As Guid
+  overload: HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId*
+references:
+- uid: HiveSync.Application.Interfaces
+  commentId: N:HiveSync.Application.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Interfaces
+  nameWithType: HiveSync.Application.Interfaces
+  fullName: HiveSync.Application.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Interfaces.html
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.UserId*
+  commentId: Overload:HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+  href: HiveSync.Application.Interfaces.ICurrentUserProvider.html#HiveSync_Application_Interfaces_ICurrentUserProvider_UserId
+  name: UserId
+  nameWithType: ICurrentUserProvider.UserId
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.UserId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.Email*
+  commentId: Overload:HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+  href: HiveSync.Application.Interfaces.ICurrentUserProvider.html#HiveSync_Application_Interfaces_ICurrentUserProvider_Email
+  name: Email
+  nameWithType: ICurrentUserProvider.Email
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.Email
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId*
+  commentId: Overload:HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId
+  href: HiveSync.Application.Interfaces.ICurrentUserProvider.html#HiveSync_Application_Interfaces_ICurrentUserProvider_InboxId
+  name: InboxId
+  nameWithType: ICurrentUserProvider.InboxId
+  fullName: HiveSync.Application.Interfaces.ICurrentUserProvider.InboxId

@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Projects.Commands
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands
+  id: HiveSync.Application.Contracts.Projects.Commands
+  children:
+  - HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  - HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand
+  - HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Projects.Commands
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands
+  fullName: HiveSync.Application.Contracts.Projects.Commands
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  parent: HiveSync.Application.Contracts.Projects.Commands
+  href: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html
+  name: AddProjectCommand
+  nameWithType: AddProjectCommand
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+- uid: HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand
+  parent: HiveSync.Application.Contracts.Projects.Commands
+  href: HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand.html
+  name: DeleteProjectCommand
+  nameWithType: DeleteProjectCommand
+  fullName: HiveSync.Application.Contracts.Projects.Commands.DeleteProjectCommand
+- uid: HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand
+  parent: HiveSync.Application.Contracts.Projects.Commands
+  href: HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand.html
+  name: UpdateProjectCommand
+  nameWithType: UpdateProjectCommand
+  fullName: HiveSync.Application.Contracts.Projects.Commands.UpdateProjectCommand
+- uid: HiveSync.Application.Contracts.Projects.Commands
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Commands
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands
+  fullName: HiveSync.Application.Contracts.Projects.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html

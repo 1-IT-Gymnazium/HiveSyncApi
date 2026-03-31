@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands.Dto
+  id: HiveSync.Application.Contracts.Sections.Commands.Dto
+  children:
+  - HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+  - HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  - HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+  - HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Sections.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  name: AddSectionDto
+  nameWithType: AddSectionDto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html
+  name: AddSectionExtensions
+  nameWithType: AddSectionExtensions
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto.html
+  name: UpdateSectionDto
+  nameWithType: UpdateSectionDto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionDto
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension.html
+  name: UpdateSectionExtension
+  nameWithType: UpdateSectionExtension
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.UpdateSectionExtension
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Sections.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html

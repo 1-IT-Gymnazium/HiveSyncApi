@@ -1,0 +1,1361 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  commentId: T:HiveSync.Application.Specifications.UniqueFieldSpec`1
+  id: UniqueFieldSpec`1
+  parent: HiveSync.Application.Specifications
+  children:
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Nullable{System.Guid})
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1.Value
+  langs:
+  - csharp
+  - vb
+  name: UniqueFieldSpec<TEntity>
+  nameWithType: UniqueFieldSpec<TEntity>
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: UniqueFieldSpec
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  summary: >-
+    Specification to check whether a given string field value is unique within a set of entities.
+
+    Supports optional scoping and ignoring a specific entity by ID.
+  example: []
+  syntax:
+    content: 'public record UniqueFieldSpec<TEntity> : ISpecification<TEntity, bool>, IEquatable<UniqueFieldSpec<TEntity>> where TEntity : class, IBaseEntity'
+    typeParameters:
+    - id: TEntity
+      description: Type of entity implementing <xref href="HiveSync.Application.Contracts.Interfaces.IBaseEntity" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Class UniqueFieldSpec(Of TEntity As {Class, IBaseEntity}) Implements ISpecification(Of TEntity, Boolean), IEquatable(Of UniqueFieldSpec(Of TEntity))
+  inheritance:
+  - System.Object
+  implements:
+  - HiveSync.Application.Contracts.Persistence.ISpecification{{TEntity},System.Boolean}
+  - System.IEquatable{HiveSync.Application.Specifications.UniqueFieldSpec`1}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UniqueFieldSpec(Of TEntity)
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity)
+  name.vb: UniqueFieldSpec(Of TEntity)
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Nullable{System.Guid})
+  commentId: M:HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Nullable{System.Guid})
+  id: '#ctor(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Nullable{System.Guid})'
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: UniqueFieldSpec(string, Expression<Func<TEntity, string>>, Expression<Func<TEntity, bool>>?, Guid?)
+  nameWithType: UniqueFieldSpec<TEntity>.UniqueFieldSpec(string, Expression<Func<TEntity, string>>, Expression<Func<TEntity, bool>>?, Guid?)
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.UniqueFieldSpec(string, System.Linq.Expressions.Expression<System.Func<TEntity, string>>, System.Linq.Expressions.Expression<System.Func<TEntity, bool>>?, System.Guid?)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 11
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  summary: >-
+    Specification to check whether a given string field value is unique within a set of entities.
+
+    Supports optional scoping and ignoring a specific entity by ID.
+  example: []
+  syntax:
+    content: public UniqueFieldSpec(string Value, Expression<Func<TEntity, string>> PropertySelector, Expression<Func<TEntity, bool>>? Scope = null, Guid? IgnoreId = null)
+    parameters:
+    - id: Value
+      type: System.String
+    - id: PropertySelector
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.String}}
+    - id: Scope
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: IgnoreId
+      type: System.Nullable{System.Guid}
+    content.vb: Public Sub New(Value As String, PropertySelector As Expression(Of Func(Of TEntity, String)), Scope As Expression(Of Func(Of TEntity, Boolean)) = Nothing, IgnoreId As Guid? = Nothing)
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor*
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).New(String, Expression(Of Func(Of TEntity, String)), Expression(Of Func(Of TEntity, Boolean)), Guid?)
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).New(String, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, String)), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Guid?)
+  name.vb: New(String, Expression(Of Func(Of TEntity, String)), Expression(Of Func(Of TEntity, Boolean)), Guid?)
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.Value
+  commentId: P:HiveSync.Application.Specifications.UniqueFieldSpec`1.Value
+  id: Value
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UniqueFieldSpec<TEntity>.Value
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.Value
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Value
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 12
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  syntax:
+    content: public string Value { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.Value*
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).Value
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).Value
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector
+  commentId: P:HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector
+  id: PropertySelector
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: PropertySelector
+  nameWithType: UniqueFieldSpec<TEntity>.PropertySelector
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.PropertySelector
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: PropertySelector
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 13
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  syntax:
+    content: public Expression<Func<TEntity, string>> PropertySelector { get; init; }
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.String}}
+    content.vb: Public Property PropertySelector As Expression(Of Func(Of TEntity, String))
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector*
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).PropertySelector
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).PropertySelector
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope
+  commentId: P:HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope
+  id: Scope
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: UniqueFieldSpec<TEntity>.Scope
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.Scope
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Scope
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 14
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  syntax:
+    content: public Expression<Func<TEntity, bool>>? Scope { get; init; }
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    content.vb: Public Property Scope As Expression(Of Func(Of TEntity, Boolean))
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope*
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).Scope
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).Scope
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId
+  commentId: P:HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId
+  id: IgnoreId
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: IgnoreId
+  nameWithType: UniqueFieldSpec<TEntity>.IgnoreId
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.IgnoreId
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: IgnoreId
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 15
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  syntax:
+    content: public Guid? IgnoreId { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property IgnoreId As Guid?
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId*
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).IgnoreId
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).IgnoreId
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  id: ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: ApplyAsync(IQueryable<TEntity>, CancellationToken)
+  nameWithType: UniqueFieldSpec<TEntity>.ApplyAsync(IQueryable<TEntity>, CancellationToken)
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.ApplyAsync(System.Linq.IQueryable<TEntity>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ApplyAsync
+    path: ../src/HiveSync.Application/Specifications/UniqueFieldSpec.cs
+    startLine: 27
+  assemblies:
+  - HiveSync.Application
+  namespace: HiveSync.Application.Specifications
+  summary: Applies the specification to the given <xref href="System.Linq.IQueryable%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Task<bool> ApplyAsync(IQueryable<TEntity> queryable, CancellationToken cancellationToken = default)
+    parameters:
+    - id: queryable
+      type: System.Linq.IQueryable{{TEntity}}
+      description: The queryable collection to filter.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if any entity exists that matches the field value (considering optional scope and ignore ID), otherwise false.
+    content.vb: Public Function ApplyAsync(queryable As IQueryable(Of TEntity), cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync*
+  implements:
+  - HiveSync.Application.Contracts.Persistence.ISpecification{{TEntity},System.Boolean}.ApplyAsync(System.Linq.IQueryable{{TEntity}},System.Threading.CancellationToken)
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).ApplyAsync(IQueryable(Of TEntity), CancellationToken)
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).ApplyAsync(System.Linq.IQueryable(Of TEntity), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of TEntity), CancellationToken)
+references:
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  name: IBaseEntity
+  nameWithType: IBaseEntity
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+- uid: HiveSync.Application.Specifications
+  commentId: N:HiveSync.Application.Specifications
+  href: HiveSync.html
+  name: HiveSync.Application.Specifications
+  nameWithType: HiveSync.Application.Specifications
+  fullName: HiveSync.Application.Specifications
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Specifications
+    name: Specifications
+    href: HiveSync.Application.Specifications.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Specifications
+    name: Specifications
+    href: HiveSync.Application.Specifications.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification{{TEntity},System.Boolean}
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification{`0,System.Boolean}
+  parent: HiveSync.Application.Contracts.Persistence
+  definition: HiveSync.Application.Contracts.Persistence.ISpecification`2
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  name: ISpecification<TEntity, bool>
+  nameWithType: ISpecification<TEntity, bool>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<TEntity, bool>
+  nameWithType.vb: ISpecification(Of TEntity, Boolean)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of TEntity, Boolean)
+  name.vb: ISpecification(Of TEntity, Boolean)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.IEquatable{HiveSync.Application.Specifications.UniqueFieldSpec`1}
+  commentId: T:System.IEquatable{HiveSync.Application.Specifications.UniqueFieldSpec`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UniqueFieldSpec<TEntity>>
+  nameWithType: IEquatable<UniqueFieldSpec<TEntity>>
+  fullName: System.IEquatable<HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>>
+  nameWithType.vb: IEquatable(Of UniqueFieldSpec(Of TEntity))
+  fullName.vb: System.IEquatable(Of HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity))
+  name.vb: IEquatable(Of UniqueFieldSpec(Of TEntity))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+    name: UniqueFieldSpec
+    href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+    name: UniqueFieldSpec
+    href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISpecification`2
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  name: ISpecification<T, TResult>
+  nameWithType: ISpecification<T, TResult>
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>
+  nameWithType.vb: ISpecification(Of T, TResult)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult)
+  name.vb: ISpecification(Of T, TResult)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2
+    name: ISpecification
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.#ctor
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1__ctor_System_String_System_Linq_Expressions_Expression_System_Func__0_System_String___System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Nullable_System_Guid__
+  name: UniqueFieldSpec
+  nameWithType: UniqueFieldSpec<TEntity>.UniqueFieldSpec
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.UniqueFieldSpec
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).New
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.String}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.String}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, string>>
+  nameWithType: Expression<Func<TEntity, string>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, string>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, String))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, String))
+  name.vb: Expression(Of Func(Of TEntity, String))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, bool>>
+  nameWithType: Expression<Func<TEntity, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, bool>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.Value*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.Value
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1_Value
+  name: Value
+  nameWithType: UniqueFieldSpec<TEntity>.Value
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.Value
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).Value
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).Value
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.PropertySelector
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1_PropertySelector
+  name: PropertySelector
+  nameWithType: UniqueFieldSpec<TEntity>.PropertySelector
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.PropertySelector
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).PropertySelector
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).PropertySelector
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.Scope
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1_Scope
+  name: Scope
+  nameWithType: UniqueFieldSpec<TEntity>.Scope
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.Scope
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).Scope
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).Scope
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.IgnoreId
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1_IgnoreId
+  name: IgnoreId
+  nameWithType: UniqueFieldSpec<TEntity>.IgnoreId
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.IgnoreId
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).IgnoreId
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).IgnoreId
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync*
+  commentId: Overload:HiveSync.Application.Specifications.UniqueFieldSpec`1.ApplyAsync
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html#HiveSync_Application_Specifications_UniqueFieldSpec_1_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync
+  nameWithType: UniqueFieldSpec<TEntity>.ApplyAsync
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>.ApplyAsync
+  nameWithType.vb: UniqueFieldSpec(Of TEntity).ApplyAsync
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity).ApplyAsync
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification{{TEntity},System.Boolean}.ApplyAsync(System.Linq.IQueryable{{TEntity}},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISpecification{`0,System.Boolean}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.ISpecification{{TEntity},System.Boolean}
+  definition: HiveSync.Application.Contracts.Persistence.ISpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync(IQueryable<TEntity>, CancellationToken)
+  nameWithType: ISpecification<TEntity, bool>.ApplyAsync(IQueryable<TEntity>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<TEntity, bool>.ApplyAsync(System.Linq.IQueryable<TEntity>, System.Threading.CancellationToken)
+  nameWithType.vb: ISpecification(Of TEntity, Boolean).ApplyAsync(IQueryable(Of TEntity), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of TEntity, Boolean).ApplyAsync(System.Linq.IQueryable(Of TEntity), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of TEntity), CancellationToken)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification{`0,System.Boolean}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification{`0,System.Boolean}.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Linq.IQueryable{{TEntity}}
+  commentId: T:System.Linq.IQueryable{`0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<TEntity>
+  nameWithType: IQueryable<TEntity>
+  fullName: System.Linq.IQueryable<TEntity>
+  nameWithType.vb: IQueryable(Of TEntity)
+  fullName.vb: System.Linq.IQueryable(Of TEntity)
+  name.vb: IQueryable(Of TEntity)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: HiveSync.Application.Contracts.Persistence.ISpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+  isExternal: true
+  href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  name: ApplyAsync(IQueryable<T>, CancellationToken)
+  nameWithType: ISpecification<T, TResult>.ApplyAsync(IQueryable<T>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISpecification<T, TResult>.ApplyAsync(System.Linq.IQueryable<T>, System.Threading.CancellationToken)
+  nameWithType.vb: ISpecification(Of T, TResult).ApplyAsync(IQueryable(Of T), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISpecification(Of T, TResult).ApplyAsync(System.Linq.IQueryable(Of T), System.Threading.CancellationToken)
+  name.vb: ApplyAsync(IQueryable(Of T), CancellationToken)
+  spec.csharp:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: HiveSync.Application.Contracts.Persistence.ISpecification`2.ApplyAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken)
+    name: ApplyAsync
+    href: HiveSync.Application.Contracts.Persistence.ISpecification-2.html#HiveSync_Application_Contracts_Persistence_ISpecification_2_ApplyAsync_System_Linq_IQueryable__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

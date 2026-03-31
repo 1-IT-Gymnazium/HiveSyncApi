@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Entities.Identity
+  commentId: N:HiveSync.Application.Contracts.Entities.Identity
+  id: HiveSync.Application.Contracts.Entities.Identity
+  children:
+  - HiveSync.Application.Contracts.Entities.Identity.AppUser
+  - HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+  - HiveSync.Application.Contracts.Entities.Identity.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Entities.Identity
+  nameWithType: HiveSync.Application.Contracts.Entities.Identity
+  fullName: HiveSync.Application.Contracts.Entities.Identity
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Entities.Identity.AppUser
+  commentId: T:HiveSync.Application.Contracts.Entities.Identity.AppUser
+  href: HiveSync.Application.Contracts.Entities.Identity.AppUser.html
+  name: AppUser
+  nameWithType: AppUser
+  fullName: HiveSync.Application.Contracts.Entities.Identity.AppUser
+- uid: HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+  commentId: T:HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+  href: HiveSync.Application.Contracts.Entities.Identity.EmailMessage.html
+  name: EmailMessage
+  nameWithType: EmailMessage
+  fullName: HiveSync.Application.Contracts.Entities.Identity.EmailMessage
+- uid: HiveSync.Application.Contracts.Entities.Identity.RefreshToken
+  commentId: T:HiveSync.Application.Contracts.Entities.Identity.RefreshToken
+  href: HiveSync.Application.Contracts.Entities.Identity.RefreshToken.html
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: HiveSync.Application.Contracts.Entities.Identity.RefreshToken

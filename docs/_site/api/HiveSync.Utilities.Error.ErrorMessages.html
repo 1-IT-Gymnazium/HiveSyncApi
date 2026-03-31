@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ErrorMessages | HiveSync Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ErrorMessages | HiveSync Docs ">
+      
+      <meta name="description" content="Central repository of error messages for HiveSync API. Provides both static messages for common errors and dynamic helpers for field-specific validation.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="HiveSync Docs">
+            HiveSync Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="HiveSync.Utilities.Error.ErrorMessages">
+
+
+
+  <h1 id="HiveSync_Utilities_Error_ErrorMessages" data-uid="HiveSync.Utilities.Error.ErrorMessages" class="text-break">
+Class ErrorMessages  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="HiveSync.html">HiveSync</a>.<a class="xref" href="HiveSync.Utilities.html">Utilities</a>.<a class="xref" href="HiveSync.Utilities.Error.html">Error</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HiveSync.Utilities.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Central repository of error messages for HiveSync API.
+Provides both static messages for common errors and dynamic helpers for field-specific validation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ErrorMessages</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ErrorMessages</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="HiveSync_Utilities_Error_ErrorMessages_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class is intended to standardize error messages across the application
+and simplify API error responses. It covers entities such as Project, Section, Todo,
+general validation, authentication/account issues, refresh token handling, and user confirmation.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_AccountLockedOut_" data-uid="HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_AccountLockedOut" data-uid="HiveSync.Utilities.Error.ErrorMessages.AccountLockedOut">
+  AccountLockedOut()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Account is locked out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AccountLockedOut()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_AlreadyConfirmed_" data-uid="HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_AlreadyConfirmed" data-uid="HiveSync.Utilities.Error.ErrorMessages.AlreadyConfirmed">
+  AlreadyConfirmed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Email has already been confirmed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AlreadyConfirmed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_AlreadyExists_" data-uid="HiveSync.Utilities.Error.ErrorMessages.AlreadyExists*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_AlreadyExists_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.AlreadyExists(System.String)">
+  AlreadyExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an already exists error message for a specific entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AlreadyExists(string entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the entity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ClientForProjectNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ClientForProjectNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.ClientForProjectNotFound">
+  ClientForProjectNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Client for project could not be found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ClientForProjectNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_DoesNotBelongToProject_" data-uid="HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_DoesNotBelongToProject_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.DoesNotBelongToProject(System.String)">
+  DoesNotBelongToProject(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DoesNotBelongToProject(string entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_EmailDoesNotMatch_" data-uid="HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_EmailDoesNotMatch" data-uid="HiveSync.Utilities.Error.ErrorMessages.EmailDoesNotMatch">
+  EmailDoesNotMatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>No account matches this email.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EmailDoesNotMatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_Forbidden_" data-uid="HiveSync.Utilities.Error.ErrorMessages.Forbidden*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_Forbidden" data-uid="HiveSync.Utilities.Error.ErrorMessages.Forbidden">
+  Forbidden()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Operation is forbidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Forbidden()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InboxProjectProtected_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InboxProjectProtected" data-uid="HiveSync.Utilities.Error.ErrorMessages.InboxProjectProtected">
+  InboxProjectProtected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inbox project cannot be modified or deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InboxProjectProtected()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InvalidEmail_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidEmail*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InvalidEmail" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidEmail">
+  InvalidEmail()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Email provided is invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvalidEmail()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InvalidEmailOrPassword_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InvalidEmailOrPassword" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidEmailOrPassword">
+  InvalidEmailOrPassword()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invalid email or password combination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvalidEmailOrPassword()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InvalidGuid_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidGuid*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InvalidGuid_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidGuid(System.String)">
+  InvalidGuid(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a standardized message indicating that the provided value is not a valid GUID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvalidGuid(string field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InvalidPassword_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidPassword*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InvalidPassword" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidPassword">
+  InvalidPassword()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Password does not meet complexity requirements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvalidPassword()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_InvalidToken_" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidToken*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_InvalidToken" data-uid="HiveSync.Utilities.Error.ErrorMessages.InvalidToken">
+  InvalidToken()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Token provided for confirmation is invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvalidToken()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_MaxLength_" data-uid="HiveSync.Utilities.Error.ErrorMessages.MaxLength*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_MaxLength_System_String_System_Int32_" data-uid="HiveSync.Utilities.Error.ErrorMessages.MaxLength(System.String,System.Int32)">
+  MaxLength(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a maximum length error message for a field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MaxLength(string field, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the field.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Maximum allowed length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_MinLength_" data-uid="HiveSync.Utilities.Error.ErrorMessages.MinLength*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_MinLength_System_String_System_Int32_" data-uid="HiveSync.Utilities.Error.ErrorMessages.MinLength(System.String,System.Int32)">
+  MinLength(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a minimum length error message for a field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MinLength(string field, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the field.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Minimum required length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_NotDeleted_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotDeleted*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_NotDeleted_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotDeleted(System.String)">
+  NotDeleted(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a not deleted error message for a specific entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NotDeleted(string entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the entity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_NotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_NotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotFound">
+  NotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resource not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_NotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_NotFound_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotFound(System.String)">
+  NotFound(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a not found error message for a specific entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NotFound(string entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the entity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_NotUnique_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotUnique*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_NotUnique_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.NotUnique(System.String)">
+  NotUnique(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an error message indicating that a field value must be unique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NotUnique(string field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the field that must be unique.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ProjectNotDeleted_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ProjectNotDeleted" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectNotDeleted">
+  ProjectNotDeleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Project could not be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProjectNotDeleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ProjectNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ProjectNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectNotFound">
+  ProjectNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Project entity was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProjectNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ProjectTitleNotUnique_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ProjectTitleNotUnique" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectTitleNotUnique">
+  ProjectTitleNotUnique()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the project must be unique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProjectTitleNotUnique()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ProjectTitleRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ProjectTitleRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.ProjectTitleRequired">
+  ProjectTitleRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the project is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProjectTitleRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_RefreshTokenInvalidOrExpired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_RefreshTokenInvalidOrExpired" data-uid="HiveSync.Utilities.Error.ErrorMessages.RefreshTokenInvalidOrExpired">
+  RefreshTokenInvalidOrExpired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refresh token is invalid or has expired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RefreshTokenInvalidOrExpired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_RefreshTokenNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_RefreshTokenNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.RefreshTokenNotFound">
+  RefreshTokenNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refresh token not found in request or storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RefreshTokenNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_Required_" data-uid="HiveSync.Utilities.Error.ErrorMessages.Required*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_Required_System_String_" data-uid="HiveSync.Utilities.Error.ErrorMessages.Required(System.String)">
+  Required(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a required field error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Required(string field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_SectionNotDeleted_" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_SectionNotDeleted" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionNotDeleted">
+  SectionNotDeleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Section could not be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SectionNotDeleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_SectionNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_SectionNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionNotFound">
+  SectionNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Section entity was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SectionNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_SectionParentProjectRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_SectionParentProjectRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionParentProjectRequired">
+  SectionParentProjectRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Section must have a parental project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SectionParentProjectRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_SectionTitleNotUnique_" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_SectionTitleNotUnique" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionTitleNotUnique">
+  SectionTitleNotUnique()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the section must be unique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SectionTitleNotUnique()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_SectionTitleRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_SectionTitleRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.SectionTitleRequired">
+  SectionTitleRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the section is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SectionTitleRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoNotDeleted_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoNotDeleted" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoNotDeleted">
+  TodoNotDeleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Task could not be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoNotDeleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoNotFound">
+  TodoNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Task entity was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoParentProjectRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoParentProjectRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoParentProjectRequired">
+  TodoParentProjectRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A parental project is required for this task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoParentProjectRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoPriorityNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoPriorityNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoPriorityNotFound">
+  TodoPriorityNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selected priority for this task was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoPriorityNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoProjectNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoProjectNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoProjectNotFound">
+  TodoProjectNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selected project for this task was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoProjectNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoSectionNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoSectionNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoSectionNotFound">
+  TodoSectionNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selected section for this task was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoSectionNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoStatusIsRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoStatusIsRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoStatusIsRequired">
+  TodoStatusIsRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Status for this task is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoStatusIsRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoStatusNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoStatusNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoStatusNotFound">
+  TodoStatusNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selected status for this task was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoStatusNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_TodoSummaryRequired_" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_TodoSummaryRequired" data-uid="HiveSync.Utilities.Error.ErrorMessages.TodoSummaryRequired">
+  TodoSummaryRequired()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the task is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TodoSummaryRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_Unauthorized_" data-uid="HiveSync.Utilities.Error.ErrorMessages.Unauthorized*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_Unauthorized" data-uid="HiveSync.Utilities.Error.ErrorMessages.Unauthorized">
+  Unauthorized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>User is not authorized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Unauthorized()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_UserAlreadyExists_" data-uid="HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_UserAlreadyExists" data-uid="HiveSync.Utilities.Error.ErrorMessages.UserAlreadyExists">
+  UserAlreadyExists()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Email is already in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UserAlreadyExists()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_UserNotFound_" data-uid="HiveSync.Utilities.Error.ErrorMessages.UserNotFound*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_UserNotFound" data-uid="HiveSync.Utilities.Error.ErrorMessages.UserNotFound">
+  UserNotFound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>User associated with refresh token was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UserNotFound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HiveSync_Utilities_Error_ErrorMessages_ValidationError_" data-uid="HiveSync.Utilities.Error.ErrorMessages.ValidationError*"></a>
+
+  <h3 id="HiveSync_Utilities_Error_ErrorMessages_ValidationError" data-uid="HiveSync.Utilities.Error.ErrorMessages.ValidationError">
+  ValidationError()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validation failed unexpectedly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ValidationError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

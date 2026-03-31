@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.ISingletonService
+  commentId: T:Microsoft.Extensions.DependencyInjection.ISingletonService
+  id: ISingletonService
+  parent: Microsoft.Extensions.DependencyInjection
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISingletonService
+  nameWithType: ISingletonService
+  fullName: Microsoft.Extensions.DependencyInjection.ISingletonService
+  type: Interface
+  source:
+    remote:
+      path: src/CodeHive.Utility/ServiceInterfaces.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ISingletonService
+    path: ../src/CodeHive.Utility/ServiceInterfaces.cs
+    startLine: 4
+  assemblies:
+  - CodeHive.Utility
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public interface ISingletonService
+    content.vb: Public Interface ISingletonService
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  href: Microsoft.html
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: Microsoft.Extensions.DependencyInjection.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: Microsoft.Extensions.DependencyInjection.html

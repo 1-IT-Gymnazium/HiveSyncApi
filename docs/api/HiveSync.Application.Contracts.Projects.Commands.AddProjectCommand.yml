@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  id: AddProjectCommand
+  parent: HiveSync.Application.Contracts.Projects.Commands
+  children:
+  - HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  - HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject
+  langs:
+  - csharp
+  - vb
+  name: AddProjectCommand
+  nameWithType: AddProjectCommand
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddProjectCommand
+    path: ../src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Projects.Commands
+  summary: >-
+    Command for creating a new project.
+
+    Returns the ID of the newly created project.
+  example: []
+  syntax:
+    content: 'public sealed record AddProjectCommand : IRequest<Guid>, IBaseRequest, IEquatable<AddProjectCommand>'
+    content.vb: Public NotInheritable Class AddProjectCommand Implements IRequest(Of Guid), IBaseRequest, IEquatable(Of AddProjectCommand)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{System.Guid}
+  - MediatR.IBaseRequest
+  - System.IEquatable{HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  commentId: M:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  id: '#ctor(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)'
+  parent: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  langs:
+  - csharp
+  - vb
+  name: AddProjectCommand(AddProjectDto)
+  nameWithType: AddProjectCommand.AddProjectCommand(AddProjectDto)
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.AddProjectCommand(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Projects.Commands
+  summary: >-
+    Command for creating a new project.
+
+    Returns the ID of the newly created project.
+  example: []
+  syntax:
+    content: public AddProjectCommand(AddProjectDto NewProject)
+    parameters:
+    - id: NewProject
+      type: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+      description: The DTO containing the details of the project to create.
+    content.vb: Public Sub New(NewProject As AddProjectDto)
+  overload: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor*
+  nameWithType.vb: AddProjectCommand.New(AddProjectDto)
+  fullName.vb: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.New(HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto)
+  name.vb: New(AddProjectDto)
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject
+  commentId: P:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject
+  id: NewProject
+  parent: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+  langs:
+  - csharp
+  - vb
+  name: NewProject
+  nameWithType: AddProjectCommand.NewProject
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject
+  type: Property
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: NewProject
+    path: ../src/HiveSync.Application.Contracts/Projects/Commands/AddProjectCommand.cs
+    startLine: 9
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Projects.Commands
+  summary: The DTO containing the details of the project to create.
+  example: []
+  syntax:
+    content: public AddProjectDto NewProject { get; init; }
+    parameters: []
+    return:
+      type: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+    content.vb: Public Property NewProject As AddProjectDto
+  overload: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject*
+references:
+- uid: HiveSync.Application.Contracts.Projects.Commands
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Commands
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands
+  fullName: HiveSync.Application.Contracts.Projects.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{System.Guid}
+  commentId: T:MediatR.IRequest{System.Guid}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: IRequest<Guid>
+  nameWithType: IRequest<Guid>
+  fullName: MediatR.IRequest<System.Guid>
+  nameWithType.vb: IRequest(Of Guid)
+  fullName.vb: MediatR.IRequest(Of System.Guid)
+  name.vb: IRequest(Of Guid)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand}
+  commentId: T:System.IEquatable{HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AddProjectCommand>
+  nameWithType: IEquatable<AddProjectCommand>
+  fullName: System.IEquatable<HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand>
+  nameWithType.vb: IEquatable(Of AddProjectCommand)
+  fullName.vb: System.IEquatable(Of HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand)
+  name.vb: IEquatable(Of AddProjectCommand)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+    name: AddProjectCommand
+    href: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand
+    name: AddProjectCommand
+    href: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor*
+  commentId: Overload:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.#ctor
+  href: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html#HiveSync_Application_Contracts_Projects_Commands_AddProjectCommand__ctor_HiveSync_Application_Contracts_Projects_Commands_Dto_AddProjectDto_
+  name: AddProjectCommand
+  nameWithType: AddProjectCommand.AddProjectCommand
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.AddProjectCommand
+  nameWithType.vb: AddProjectCommand.New
+  fullName.vb: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.New
+  name.vb: New
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+  commentId: T:HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+  parent: HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto.html
+  name: AddProjectDto
+  nameWithType: AddProjectDto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto.AddProjectDto
+- uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Projects.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Projects.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Projects.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Projects.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects
+    name: Projects
+    href: HiveSync.Application.Contracts.Projects.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Projects.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Projects.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Projects.Commands.Dto.html
+- uid: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject*
+  commentId: Overload:HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject
+  href: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.html#HiveSync_Application_Contracts_Projects_Commands_AddProjectCommand_NewProject
+  name: NewProject
+  nameWithType: AddProjectCommand.NewProject
+  fullName: HiveSync.Application.Contracts.Projects.Commands.AddProjectCommand.NewProject

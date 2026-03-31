@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands
+  id: HiveSync.Application.Contracts.Todos.Commands
+  children:
+  - HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  - HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  - HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Todos.Commands
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands
+  fullName: HiveSync.Application.Contracts.Todos.Commands
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand.html
+  name: AddTodoCommand
+  nameWithType: AddTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.AddTodoCommand
+- uid: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand.html
+  name: DeleteTodoCommand
+  nameWithType: DeleteTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.DeleteTodoCommand
+- uid: HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand
+  commentId: T:HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand
+  parent: HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand.html
+  name: UpdateTodoCommand
+  nameWithType: UpdateTodoCommand
+  fullName: HiveSync.Application.Contracts.Todos.Commands.UpdateTodoCommand
+- uid: HiveSync.Application.Contracts.Todos.Commands
+  commentId: N:HiveSync.Application.Contracts.Todos.Commands
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Commands
+  nameWithType: HiveSync.Application.Contracts.Todos.Commands
+  fullName: HiveSync.Application.Contracts.Todos.Commands
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Todos.Commands.html

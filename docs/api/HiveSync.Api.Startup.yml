@@ -1,0 +1,646 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Api.Startup
+  commentId: T:HiveSync.Api.Startup
+  id: Startup
+  parent: HiveSync.Api
+  children:
+  - HiveSync.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  - HiveSync.Api.Startup.APPLICATION_NAME
+  - HiveSync.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  - HiveSync.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: Startup
+  nameWithType: Startup
+  fullName: HiveSync.Api.Startup
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Api/Startup.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Startup
+    path: ../src/HiveSync.Api/Startup.cs
+    startLine: 28
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api
+  summary: >-
+    Application startup configuration responsible for registering services
+
+    and configuring the HTTP request pipeline.
+  example: []
+  syntax:
+    content: public class Startup
+    content.vb: Public Class Startup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  commentId: M:HiveSync.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)'
+  parent: HiveSync.Api.Startup
+  langs:
+  - csharp
+  - vb
+  name: Startup(IConfiguration, IWebHostEnvironment)
+  nameWithType: Startup.Startup(IConfiguration, IWebHostEnvironment)
+  fullName: HiveSync.Api.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  type: Constructor
+  source:
+    remote:
+      path: src/HiveSync.Api/Startup.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: .ctor
+    path: ../src/HiveSync.Api/Startup.cs
+    startLine: 28
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api
+  summary: >-
+    Application startup configuration responsible for registering services
+
+    and configuring the HTTP request pipeline.
+  example: []
+  syntax:
+    content: public Startup(IConfiguration configuration, IWebHostEnvironment hostEnvironment)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: Application configuration source.
+    - id: hostEnvironment
+      type: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+      description: Provides information about the hosting environment.
+    content.vb: Public Sub New(configuration As IConfiguration, hostEnvironment As IWebHostEnvironment)
+  overload: HiveSync.Api.Startup.#ctor*
+  nameWithType.vb: Startup.New(IConfiguration, IWebHostEnvironment)
+  fullName.vb: HiveSync.Api.Startup.New(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name.vb: New(IConfiguration, IWebHostEnvironment)
+- uid: HiveSync.Api.Startup.APPLICATION_NAME
+  commentId: F:HiveSync.Api.Startup.APPLICATION_NAME
+  id: APPLICATION_NAME
+  parent: HiveSync.Api.Startup
+  langs:
+  - csharp
+  - vb
+  name: APPLICATION_NAME
+  nameWithType: Startup.APPLICATION_NAME
+  fullName: HiveSync.Api.Startup.APPLICATION_NAME
+  type: Field
+  source:
+    remote:
+      path: src/HiveSync.Api/Startup.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: APPLICATION_NAME
+    path: ../src/HiveSync.Api/Startup.cs
+    startLine: 33
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api
+  summary: Name of the application used in documentation and metadata.
+  example: []
+  syntax:
+    content: public const string APPLICATION_NAME = "HiveSync"
+    return:
+      type: System.String
+    content.vb: Public Const APPLICATION_NAME As String = "HiveSync"
+- uid: HiveSync.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:HiveSync.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  parent: HiveSync.Api.Startup
+  langs:
+  - csharp
+  - vb
+  name: ConfigureServices(IServiceCollection)
+  nameWithType: Startup.ConfigureServices(IServiceCollection)
+  fullName: HiveSync.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Api/Startup.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ConfigureServices
+    path: ../src/HiveSync.Api/Startup.cs
+    startLine: 44
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api
+  summary: Registers application services into the dependency injection container.
+  example: []
+  syntax:
+    content: public void ConfigureServices(IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service collection used for dependency injection.
+    content.vb: Public Sub ConfigureServices(services As IServiceCollection)
+  overload: HiveSync.Api.Startup.ConfigureServices*
+- uid: HiveSync.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:HiveSync.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  parent: HiveSync.Api.Startup
+  langs:
+  - csharp
+  - vb
+  name: Configure(IApplicationBuilder)
+  nameWithType: Startup.Configure(IApplicationBuilder)
+  fullName: HiveSync.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Api/Startup.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: Configure
+    path: ../src/HiveSync.Api/Startup.cs
+    startLine: 191
+  assemblies:
+  - HiveSync.Api
+  namespace: HiveSync.Api
+  summary: Configures the HTTP request processing pipeline.
+  example: []
+  syntax:
+    content: public void Configure(IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+      description: Application builder used to configure middleware.
+    content.vb: Public Sub Configure(app As IApplicationBuilder)
+  overload: HiveSync.Api.Startup.Configure*
+references:
+- uid: HiveSync.Api
+  commentId: N:HiveSync.Api
+  href: HiveSync.html
+  name: HiveSync.Api
+  nameWithType: HiveSync.Api
+  fullName: HiveSync.Api
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Api
+    name: Api
+    href: HiveSync.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Api.Startup.#ctor*
+  commentId: Overload:HiveSync.Api.Startup.#ctor
+  href: HiveSync.Api.Startup.html#HiveSync_Api_Startup__ctor_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  name: Startup
+  nameWithType: Startup.Startup
+  fullName: HiveSync.Api.Startup.Startup
+  nameWithType.vb: Startup.New
+  fullName.vb: HiveSync.Api.Startup.New
+  name.vb: New
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+  commentId: T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+  parent: Microsoft.AspNetCore.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iwebhostenvironment
+  name: IWebHostEnvironment
+  nameWithType: IWebHostEnvironment
+  fullName: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Microsoft.AspNetCore.Hosting
+  commentId: N:Microsoft.AspNetCore.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Hosting
+  nameWithType: Microsoft.AspNetCore.Hosting
+  fullName: Microsoft.AspNetCore.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HiveSync.Api.Startup.ConfigureServices*
+  commentId: Overload:HiveSync.Api.Startup.ConfigureServices
+  href: HiveSync.Api.Startup.html#HiveSync_Api_Startup_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: ConfigureServices
+  nameWithType: Startup.ConfigureServices
+  fullName: HiveSync.Api.Startup.ConfigureServices
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  href: Microsoft.html
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: Microsoft.Extensions.DependencyInjection.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: Microsoft.Extensions.DependencyInjection.html
+- uid: HiveSync.Api.Startup.Configure*
+  commentId: Overload:HiveSync.Api.Startup.Configure
+  href: HiveSync.Api.Startup.html#HiveSync_Api_Startup_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  name: Configure
+  nameWithType: Startup.Configure
+  fullName: HiveSync.Api.Startup.Configure
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder

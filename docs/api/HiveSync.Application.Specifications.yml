@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Specifications
+  commentId: N:HiveSync.Application.Specifications
+  id: HiveSync.Application.Specifications
+  children:
+  - HiveSync.Application.Specifications.DefaultInboxSpecification
+  - HiveSync.Application.Specifications.UniqueFieldSpec`1
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Specifications
+  nameWithType: HiveSync.Application.Specifications
+  fullName: HiveSync.Application.Specifications
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Specifications.DefaultInboxSpecification
+  commentId: T:HiveSync.Application.Specifications.DefaultInboxSpecification
+  href: HiveSync.Application.Specifications.DefaultInboxSpecification.html
+  name: DefaultInboxSpecification
+  nameWithType: DefaultInboxSpecification
+  fullName: HiveSync.Application.Specifications.DefaultInboxSpecification
+- uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+  commentId: T:HiveSync.Application.Specifications.UniqueFieldSpec`1
+  href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html
+  name: UniqueFieldSpec<TEntity>
+  nameWithType: UniqueFieldSpec<TEntity>
+  fullName: HiveSync.Application.Specifications.UniqueFieldSpec<TEntity>
+  nameWithType.vb: UniqueFieldSpec(Of TEntity)
+  fullName.vb: HiveSync.Application.Specifications.UniqueFieldSpec(Of TEntity)
+  name.vb: UniqueFieldSpec(Of TEntity)
+  spec.csharp:
+  - uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+    name: UniqueFieldSpec
+    href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: HiveSync.Application.Specifications.UniqueFieldSpec`1
+    name: UniqueFieldSpec
+    href: HiveSync.Application.Specifications.UniqueFieldSpec-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )

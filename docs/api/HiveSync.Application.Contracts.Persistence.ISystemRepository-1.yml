@@ -1,0 +1,678 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  commentId: T:HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  id: ISystemRepository`1
+  parent: HiveSync.Application.Contracts.Persistence
+  children:
+  - HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync(`0,System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  - HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ISystemRepository<T>
+  nameWithType: ISystemRepository<T>
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>
+  type: Interface
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ISystemRepository
+    path: ../src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+    startLine: 10
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: >-
+    Repository interface for system-level entities that are trackable and have a base entity structure.
+
+    Supports basic read, add, save, and transactional operations.
+  example: []
+  syntax:
+    content: 'public interface ISystemRepository<T> where T : class, ITrackable, IBaseEntity'
+    typeParameters:
+    - id: T
+      description: The entity type. Must implement <xref href="HiveSync.Application.Contracts.Interfaces.ITrackable" data-throw-if-not-resolved="false"></xref> and <xref href="HiveSync.Application.Contracts.Interfaces.IBaseEntity" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Interface ISystemRepository(Of T As {Class, ITrackable, IBaseEntity})
+  derivedClasses:
+  - HiveSync.Data.Repositories.EfSystemRepository`1
+  nameWithType.vb: ISystemRepository(Of T)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T)
+  name.vb: ISystemRepository(Of T)
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  id: ListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(Expression<Func<T, bool>>, CancellationToken)
+  nameWithType: ISystemRepository<T>.ListAsync(Expression<Func<T, bool>>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.ListAsync(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ListAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+    startLine: 20
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Returns a read-only list of entities that match the specified predicate.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<T>> ListAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: A filter expression to select specific entities.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{T}}}
+      description: A read-only list of entities matching the filter.
+    content.vb: Function ListAsync(predicate As Expression(Of Func(Of T, Boolean)), cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of T))
+  overload: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync*
+  nameWithType.vb: ISystemRepository(Of T).ListAsync(Expression(Of Func(Of T, Boolean)), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).ListAsync(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Threading.CancellationToken)
+  name.vb: ListAsync(Expression(Of Func(Of T, Boolean)), CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync(`0,System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync(`0,System.Threading.CancellationToken)
+  id: AddAsync(`0,System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(T, CancellationToken)
+  nameWithType: ISystemRepository<T>.AddAsync(T, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.AddAsync(T, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+    startLine: 29
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Adds a new entity to the repository.
+  example: []
+  syntax:
+    content: Task AddAsync(T entity, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entity
+      type: '{T}'
+      description: The entity to add.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(entity As T, cancellationToken As CancellationToken = Nothing) As Task
+  overload: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync*
+  nameWithType.vb: ISystemRepository(Of T).AddAsync(T, CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).AddAsync(T, System.Threading.CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync(System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync(System.Threading.CancellationToken)
+  id: SaveChangesAsync(System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync(CancellationToken)
+  nameWithType: ISystemRepository<T>.SaveChangesAsync(CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.SaveChangesAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: SaveChangesAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+    startLine: 35
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: Saves all changes in the repository to the underlying database.
+  example: []
+  syntax:
+    content: Task SaveChangesAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SaveChangesAsync(cancellationToken As CancellationToken = Nothing) As Task
+  overload: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync*
+  nameWithType.vb: ISystemRepository(Of T).SaveChangesAsync(CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).SaveChangesAsync(System.Threading.CancellationToken)
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  id: ExecuteInTransactionAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: HiveSync.Application.Contracts.Persistence.ISystemRepository`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteInTransactionAsync(Func<Task>, CancellationToken)
+  nameWithType: ISystemRepository<T>.ExecuteInTransactionAsync(Func<Task>, CancellationToken)
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.ExecuteInTransactionAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: ExecuteInTransactionAsync
+    path: ../src/HiveSync.Application.Contracts/Persistence/ISystemRepository.cs
+    startLine: 43
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Persistence
+  summary: >-
+    Executes the specified action within a database transaction.
+
+    Rolls back if an exception occurs.
+  example: []
+  syntax:
+    content: Task ExecuteInTransactionAsync(Func<Task> action, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.Func{System.Threading.Tasks.Task}
+      description: An async action to execute transactionally.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the operation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ExecuteInTransactionAsync(action As Func(Of Task), cancellationToken As CancellationToken = Nothing) As Task
+  overload: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync*
+  nameWithType.vb: ISystemRepository(Of T).ExecuteInTransactionAsync(Func(Of Task), CancellationToken)
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).ExecuteInTransactionAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: ExecuteInTransactionAsync(Func(Of Task), CancellationToken)
+references:
+- uid: HiveSync.Application.Contracts.Interfaces.ITrackable
+  commentId: T:HiveSync.Application.Contracts.Interfaces.ITrackable
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.ITrackable.html
+  name: ITrackable
+  nameWithType: ITrackable
+  fullName: HiveSync.Application.Contracts.Interfaces.ITrackable
+- uid: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  commentId: T:HiveSync.Application.Contracts.Interfaces.IBaseEntity
+  parent: HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.Application.Contracts.Interfaces.IBaseEntity.html
+  name: IBaseEntity
+  nameWithType: IBaseEntity
+  fullName: HiveSync.Application.Contracts.Interfaces.IBaseEntity
+- uid: HiveSync.Application.Contracts.Persistence
+  commentId: N:HiveSync.Application.Contracts.Persistence
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Persistence
+  nameWithType: HiveSync.Application.Contracts.Persistence
+  fullName: HiveSync.Application.Contracts.Persistence
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Persistence
+    name: Persistence
+    href: HiveSync.Application.Contracts.Persistence.html
+- uid: HiveSync.Application.Contracts.Interfaces
+  commentId: N:HiveSync.Application.Contracts.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Interfaces
+  nameWithType: HiveSync.Application.Contracts.Interfaces
+  fullName: HiveSync.Application.Contracts.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Interfaces
+    name: Interfaces
+    href: HiveSync.Application.Contracts.Interfaces.html
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ListAsync
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html#HiveSync_Application_Contracts_Persistence_ISystemRepository_1_ListAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Threading_CancellationToken_
+  name: ListAsync
+  nameWithType: ISystemRepository<T>.ListAsync
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.ListAsync
+  nameWithType.vb: ISystemRepository(Of T).ListAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).ListAsync
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<T>>
+  nameWithType: Task<IReadOnlyList<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<T>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of T))
+  name.vb: Task(Of IReadOnlyList(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.AddAsync
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html#HiveSync_Application_Contracts_Persistence_ISystemRepository_1_AddAsync__0_System_Threading_CancellationToken_
+  name: AddAsync
+  nameWithType: ISystemRepository<T>.AddAsync
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.AddAsync
+  nameWithType.vb: ISystemRepository(Of T).AddAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).AddAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.SaveChangesAsync
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html#HiveSync_Application_Contracts_Persistence_ISystemRepository_1_SaveChangesAsync_System_Threading_CancellationToken_
+  name: SaveChangesAsync
+  nameWithType: ISystemRepository<T>.SaveChangesAsync
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.SaveChangesAsync
+  nameWithType.vb: ISystemRepository(Of T).SaveChangesAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).SaveChangesAsync
+- uid: HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync*
+  commentId: Overload:HiveSync.Application.Contracts.Persistence.ISystemRepository`1.ExecuteInTransactionAsync
+  href: HiveSync.Application.Contracts.Persistence.ISystemRepository-1.html#HiveSync_Application_Contracts_Persistence_ISystemRepository_1_ExecuteInTransactionAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  name: ExecuteInTransactionAsync
+  nameWithType: ISystemRepository<T>.ExecuteInTransactionAsync
+  fullName: HiveSync.Application.Contracts.Persistence.ISystemRepository<T>.ExecuteInTransactionAsync
+  nameWithType.vb: ISystemRepository(Of T).ExecuteInTransactionAsync
+  fullName.vb: HiveSync.Application.Contracts.Persistence.ISystemRepository(Of T).ExecuteInTransactionAsync
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

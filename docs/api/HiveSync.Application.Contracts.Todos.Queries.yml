@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Todos.Queries
+  commentId: N:HiveSync.Application.Contracts.Todos.Queries
+  id: HiveSync.Application.Contracts.Todos.Queries
+  children:
+  - HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery
+  - HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery
+  - HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  - HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Contracts.Todos.Queries
+  nameWithType: HiveSync.Application.Contracts.Todos.Queries
+  fullName: HiveSync.Application.Contracts.Todos.Queries
+  type: Namespace
+  assemblies:
+  - HiveSync.Application.Contracts
+references:
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery
+  parent: HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery.html
+  name: GetTodoDtoListByProjectQuery
+  nameWithType: GetTodoDtoListByProjectQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListByProjectQuery
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery
+  parent: HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery.html
+  name: GetTodoDtoListBySectionQuery
+  nameWithType: GetTodoDtoListBySectionQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListBySectionQuery
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+  parent: HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery.html
+  name: GetTodoDtoListQuery
+  nameWithType: GetTodoDtoListQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoListQuery
+- uid: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery
+  commentId: T:HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery
+  parent: HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery.html
+  name: GetTodoDtoQuery
+  nameWithType: GetTodoDtoQuery
+  fullName: HiveSync.Application.Contracts.Todos.Queries.GetTodoDtoQuery
+- uid: HiveSync.Application.Contracts.Todos.Queries
+  commentId: N:HiveSync.Application.Contracts.Todos.Queries
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Todos.Queries
+  nameWithType: HiveSync.Application.Contracts.Todos.Queries
+  fullName: HiveSync.Application.Contracts.Todos.Queries
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos
+    name: Todos
+    href: HiveSync.Application.Contracts.Todos.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Todos.Queries
+    name: Queries
+    href: HiveSync.Application.Contracts.Todos.Queries.html

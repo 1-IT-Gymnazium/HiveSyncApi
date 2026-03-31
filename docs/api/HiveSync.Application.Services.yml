@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Services
+  commentId: N:HiveSync.Application.Services
+  id: HiveSync.Application.Services
+  children:
+  - HiveSync.Application.Services.EmailSenderService
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Services
+  nameWithType: HiveSync.Application.Services
+  fullName: HiveSync.Application.Services
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Services.EmailSenderService
+  commentId: T:HiveSync.Application.Services.EmailSenderService
+  parent: HiveSync.Application.Services
+  href: HiveSync.Application.Services.EmailSenderService.html
+  name: EmailSenderService
+  nameWithType: EmailSenderService
+  fullName: HiveSync.Application.Services.EmailSenderService
+- uid: HiveSync.Application.Services
+  commentId: N:HiveSync.Application.Services
+  href: HiveSync.html
+  name: HiveSync.Application.Services
+  nameWithType: HiveSync.Application.Services
+  fullName: HiveSync.Application.Services
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Services
+    name: Services
+    href: HiveSync.Application.Services.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Services
+    name: Services
+    href: HiveSync.Application.Services.html

@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  id: AddSectionExtensions
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  children:
+  - HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  langs:
+  - csharp
+  - vb
+  name: AddSectionExtensions
+  nameWithType: AddSectionExtensions
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Sections/Commands/Dto/AddSectionDto.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: AddSectionExtensions
+    path: ../src/HiveSync.Application.Contracts/Sections/Commands/Dto/AddSectionDto.cs
+    startLine: 34
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Sections.Commands.Dto
+  summary: Extension methods for converting <xref href="HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto" data-throw-if-not-resolved="false"></xref> to <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> entities.
+  example: []
+  syntax:
+    content: public static class AddSectionExtensions
+    content.vb: Public Module AddSectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  commentId: M:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  id: FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper,HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  isExtensionMethod: true
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromCreate(IApplicationMapper, AddSectionDto)
+  nameWithType: AddSectionExtensions.FromCreate(IApplicationMapper, AddSectionDto)
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate(HiveSync.Utilities.Interfaces.IApplicationMapper, HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto)
+  type: Method
+  source:
+    remote:
+      path: src/HiveSync.Application.Contracts/Sections/Commands/Dto/AddSectionDto.cs
+      branch: dev
+      repo: https://gitlab.com/code-hive/hivesyncapi.git
+    id: FromCreate
+    path: ../src/HiveSync.Application.Contracts/Sections/Commands/Dto/AddSectionDto.cs
+    startLine: 41
+  assemblies:
+  - HiveSync.Application.Contracts
+  namespace: HiveSync.Application.Contracts.Sections.Commands.Dto
+  summary: Creates a new <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> entity from the source DTO.
+  example: []
+  syntax:
+    content: public static Section FromCreate(this IApplicationMapper mapper, AddSectionDto source)
+    parameters:
+    - id: mapper
+      type: HiveSync.Utilities.Interfaces.IApplicationMapper
+    - id: source
+      type: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+      description: DTO containing values for the new section.
+    return:
+      type: HiveSync.Application.Contracts.Entities.Business.Section
+      description: A new <xref href="HiveSync.Application.Contracts.Entities.Business.Section" data-throw-if-not-resolved="false"></xref> entity with a new GUID.
+    content.vb: Public Shared Function FromCreate(mapper As IApplicationMapper, source As AddSectionDto) As Section
+  overload: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate*
+references:
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+  commentId: T:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+  parent: HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto.html
+  name: AddSectionDto
+  nameWithType: AddSectionDto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionDto
+- uid: HiveSync.Application.Contracts.Entities.Business.Section
+  commentId: T:HiveSync.Application.Contracts.Entities.Business.Section
+  parent: HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.Application.Contracts.Entities.Business.Section.html
+  name: Section
+  nameWithType: Section
+  fullName: HiveSync.Application.Contracts.Entities.Business.Section
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+  commentId: N:HiveSync.Application.Contracts.Sections.Commands.Dto
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Sections.Commands.Dto
+  nameWithType: HiveSync.Application.Contracts.Sections.Commands.Dto
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections
+    name: Sections
+    href: HiveSync.Application.Contracts.Sections.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands
+    name: Commands
+    href: HiveSync.Application.Contracts.Sections.Commands.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Sections.Commands.Dto
+    name: Dto
+    href: HiveSync.Application.Contracts.Sections.Commands.Dto.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: HiveSync.Application.Contracts.Entities.Business
+  commentId: N:HiveSync.Application.Contracts.Entities.Business
+  href: HiveSync.html
+  name: HiveSync.Application.Contracts.Entities.Business
+  nameWithType: HiveSync.Application.Contracts.Entities.Business
+  fullName: HiveSync.Application.Contracts.Entities.Business
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Application
+    name: Application
+    href: HiveSync.Application.html
+  - name: .
+  - uid: HiveSync.Application.Contracts
+    name: Contracts
+    href: HiveSync.Application.Contracts.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities
+    name: Entities
+    href: HiveSync.Application.Contracts.Entities.html
+  - name: .
+  - uid: HiveSync.Application.Contracts.Entities.Business
+    name: Business
+    href: HiveSync.Application.Contracts.Entities.Business.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate*
+  commentId: Overload:HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate
+  href: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.html#HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionExtensions_FromCreate_HiveSync_Utilities_Interfaces_IApplicationMapper_HiveSync_Application_Contracts_Sections_Commands_Dto_AddSectionDto_
+  name: FromCreate
+  nameWithType: AddSectionExtensions.FromCreate
+  fullName: HiveSync.Application.Contracts.Sections.Commands.Dto.AddSectionExtensions.FromCreate
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+  commentId: T:HiveSync.Utilities.Interfaces.IApplicationMapper
+  parent: HiveSync.Utilities.Interfaces
+  href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  name: IApplicationMapper
+  nameWithType: IApplicationMapper
+  fullName: HiveSync.Utilities.Interfaces.IApplicationMapper
+- uid: HiveSync.Utilities.Interfaces
+  commentId: N:HiveSync.Utilities.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Utilities.Interfaces
+  nameWithType: HiveSync.Utilities.Interfaces
+  fullName: HiveSync.Utilities.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html

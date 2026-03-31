@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Utilities.Interfaces
+  commentId: N:HiveSync.Utilities.Interfaces
+  id: HiveSync.Utilities.Interfaces
+  children:
+  - HiveSync.Utilities.Interfaces.IApplicationMapper
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Utilities.Interfaces
+  nameWithType: HiveSync.Utilities.Interfaces
+  fullName: HiveSync.Utilities.Interfaces
+  type: Namespace
+  assemblies:
+  - HiveSync.Utilities
+references:
+- uid: HiveSync.Utilities.Interfaces.IApplicationMapper
+  commentId: T:HiveSync.Utilities.Interfaces.IApplicationMapper
+  parent: HiveSync.Utilities.Interfaces
+  href: HiveSync.Utilities.Interfaces.IApplicationMapper.html
+  name: IApplicationMapper
+  nameWithType: IApplicationMapper
+  fullName: HiveSync.Utilities.Interfaces.IApplicationMapper
+- uid: HiveSync.Utilities.Interfaces
+  commentId: N:HiveSync.Utilities.Interfaces
+  href: HiveSync.html
+  name: HiveSync.Utilities.Interfaces
+  nameWithType: HiveSync.Utilities.Interfaces
+  fullName: HiveSync.Utilities.Interfaces
+  spec.csharp:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html
+  spec.vb:
+  - uid: HiveSync
+    name: HiveSync
+    href: HiveSync.html
+  - name: .
+  - uid: HiveSync.Utilities
+    name: Utilities
+    href: HiveSync.Utilities.html
+  - name: .
+  - uid: HiveSync.Utilities.Interfaces
+    name: Interfaces
+    href: HiveSync.Utilities.Interfaces.html

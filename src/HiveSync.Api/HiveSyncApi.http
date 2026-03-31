@@ -1,6 +1,0 @@
-@HiveSyncApi_HostAddress = http://localhost:5033
-
-GET {{HiveSyncApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

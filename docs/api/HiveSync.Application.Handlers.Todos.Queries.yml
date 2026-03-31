@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Todos.Queries
+  commentId: N:HiveSync.Application.Handlers.Todos.Queries
+  id: HiveSync.Application.Handlers.Todos.Queries
+  children:
+  - HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler
+  - HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler
+  - HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler
+  - HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Handlers.Todos.Queries
+  nameWithType: HiveSync.Application.Handlers.Todos.Queries
+  fullName: HiveSync.Application.Handlers.Todos.Queries
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler
+  href: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler.html
+  name: GetTodoDtoListByProjectQueryHandler
+  nameWithType: GetTodoDtoListByProjectQueryHandler
+  fullName: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListByProjectQueryHandler
+- uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler
+  href: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler.html
+  name: GetTodoDtoListBySectionQueryHandler
+  nameWithType: GetTodoDtoListBySectionQueryHandler
+  fullName: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListBySectionQueryHandler
+- uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler
+  href: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler.html
+  name: GetTodoDtoListQueryHandler
+  nameWithType: GetTodoDtoListQueryHandler
+  fullName: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoListQueryHandler
+- uid: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler
+  href: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler.html
+  name: GetTodoDtoQueryHandler
+  nameWithType: GetTodoDtoQueryHandler
+  fullName: HiveSync.Application.Handlers.Todos.Queries.GetTodoDtoQueryHandler

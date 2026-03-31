@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HiveSync.Application.Handlers.Sections.Queries
+  commentId: N:HiveSync.Application.Handlers.Sections.Queries
+  id: HiveSync.Application.Handlers.Sections.Queries
+  children:
+  - HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler
+  - HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler
+  - HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: HiveSync.Application.Handlers.Sections.Queries
+  nameWithType: HiveSync.Application.Handlers.Sections.Queries
+  fullName: HiveSync.Application.Handlers.Sections.Queries
+  type: Namespace
+  assemblies:
+  - HiveSync.Application
+references:
+- uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler
+  href: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler.html
+  name: GetSectionDtoListByProjectQueryHandler
+  nameWithType: GetSectionDtoListByProjectQueryHandler
+  fullName: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListByProjectQueryHandler
+- uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler
+  href: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler.html
+  name: GetSectionDtoListQueryHandler
+  nameWithType: GetSectionDtoListQueryHandler
+  fullName: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoListQueryHandler
+- uid: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler
+  commentId: T:HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler
+  href: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler.html
+  name: GetSectionDtoQueryHandler
+  nameWithType: GetSectionDtoQueryHandler
+  fullName: HiveSync.Application.Handlers.Sections.Queries.GetSectionDtoQueryHandler
