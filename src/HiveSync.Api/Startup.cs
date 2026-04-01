@@ -57,8 +57,12 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment hostEnvir
         {
             options.AddPolicy(CorsPolicy, policy =>
             {
+                var allowedOrigins = hostEnvironment.IsDevelopment()
+                    ? new[] { "http://localhost:3000" }
+                    : new[] { "https://hivesyncui.onrender.com" };
+
                 policy
-                    .WithOrigins("http://localhost:3000")
+                    .WithOrigins(allowedOrigins)
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();
@@ -217,10 +221,7 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment hostEnvir
 
         app.UseRouting();
 
-        if (hostEnvironment.IsDevelopment())
-        {
-            app.UseCors(CorsPolicy);
-        }
+        app.UseCors(CorsPolicy);
 
         app.UseAuthentication();
         app.UseAuthorization();
