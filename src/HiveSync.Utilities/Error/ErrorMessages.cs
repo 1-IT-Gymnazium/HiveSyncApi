@@ -29,7 +29,7 @@ public static class ErrorMessages
     public static string ProjectNotDeleted() => "This project could not be deleted.";
 
     /// <summary>Inbox project cannot be modified or deleted.</summary>
-    public static string InboxProjectProtected() => "Inbox project cannot be modified or deleted.";
+    public static string InboxProjectProtected() => "Your default project cannot be deleted.";
 
     #endregion
 
