@@ -27,9 +27,9 @@ public class Program
         var host = builder.Build();
 
         // TEMPORARY DEBUG - remove after fixing
-        var config = host.Services.GetRequiredService<IConfiguration>();
-        var cs = config.GetConnectionString("DefaultConnection");
-        Console.WriteLine($"CONNECTION STRING: {cs}");
+        //var config = host.Services.GetRequiredService<IConfiguration>();
+        //var cs = config.GetConnectionString("DefaultConnection");
+        //Console.WriteLine($"CONNECTION STRING: {cs}");
         await MigrateDb(host);
         await host.RunAsync();
     }
@@ -40,7 +40,7 @@ public class Program
     /// <param name="host">The application host containing registered services.</param>
     private static async Task MigrateDb(IHost host)
     {
-        using var scope = host.Services.CreateScope();
+        await using var scope = host.Services.CreateAsyncScope();
 
         var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
         await dbContext.Database.MigrateAsync();
