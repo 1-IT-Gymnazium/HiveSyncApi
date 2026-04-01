@@ -395,7 +395,7 @@ public class AuthController(
 
         var url = $"{_environmentOptions.FrontendHostUrl}{_environmentOptions.FrontendResetPasswordUrl}?token={escapedToken}&email={user.Email}";
 
-        var logoUrl = "https://raw.githubusercontent.com/WestrCZ/hivesyncui/feature/basicUI/app/frontend/src/assets/logo/logo-icon.svg";
+        var logoUrl = "https://raw.githubusercontent.com/1-IT-Gymnazium/HiveSyncUi/1ef5eb91efa59425e19edff0bce5b70da1f69c4b/app/frontend/src/assets/logo/logo-icon.svg";
 
         var emailHtml = $"""
 <div style="background-color:#282828; color:#ffffff; font-family:sans-serif; padding:20px;">
@@ -560,7 +560,7 @@ public class AuthController(
         var url =
             $"{_environmentOptions.FrontendHostUrl}{_environmentOptions.FrontendConfirmUrl}?token={escapedToken}&email={user.Email}";
 
-        var logoUrl = "https://raw.githubusercontent.com/WestrCZ/hivesyncui/feature/basicUI/app/frontend/src/assets/logo/logo-icon.svg";
+        var logoUrl = "https://raw.githubusercontent.com/1-IT-Gymnazium/HiveSyncUi/1ef5eb91efa59425e19edff0bce5b70da1f69c4b/app/frontend/src/assets/logo/logo-icon.svg";
 
         var emailHtml = $"""
 <div style="background-color:#282828; color:#ffffff; font-family:sans-serif; padding:20px;">
