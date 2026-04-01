@@ -26,19 +26,22 @@ public static class ServiceCollectionExtensions
     /// </remarks>
     public static IServiceCollection AddDataLayer(this IServiceCollection services, string connectionString)
     {
-        // Přidání DbContextu
+        // DbContext configuration with Npgsql and NodaTime support
         services.AddDbContext<AppDbContext>(options =>
         {
             options.UseNpgsql(connectionString, builder => builder.UseNodaTime());
+            options.ConfigureWarnings(warnings =>
+                warnings.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.PendingModelChangesWarning)
+                );
         });
 
-        // Přidání Identity, pokud se tady bude používat
+        //Identity configuration for AppUser with confirmed account requirement
         services.AddIdentityCore<AppUser>(options =>
             options.SignIn.RequireConfirmedAccount = true)
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
 
-        // Přidání repozitářů a dalších datových služeb
+        // Adding repositories and other data services
         services.Scan(scan => scan
             .FromAssemblyOf<AppDbContext>()
             .AddClasses(classes => classes.InNamespaces("HiveSync.Data.Repositories"))
