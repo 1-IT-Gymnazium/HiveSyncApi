@@ -80,40 +80,36 @@ public class EmailSenderService
         var unsentMails = await _emailRepository.ListAsync(x => !x.Sent);
         if (!unsentMails.Any()) return;
 
-        using var smtp = new MailKit.Net.Smtp.SmtpClient();
-
-        try
-        {
-            await smtp.ConnectAsync(_smtpOptions.Host, _smtpOptions.Port);
-            await smtp.AuthenticateAsync(_smtpOptions.Username, _smtpOptions.Password);
-        }
-        catch (Exception ex)
-        {
-            throw new Exception("Failed to connect or authenticate to SMTP server", ex);
-        }
+        using var httpClient = new HttpClient();
+        httpClient.DefaultRequestHeaders.Add("api-key", _smtpOptions.ApiKey);
+        httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
         foreach (var unsentMail in unsentMails)
         {
-            var message = new MimeMessage();
-            message.From.Add(new MailboxAddress(unsentMail.FromName, unsentMail.FromEmail));
-            message.To.Add(new MailboxAddress(unsentMail.RecipientName, unsentMail.RecipientEmail));
-            message.Subject = unsentMail.Subject;
-            message.Body = new BodyBuilder { HtmlBody = unsentMail.Body }.ToMessageBody();
-
-            try
+            var payload = new
             {
-                await smtp.SendAsync(message);
+                sender = new { name = unsentMail.FromName, email = unsentMail.FromEmail },
+                to = new[] { new { name = unsentMail.RecipientName, email = unsentMail.RecipientEmail } },
+                subject = unsentMail.Subject,
+                htmlContent = unsentMail.Body
+            };
+
+            var json = System.Text.Json.JsonSerializer.Serialize(payload);
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await httpClient.PostAsync("https://api.brevo.com/v3/smtp/email", content);
+
+            if (response.IsSuccessStatusCode)
+            {
                 unsentMail.Sent = true;
             }
-            catch (Exception ex)
+            else
             {
-                throw new Exception($"Failed to send email to {unsentMail.RecipientEmail}", ex);
+                var error = await response.Content.ReadAsStringAsync();
+                throw new Exception($"Failed to send email to {unsentMail.RecipientEmail}: {error}");
             }
         }
 
         await _emailRepository.SaveChangesAsync();
-
-        if (smtp.IsConnected)
-            await smtp.DisconnectAsync(true);
     }
 }

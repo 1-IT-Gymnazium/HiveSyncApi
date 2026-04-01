@@ -38,4 +38,5 @@ public class SmtpSettings
     /// This value should be stored securely (e.g., user secrets, environment variables, or vault).
     /// </remarks>
     public required string Password { get; set; }
+    public required string ApiKey { get; set; }
 }
