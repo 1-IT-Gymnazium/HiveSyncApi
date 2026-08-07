@@ -487,6 +487,15 @@ public class AuthController(
         => Ok("Succesfully reached endpoint!");
 
     /// <summary>
+    /// Endpoint for wakening backend services.
+    /// </summary>
+    /// <returns> Returns a simple "Pong!" response.</returns>
+    /// <response code="200">Returns "Pong!" to indicate the service is awake.</response>
+    [HttpGet("Ping")]
+    public ActionResult Ping()
+        => Ok("Pong!");
+
+    /// <summary>
     /// Generates and stores a refresh token for a user.
     /// </summary>
     /// <param name="userId">Identifier of the user.</param>
